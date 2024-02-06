@@ -28,7 +28,7 @@ MAESTRO INSTALLATION
 
 AMBERTOOLS INSTALLATION GUIDE (AMBER22 on Ubuntu 22.10)
 -If you do not have conda, download it by visiting:  https://docs.conda.io/en/latest/miniconda.html
--Install cmake and other packages if you do not have. (See more at: https://cmake.org/download)
+-Install cmake and other packages if you do not have. See more at: https://cmake.org/download
 sudo su
 apt update
 apt upgrade
@@ -62,19 +62,19 @@ sudo apt install python3-tk
 THE WORK FLOW
 
 1) Preparation of the system and building topologies
-Calculate the relaxed geometries and ESP charges with Gaussian16 for the reacting moieties which include; cis stilbene oxide substrate, water molecule and Aspartate (Asp101) in reactant state (RS). That for the product state (PS) were equally determined; RRDiol or SSDiol, Deprotonated Aspartate (ASP101) and Protonated Aspartate(ASP132). We will obtain the following files for RS: STO.log (substrate), H2O.log (water) and ASH.log (ASH101); and for PS we will have: RRD.log or SSDiol(substrate), ASP.log (ASP101), and ASH.log (ASH132). The commands used for the various files to get the .log and ESP charges was:
+Calculate the relaxed geometries and ESP charges with Gaussian16 for the reacting moieties which include; cis stilbene oxide substrate, water molecule and Aspartate (Asp101) in reactant state (RS). That for the product state (PS) were equally  calculated; RRDiol or SSDiol, Deprotonated Aspartate (ASP101) and Protonated Aspartate(ASP132). In the case of reactants, We will obtain the following files: STO.log (substrate), H2O.log (water) and ASH.log (ASH101); and for PS we will have: RRD.log or SSD.log(substrate), ASP.log (ASP101), and ASH.log (ASH132). The commands used for the various files to get the .log and ESP charges was:
                  g16 input.com  (g16 STO.com)
                  g16 input.com  (g16 STO_gesp.com)
-NOTE: The molecules were drawn on Avogadro so as to obatin their coordinates which will serve as input for the gaussian calculation. 
+NOTE: The molecules were drawn on Avogadro so as to obatin their coordinates which will serve as an input for the gaussian calculation. 
 
-2) Calculate the RESP charges with antechamber from AmberTools. The command below should be repeated for each output file from the Gaussian calculation. 
+2) Calculate the RESP charges with antechamber from AmberTools. The command below should be repeated for each of the output files from the Gaussian calculation. 
                  antechamber -fi gout -i STO_gesp.log -fo ac -o STO.ac -c resp -nc -1
 
 3) Extract the pdb from the gaussian output file for all the reactants and products.
-                 antechamber -fi gout -i STO_gesp.log -fo pdb -o STO_gesp.pdb -rn STO
+                 antechamber -fi gout -i STO_gesp.log -fo pdb -o STO.pdb -rn STO
 
 4)Use the extracted pdb files to calculate the ffld_server parameters using maestro (get the .mae files and pass through the command below).
-                 $PATH(ffld_server.exe)  -imae STO.mae -version 14  -print_parameters -out_file STO.ffld
+                 $PATH(ffld_server.exe) -imae STO.mae -version 14  -print_parameters -out_file STO.ffld
 
 5) Convert the ffld_server parameters into GROMACS' OPLS-AA force field format using the python code (ffld2gmx.py). For cis-Stilbene oxide substrate we will obtain the following files: sto_atomtypes.opls, sto_vdw.opls, sto_bonds.opls, sto_angles.opls, sto_torsions.opls, and sto_impropers.opls.
                  ffld2gmx.py -n STO -f STO.ffld -a STO.ac
