@@ -1,15 +1,15 @@
 EMPERICAL VALENCE BOND SIMULATION WITH GROMACS
 DOWNLOAD AND INSTALLATION OF RELEVANT SOFTWARES
 
-CAUTION!!!! THE FOLLOWING INSTALLATION GUIDES ARE DESIGNED FOR LINUX SUB-SYSTEMS
+CAUTION!!!! THE FOLLOWING INSTALLATION GUIDES (AMBER, GROMACS, GAUSSIAN) ARE DESIGNED FOR LINUX SUB-SYSTEMS
 
 AVOGADRO SOFTWARE
 The software is open sourced and can be downloaded from "https://sourceforge.net/projects/avogadro/". Accept the necessary privacy regulations in order to install the software.   
 
 GAUSSIAN INSTALLATION GUIDE
 
-Gaussian is not open source. So you can easily have access to it through a supercomputing center or through research persons who have a licence. 
-In case it is a module on your supercomputer cluster, activate Gaussian by writing  "module load Gaussian"
+Gaussian is not open source. You can easily have access to it through a supercomputing center or through research persons who have a licence. 
+In case it is a module on your supercomputing cluster, activate Gaussian by writing  "module load Gaussian"
 
 GROMACS INSTALLATION GUIDE
 -Download GROMACS at: https://ftp.gromacs.org/gromacs/gromacs-2023.tar.gz
@@ -58,6 +58,8 @@ pip install tk
 python3 -m pip install -U pip
 pip install matplotlib
 sudo apt install python3-tk  
+
+THE WORK FLOW
 
 1) Preparation of the system and building topologies
 Calculate the relaxed geometries and ESP charges with Gaussian16 for the reacting moieties which include; cis stilbene oxide substrate, water molecule and Aspartate (Asp101) in reactant state (RS). That for the product state (PS) were equally determined; RRDiol or SSDiol, Deprotonated Aspartate (ASP101) and Protonated Aspartate(ASP132). We will obtain the following files for RS: STO.log (substrate), H2O.log (water) and ASH.log (ASH101); and for PS we will have: RRD.log or SSDiol(substrate), ASP.log (ASP101), and ASH.log (ASH132). The commands used for the various files to get the .log and ESP charges was:
