@@ -63,6 +63,7 @@ sudo apt install python3-tk
 Calculate the relaxed geometries and ESP charges with Gaussian16 for the reacting moieties which include; cis stilbene oxide substrate, water molecule and Aspartate (Asp101) in reactant state (RS). That for the product state (PS) were equally determined; RRDiol or SSDiol, Deprotonated Aspartate (ASP101) and Protonated Aspartate(ASP132). We will obtain the following files for RS: STO.log (substrate), H2O.log (water) and ASH.log (ASH101); and for PS we will have: RRD.log or SSDiol(substrate), ASP.log (ASP101), and ASH.log (ASH132). The commands used for the various files to get the .log and ESP charges was:
                  g16 input.com  (g16 STO.com)
                  g16 input.com  (g16 STO_gesp.com)
+NOTE: The molecules were drawn on Avogadro so as to obatin their coordinates which will serve as input for the gaussian calculation. 
 
 2) Calculate the RESP charges with antechamber from AmberTools. The command below should be repeated for each output file from the Gaussian calculation. 
                  antechamber -fi gout -i STO_gesp.log -fo ac -o STO.ac -c resp -nc -1
