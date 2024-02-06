@@ -1,7 +1,10 @@
 EMPERICAL VALENCE BOND SIMULATION WITH GROMACS
-THE WORK FLOW
+DOWNLOAD AND INSTALLATION OF RELEVANT SOFTWARES
 
 CAUTION!!!! THE FOLLOWING INSTALLATION GUIDES ARE DESIGNED FOR LINUX SUB-SYSTEMS
+
+AVOGADRO SOFTWARE
+The software is open sourced and can be downloaded from "https://sourceforge.net/projects/avogadro/". Accept the necessary privacy regulations in order to install the software.   
 
 GAUSSIAN INSTALLATION GUIDE
 
@@ -19,6 +22,9 @@ GROMACS INSTALLATION GUIDE
 -make check
 -sudo make install
 -source /usr/local/gromacs/bin/GMXRC
+
+MAESTRO INSTALLATION
+
 
 AMBERTOOLS INSTALLATION GUIDE (AMBER22 on Ubuntu 22.10)
 -If you do not have conda, download it by visiting:  https://docs.conda.io/en/latest/miniconda.html
