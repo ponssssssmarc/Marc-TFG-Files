@@ -5,6 +5,9 @@
     - [AVOGADRO SOFTWARE](#avogadro-software)
     - [GAUSSIAN INSTALLATION GUIDE](#gaussian-installation-guide)
     - [GROMACS INSTALLATION GUIDE](#gromacs-installation-guide)
+    - [MAESTRO INSTALLATION](#maestro-installation)
+    - [AMBERTOOLS INSTALLATION GUIDE (AMBER22 on Ubuntu 22.10)](#ambertools-installation-guide-amber22-on-ubuntu-2210)
+  - [THE WORK FLOW](#the-work-flow)
 
 
 ## DOWNLOAD AND INSTALLATION OF RELEVANT SOFTWARES
@@ -21,7 +24,8 @@ In case it is a module on your supercomputing cluster, activate Gaussian by writ
 
 ### GROMACS INSTALLATION GUIDE
 -Download GROMACS at: https://ftp.gromacs.org/gromacs/gromacs-2023.tar.gz
-```tar xfz gromacs-2023(3).tar.gz
+```
+tar xfz gromacs-2023(3).tar.gz
 cd gromacs-2023
 mkdir build
 cd build
@@ -29,7 +33,8 @@ cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
 make
 make check
 sudo make install
-source /usr/local/gromacs/bin/GMXRC```
+source /usr/local/gromacs/bin/GMXRC
+```
 
 ### MAESTRO INSTALLATION
 
@@ -37,7 +42,8 @@ source /usr/local/gromacs/bin/GMXRC```
 ### AMBERTOOLS INSTALLATION GUIDE (AMBER22 on Ubuntu 22.10)
 -If you do not have conda, download it by visiting:  https://docs.conda.io/en/latest/miniconda.html
 -Install cmake and other packages if you do not have. See more at: https://cmake.org/download
-```sudo su
+```
+sudo su
 apt update
 apt upgrade
 apt install cmake
@@ -47,16 +53,20 @@ apt install gcc
 apt -y install gcc gfortran
 apt -y install flex bison patch
 apt -y install bc xorg-dev libbz2-dev wget
-apt-get install gcc build-essential```
+apt-get install gcc build-essential
+```
 - Download Ambertools (AmberTools22.tar.bz2 and Amber22.tar.bz) from https://ambermd.org/GetAmber.php into the amber directory
 - Extract the files 
-```tar xvf  AmberTools22.tar.bz2
+```
+tar xvf  AmberTools22.tar.bz2
 tar xvf Amber22.tar.bz2
 - Compile and install Amber
 - cd/amber/amber22_src/build
-- ./run_cmake```
+- ./run_cmake
+```
 If this does not work, install a few other necessary packages as follows.
-```sudo apt install pip
+```
+sudo apt install pip
 pip install numpy
 python3 -m pip install scipy
 pip install Cython
@@ -65,27 +75,38 @@ python3 setup.py install
 pip install tk
 python3 -m pip install -U pip
 pip install matplotlib
-sudo apt install python3-tk  ```
+sudo apt install python3-tk  
+```
 
 ## THE WORK FLOW
 
 1. Preparation of the system and building topologies
 Calculate the relaxed geometries and ESP charges with Gaussian16 for the reacting moieties which include; cis stilbene oxide substrate, water molecule and Aspartate (Asp101) in reactant state (RS). That for the product state (PS) were equally  calculated; RRDiol or SSDiol, Deprotonated Aspartate (ASP101) and Protonated Aspartate(ASP132). In the case of reactants, We will obtain the following files: STO.log (substrate), H2O.log (water) and ASH.log (ASH101); and for PS we will have: RRD.log or SSD.log(substrate), ASP.log (ASP101), and ASH.log (ASH132). The commands used for the various files to get the .log and ESP charges was:
-                 ```g16 input.com  (g16 STO.com)
-                 g16 input.com  (g16 STO_gesp.com)```
+```
+g16 input.com  (g16 STO.com)
+g16 input.com  (g16 STO_gesp.com)
+```
 NOTE: The molecules were drawn on Avogadro so as to obatin their coordinates which will serve as an input for the gaussian calculation. 
 
 2. Calculate the RESP charges with antechamber from AmberTools. The command below should be repeated for each of the output files from the Gaussian calculation. 
-                 ```antechamber -fi gout -i STO_gesp.log -fo ac -o STO.ac -c resp -nc -1```
+```
+antechamber -fi gout -i STO_gesp.log -fo ac -o STO.ac -c resp -nc -1
+```
 
 3. Extract the pdb from the gaussian output file for all the reactants and products.
-                 ```antechamber -fi gout -i STO_gesp.log -fo pdb -o STO.pdb -rn STO```
+```
+antechamber -fi gout -i STO_gesp.log -fo pdb -o STO.pdb -rn STO
+```
 
 4. Use the extracted pdb files to calculate the ffld_server parameters using maestro (get the .mae files and pass through the command below).
-                ``` $PATH(ffld_server.exe) -imae STO.mae -version 14  -print_parameters -out_file STO.ffld```
+``` 
+$PATH(ffld_server.exe) -imae STO.mae -version 14  -print_parameters -out_file STO.ffld
+```
 
 5. Convert the ffld_server parameters into GROMACS' OPLS-AA force field format using the python code (ffld2gmx.py). For cis-Stilbene oxide substrate we will obtain the following files: sto_atomtypes.opls, sto_vdw.opls, sto_bonds.opls, sto_angles.opls, sto_torsions.opls, and sto_impropers.opls.
-                 ```ffld2gmx.py -n STO -f STO.ffld -a STO.ac```
+```
+ffld2gmx.py -n STO -f STO.ffld -a STO.ac
+```
 
 6. Add the content from sto_atomtypes.opls to atomtypes.atp, add 3ov_vdw.opls to ffnonbonded.itp, and 3ov_bonds.opls, sto_angles.opls, 3sto_torsions.opls, and sto_impropers.opls to ffbonded.itp file of GROMACS' force field. (For convenience, you can write only the parameters for RS in ffbonded.itp file and substitute the bonding types for the PS atom types inside ffnonbonded.itp with the corresponding bonding types for RS).
 
