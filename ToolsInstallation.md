@@ -133,7 +133,7 @@ gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
        ```
           echo > dummy.mdp
        gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb
-gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
-gmx genion -s dummy.tpr -o ion.gro -p complex.top -neutral
+       gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
+       gmx genion -s dummy.tpr -o ion.gro -p complex.top -neutral
 ```
 
