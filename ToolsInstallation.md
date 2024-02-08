@@ -108,7 +108,7 @@ $PATH(ffld_server.exe) -imae STO.mae -version 14  -print_parameters -out_file ST
 ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 ```
 
-6. Add the content from sto_atomtypes.opls to atomtypes.atp, add 3ov_vdw.opls to ffnonbonded.itp, and 3ov_bonds.opls, sto_angles.opls, 3sto_torsions.opls, and sto_impropers.opls to ffbonded.itp file of GROMACS' force field. (For convenience, you can write only the parameters for RS in ffbonded.itp file and substitute the bonding types for the PS atom types inside ffnonbonded.itp with the corresponding bonding types for RS). In these files, the representation of H2O is changed to WHO, ASH to AAH and ASP to AAW.
+6. Add the content from sto_atomtypes.opls to atomtypes.atp, add 3ov_vdw.opls to ffnonbonded.itp, and 3ov_bonds.opls, sto_angles.opls, sto_torsions.opls, and sto_impropers.opls to ffbonded.itp file of GROMACS' force field. (For convenience, you can write only the parameters for RS in ffbonded.itp file and substitute the bonding types for the PS atom types inside ffnonbonded.itp with the corresponding bonding types for RS). In these files, the representation of H2O is changed to WHO, ASH to AAH and ASP to AAW.
 
 7. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp files (see the files at the address indicated above)
 
