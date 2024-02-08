@@ -113,7 +113,7 @@ ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 7. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp files (see the files at the address indicated above)
 
 8. Build the corresponding residue inside aminoacids.rtp file (see STO residue inside aminoacids.rtp); we must build only the residues corresponding to RS.
-9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state).
+9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state). In these files, the representation of H2O is changed to WHO, ASH to AAH and ASP to AAW.
 10. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp for the reactant state.
 11. Build the corresponding residue inside `aminoacids.rtp` file for the Reactant state. Edit the aminoacids.rtp file and the aminoacid.hbd file so that the residues of the protonated Aspartate and the protonated Histidine are represented in a similar manner.
 12. Build GROMACS topology using the command;
