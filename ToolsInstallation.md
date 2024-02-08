@@ -121,7 +121,7 @@ ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 gmx pdb2gmx -f STBO.pdb -o STBO-start.pdb -water spc -merge all
 ```
 13) Build the periodic box using the command;
-    ```
+     ```
 gmx editconf -f STBO-start.pdb -o STBO-box.pdb -c -d 2 -bt dodecahedron
 ```
 14) Solvate the system
@@ -133,7 +133,7 @@ gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
        ```
           echo > dummy.mdp
        gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb -maxwarn 1
-        gmx genion -s dummy.tpr -o STBO_ion.pdb -p topol.top -neutral
+       gmx genion -s dummy.tpr -o STBO_ion.pdb -p topol.top -neutral
        choose Group 16 (SOL)
 ```
 
