@@ -117,7 +117,7 @@ ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 10. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp for the reactant state.
 11. Build the corresponding residue inside `aminoacids.rtp` file for the Reactant state. Edit the aminoacids.rtp file and the aminoacid.hbd file so that the residues of the protonated Aspartate and the protonated Histidine are represented in a similar manner.
 12. Build GROMACS topology using the command;
-```
+   ```
 gmx pdb2gmx -f STBO.pdb -o STBO-start.pdb -water spc -merge all
 ```
 13) Build the periodic box using the command;
