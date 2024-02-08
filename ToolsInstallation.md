@@ -115,7 +115,7 @@ ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 8. Build the corresponding residue inside aminoacids.rtp file (see STO residue inside aminoacids.rtp); we must build only the residues corresponding to RS.
 9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state).
 10. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp for the reactant state.
-11. Build the corresponding residue inside `aminoacids.rtp` file for the Reactant state.
+11. Build the corresponding residue inside `aminoacids.rtp` file for the Reactant state. Edit the aminoacids.rtp file and the aminoacid.hbd file so that the residues of the protonated Aspartate and the protonated Histidine are represented in a similar manner.
 12. Build GROMACS topology using the command;
 ```
 gmx pdb2gmx -f STBO.pdb -o STBO-start.pdb -water spc -merge all
@@ -132,8 +132,8 @@ gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
     Check the topol.top file and if some of the imprompers angles of STO are missing, copy them from the ffbonded.itp into the topol.top file.Then proceed with the following commands. 
        ```
           echo > dummy.mdp
-       gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb
-       gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
-       gmx genion -s dummy.tpr -o ion.gro -p complex.top -neutral
+       gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb -maxwarn 1
+        gmx genion -s dummy.tpr -o STBO_ion.pdb -p topol.top -neutral
+       choose Group 16 (SOL)
 ```
 
