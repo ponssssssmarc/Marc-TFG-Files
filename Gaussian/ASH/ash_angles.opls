@@ -1,0 +1,25 @@
+;  atom1       atom2       atom3      func          phi          ka
+   ash_O2      ash_C1      ash_O3        1      121.000     669.439
+   ash_O2      ash_C1      ash_C5        1      120.400     669.439
+   ash_O3      ash_C1      ash_C5        1      108.000     585.759
+   ash_C1      ash_O3      ash_H4        1      113.000     292.880
+   ash_C1      ash_C5      ash_C6        1      111.100     527.183
+   ash_C1      ash_C5      ash_H7        1      109.500     292.880
+   ash_C1      ash_C5      ash_H8        1      109.500     292.880
+   ash_C6      ash_C5      ash_H7        1      110.700     313.800
+   ash_C6      ash_C5      ash_H8        1      110.700     313.800
+   ash_H7      ash_C5      ash_H8        1      107.800     276.144
+   ash_C5      ash_C6      ash_N9        1      111.220     669.439
+   ash_C5      ash_C6      ash_C12       1      111.100     527.183
+   ash_C5      ash_C6      ash_H13       1      110.700     313.800
+   ash_N9      ash_C6      ash_C12       1      111.540     627.599
+   ash_N9      ash_C6      ash_H13       1      109.550     418.400
+   ash_C12     ash_C6      ash_H13       1      109.500     292.880
+   ash_C6      ash_N9      ash_H10       1      111.553     418.400
+   ash_C6      ash_N9      ash_H11       1      111.553     418.400
+   ash_H10     ash_N9      ash_H11       1      106.400     364.844
+   ash_C6      ash_C12     ash_O14       1      120.400     669.439
+   ash_C6      ash_C12     ash_O15       1      116.875     669.439
+   ash_O14     ash_C12     ash_O15       1      123.320     836.799
+   ash_C12     ash_O15     ash_H16       1      113.000     292.880
+
