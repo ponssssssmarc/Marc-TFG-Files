@@ -1,0 +1,33 @@
+ residue_name _origin_name _the_element _RESP_charge
+          SUB          O99            O       -0.709
+          SUB          H89            H        0.414
+          SUB          C98            C        0.368
+          SUB          H98            H       -0.003
+          SUB          C96            C       -0.046
+          SUB           C1            C       -0.148
+          SUB           C2            C       -0.158
+          SUB           C3            C       -0.123
+          SUB           C4            C       -0.158
+          SUB           C5            C       -0.148
+          SUB          C99            C        0.368
+          SUB          C97            C       -0.046
+          SUB          C10            C       -0.148
+          SUB          C11            C       -0.158
+          SUB          C12            C       -0.123
+          SUB          C13            C       -0.158
+          SUB          C14            C       -0.148
+          SUB          O88            O       -0.709
+          SUB          H88            H        0.414
+          SUB           H1            H        0.150
+          SUB           H2            H        0.138
+          SUB           H3            H        0.133
+          SUB           H4            H        0.138
+          SUB           H5            H        0.150
+          SUB          H99            H       -0.003
+          SUB          H10            H        0.150
+          SUB          H11            H        0.138
+          SUB          H12            H        0.133
+          SUB          H13            H        0.138
+          SUB          H14            H        0.150
+
+
