@@ -1,0 +1,114 @@
+; Feb. 2024
+;
+; Last column: '1' is an EVB atom (in region 1); '2' is a non-EVB atom
+; (in region 2). We need to declare the  non-EVB atoms involved in torsion
+; interactions as well as in LJ14 and QQ14 with region 1 atoms in only
+; one of the states, due to forming and/or break bonds.
+
+[atoms]
+; #pdb    at(A)        ch(A)       at(B)       ch(B)      1/2
+; ASH 101 
+  1492    aah_C1        0.520      aaw_C1       0.700      1  ; CG
+  1493    aah_O2       -0.440      aaw_O2      -0.800      1  ; OD1                              
+  1494    aah_O3       -0.530      aaw_O3      -0.800      1  ; OD2
+  1495    aah_H4        0.450      rrd_H2    0.413889      1  ; HD2  ;; !!!
+  1489    aah_C5       -0.120      aaw_C5      -0.220      1  ; CB
+  1490    aah_H7        0.060      aaw_H7       0.060      1  ; HB1
+  1491    aah_H8        0.060      aaw_H8       0.060      1  ; HB2
+  1487    aah_C6        0.140      aaw_C6       0.140      1  ; CA
+  1488    aah_H13       0.060      aaw_H13      0.060      1  ; HA
+  1485    aah_N9       -0.500      aaw_N9      -0.500      1  ; N
+  1486    aah_H10       0.300      aaw_H10      0.300      1  ; H      
+  1496    aah_C12       0.500      aaw_C12      0.500      1  ; C
+  1497    aah_O14      -0.500      aaw_O14     -0.500      1  ; O
+; STO 150
+ 2267     sto_O1      -0.251162    rrd_O1     -0.708500    1  ; O1
+ 2268     sto_C2      -0.109201    rrd_C11     0.368385    1  ; C1
+ 2269     sto_C3       0.227212    rrd_C12    -0.046102    1  ; C2 
+ 2270     sto_C4      -0.215119    rrd_C13    -0.148188    1  ; C3
+ 2271     sto_C5      -0.123712    rrd_C14    -0.157531    1  ; C4
+ 2272     sto_C6      -0.174545    rrd_C15    -0.123219    1  ; C5
+ 2273     sto_C7      -0.123712    rrd_C16    -0.157531    1  ; C6
+ 2274     sto_C8      -0.215119    rrd_C17    -0.148188    1  ; C7
+ 2275     sto_C9      -0.109201    rrd_C3      0.368385    1  ; C8
+ 2276     sto_C10      0.227212    rrd_C5     -0.046102    1  ; C9
+ 2277     sto_C11     -0.215119    rrd_C6     -0.148188    1  ; C10
+ 2278     sto_C12     -0.123712    rrd_C7     -0.157531    1  ; C11
+ 2279     sto_C13     -0.174545    rrd_C8     -0.123219    1  ; C12
+ 2280     sto_C14     -0.123712    rrd_C9     -0.157531    1  ; C13
+ 2281     sto_C15     -0.215119    rrd_C10    -0.148188    1  ; C14
+ 2282     sto_H16      0.133422    rrd_H25    -0.003180    1  ; H1
+ 2283     sto_H17      0.147457    rrd_H26     0.149939    1  ; H2 
+ 2284     sto_H18      0.142561    rrd_H27     0.138469    1  ; H3
+ 2285     sto_H19      0.146319    rrd_H28     0.133348    1  ; H4
+ 2286     sto_H20      0.142561    rrd_H29     0.138469    1  ; H5
+ 2287     sto_H21      0.147457    rrd_H30     0.149939    1  ; H6
+ 2288     sto_H22      0.133422    rrd_H4     -0.003180    1  ; H7
+ 2289     sto_H23      0.147457    rrd_H20     0.149939    1  ; H8
+ 2290     sto_H24      0.142561    rrd_H21     0.138469    1  ; H9
+ 2291     sto_H25      0.146319    rrd_H22     0.133348    1  ; H10
+ 2292     sto_H26      0.142561    rrd_H23     0.138469    1  ; H11
+ 2293     sto_H27      0.147457    rrd_H24     0.149939    1  ; H12
+; WHO 151
+  2294    who_O1     -0.940670     rrd_O18     -0.708500   1  ; O1    ;; !!!
+  2295    who_H2      0.470335     rrd_H19      0.413889   1  ; H2    ;; !!!
+  2296    who_H3      0.470335     aah_H4       0.450000   1  ; H3    ;; !!!
+; ASP 132
+  1986    aaw_C1        0.700    aah_C1         0.520      1  ; CG
+  1987    aaw_O2       -0.800    aah_O2        -0.440      1  ; OD1
+  1988    aaw_O3       -0.800    aah_O3        -0.530      1  ; OD2
+  1983    aaw_C5       -0.220    aah_C5        -0.120      1  ; CB
+  1984    aaw_H7        0.060    aah_H7         0.060      1  ; HB1
+  1985    aaw_H8        0.060    aah_H8         0.060      1  ; HB2
+  1981    aaw_C6        0.140    aah_C6         0.140      1  ; CA
+  1982    aaw_H13       0.060    aah_H13        0.060      1  ; HA
+  1979    aaw_N9       -0.500    aah_N9        -0.500      1  ; N
+  1980    aaw_H10       0.300    aah_H10        0.300      1  ; H
+  1496    aaw_C12       0.500    aah_C12        0.500      1  ; C
+  1497    aaw_O14      -0.500    aah_O14       -0.500      1  ; O
+
+
+; The A_ij = A_i * A_j; beta_ij = sqrt(beta_i * beta_j)
+[soft-core]
+;     i        A    beta
+;   2267   221.75    25.0
+;   2268   380.74    25.0
+;   2275   380.74    25.0
+;   2294   221.75    25.0
+;   2295   20.92     25.0
+;   2296   20.92     25.0
+;   1492   380.74    25.0
+;   1986   380.74    25.0
+;   1495   20.92     25.0
+
+; The bonds from topology will be substituted with these bonds
+; Use only bonds of type 1 or 3.
+[bonds]
+;   i      j type        b(A)          k(A)     beta(A)        b(B)          k(B)     beta(B)
+ 2294   2295    3      0.0945       1028.33        15.0      0.0945          0.00        15.0 ; RRD O1-H2
+ 2267   1495    3      0.0945       1028.33        15.0      0.0945          0.00        15.0 ; RRD H4-O1
+ 1986   2296    3      0.1090         623.25       15.0      0.1090          0.00        15.0 ; ASP C1-HD2
+ 1942   1945    3      0.1090          0.0         15.0      0.1090        632.25        15.0 ; ASH C1-HD2 
+ 2275   2267    3      0.1230          0.0         15.0      0.123         1028.33       15.0  ; STO C8-O1
+
+; Angles will be defined as in topology.
+; Define both states if it is a forming or a braking angle
+[angles]
+
+; Torsions will be defined as in topology.
+; Define both states if it is a forming or a braking torsion
+[torsions]
+
+; Impropers will be defined as in topology.
+; Define both states if it is a forming or a braking improper
+[impropers]
+;  i      j      k      l   type(2)    phi(A)   k(A)         phi(B)        k(B)
+
+[soft-pairs]
+;    i     j type(9)     beta          k(A)    beta           k(B)
+ 2294   2295    9        20.0       1046.00       20.0      0.00    ; RRD O1-H2  ; Forming 
+ 2267   1495    9        20.0       1046.00       20.0      0.00    ; RRD H4-O1  ; Forming
+ 1986   2296    9        20.0       1046.00       20.0      0.00    ; ASP C1-HD2 ; Forming
+ 1942   1945    9        20.0          0.0        20.0     1046.00  ; ASH C1-HD2 ; Breaking
+ 2275   2267    9        20.0          0.0        20.0     1046.00  ; STO C8-O1  ; Breaking
+
