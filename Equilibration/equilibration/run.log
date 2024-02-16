@@ -1,0 +1,24 @@
+Time: Fri Feb 16 13:08:18 CET 2024
+I'm working in this directory:
+   /home3/p315462/FinalGromacs3/equilibration
+
+Steps:
+equil_01_5k_nvt
+equil_02_100k_nvt
+equil_03_250k_nvt
+equil_04_300k_nvt
+equil_05_5k_nvt
+equil_06_5k_npt
+equil_07_100k_npt
+equil_08_250k_npt
+equil_09_300k_npt
+equil_10_300k_npt
+equil_11_300k_npt
+
+Time: Fri Feb 16 13:08:18 CET 2024     Running the step: equil_01_5k_nvt    --    FAILED
+
+Time: Fri Feb 16 13:08:19 CET 2024
+
+Normal termination
+Time: Fri Feb 16 13:08:19 CET 2024
+Total time: 1 seconds
