@@ -90,7 +90,7 @@ NOTE: The molecules were drawn on Avogadro so as to obatin their coordinates whi
 
 2. Calculate the RESP charges with antechamber from AmberTools. The command below should be repeated for each of the output files from the Gaussian calculation. 
 ```
-antechamber -fi gout -i STO_gesp.log -fo ac -o STO.ac -c resp -nc -1
+antechamber -fi gout -i STO_gesp.log -fo ac -o STO.ac -c resp -nc 0
 ```
 
 3. Extract the pdb from the gaussian output file for all the reactants and products.
@@ -141,4 +141,5 @@ choose Group 16 (SOL)
 ```
 python gmx4evb.py -f 51 -r STO ASH -p RRD ASP
 ```
-19. Successive Equilibration of the system is carried out using the topology file topo.000.top.
+19. Successive Equilibration of the system is carried out using the topology file topo.000.top. This is done by running the script equil_protocol.sh.
+    
