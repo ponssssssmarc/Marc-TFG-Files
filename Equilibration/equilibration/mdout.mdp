@@ -1,17 +1,17 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: p315462 (10315462)
-;	On host: login1
-;	At date: Fri Feb 16 13:08:18 2024
+;	By user: jordivilla (1001)
+;	On host: P-0515
+;	At date: Mon Feb 19 14:51:12 2024
 ;
 ;	Created by:
-;	                     :-) GROMACS - gmx grompp, 2023.1 (-:
+;	         :-) GROMACS - gmx grompp, 2023.1-Ubuntu_2023.1_2ubuntu1 (-:
 ;	
-;	Executable:   /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2023.1-foss-2022a-CUDA-11.7.0/bin/gmx
-;	Data prefix:  /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2023.1-foss-2022a-CUDA-11.7.0
-;	Working dir:  /home3/p315462/FinalGromacs3/equilibration
+;	Executable:   /usr/bin/gmx
+;	Data prefix:  /usr
+;	Working dir:  /home/jordivilla/GitHub/Treball/Ade-Thesis-Files/Equilibration/equilibration
 ;	Command line:
-;	  gmx grompp -f equil_01_5k_nvt.mdp -c STBO_ion.pdb -p topol_000.top -o equil_01_5k_nvt.tpr -r STBO_ion.pdb -maxwarn 1
+;	  gmx grompp -f equil_01_5k_nvt.mdp -c ../../Top/top/STBO_ion.pdb -p topol_000.top -o equil_01_5k_nvt.trp -r ../../Top/top/STBO_ion.pdb -maxwarn 1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.

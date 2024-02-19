@@ -124,7 +124,7 @@ gmx pdb2gmx -f STBO.pdb -o STBO-start.pdb -water spc -merge all
 ```
 gmx editconf -f STBO-start.pdb -o STBO-box.pdb -c -d 2 -bt dodecahedron
 ```
-14. Solvate the system.
+14. Solvate the systeme
 ```
 gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
 ```
@@ -143,3 +143,7 @@ python gmx4evb.py -f 51 -r STO ASH -p RRD ASP
 ```
 19. Successive Equilibration of the system is carried out using the topology file topo.000.top. This is done by running the script equil_protocol.sh.
     
+
+
+
+sed s/aah_C1/opls_267/g qmatoms.dat | sed s/aah_O2/opls_269/g| sed s/aah_O3/opls_268/g | sed s/aah_H4/opls_270/g | sed s/aah_C5/opls_136/g | sed s/aah_H7/opls_140/g | sed s/aah_H8/opls_140/g | sed s/aah_C6/opls_224B/g | sed s/aah_H13/opls_140/g | sed s/aah_N9/opls_238/g |sed s/aah_H10/opls_241/g | sed s/aah_c12/opls_235/g | sed s/aah_O14/opls_236/g
