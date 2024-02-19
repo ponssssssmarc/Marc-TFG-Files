@@ -1,0 +1,1267 @@
+          :-) GROMACS - gmx grompp, 2023.1-Ubuntu_2023.1_2ubuntu1 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/jordivilla/GitHub/Treball/Ade-Thesis-Files/Equilibration/equilibration
+Command line:
+  gmx grompp -f equil_01_5k_nvt.mdp -c ../../Top/top/STBO_ion.pdb -p topol_000.top -o equil_01_5k_nvt.trp -r ../../Top/top/STBO_ion.pdb -maxwarn 1
+
+Generating 1-4 interactions: fudge = 0.5
+
+ERROR 1 [file topol_000.top, line 3988]:
+  No default Bond types
+
+
+WARNING 1 [file topol_000.top, line 3988]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 2 [file topol_000.top, line 3989]:
+  No default Bond types
+
+
+WARNING 2 [file topol_000.top, line 3989]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 3 [file topol_000.top, line 3990]:
+  No default Bond types
+
+
+WARNING 3 [file topol_000.top, line 3990]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 4 [file topol_000.top, line 3991]:
+  No default Bond types
+
+
+WARNING 4 [file topol_000.top, line 3991]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 5 [file topol_000.top, line 3992]:
+  No default Bond types
+
+
+WARNING 5 [file topol_000.top, line 3992]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 6 [file topol_000.top, line 3993]:
+  No default Bond types
+
+
+WARNING 6 [file topol_000.top, line 3993]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 7 [file topol_000.top, line 4487]:
+  No default Bond types
+
+
+WARNING 7 [file topol_000.top, line 4487]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 8 [file topol_000.top, line 4488]:
+  No default Bond types
+
+
+WARNING 8 [file topol_000.top, line 4488]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 9 [file topol_000.top, line 4489]:
+  No default Bond types
+
+
+WARNING 9 [file topol_000.top, line 4489]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 10 [file topol_000.top, line 4490]:
+  No default Bond types
+
+
+WARNING 10 [file topol_000.top, line 4490]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 11 [file topol_000.top, line 4491]:
+  No default Bond types
+
+
+WARNING 11 [file topol_000.top, line 4491]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 12 [file topol_000.top, line 4773]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 13 [file topol_000.top, line 4775]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 14 [file topol_000.top, line 4776]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 15 [file topol_000.top, line 4777]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 16 [file topol_000.top, line 4778]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 17 [file topol_000.top, line 4779]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 18 [file topol_000.top, line 4780]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 19 [file topol_000.top, line 4781]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 20 [file topol_000.top, line 4782]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 21 [file topol_000.top, line 4783]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 22 [file topol_000.top, line 4784]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 23 [file topol_000.top, line 4785]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 24 [file topol_000.top, line 4786]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 25 [file topol_000.top, line 4787]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 26 [file topol_000.top, line 4788]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 27 [file topol_000.top, line 4789]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 28 [file topol_000.top, line 4790]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 29 [file topol_000.top, line 4791]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 30 [file topol_000.top, line 4792]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 31 [file topol_000.top, line 4793]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 32 [file topol_000.top, line 4794]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 33 [file topol_000.top, line 4795]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 34 [file topol_000.top, line 4796]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 35 [file topol_000.top, line 4797]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 36 [file topol_000.top, line 4798]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 37 [file topol_000.top, line 4799]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 38 [file topol_000.top, line 4800]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 39 [file topol_000.top, line 4801]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+WARNING 40 [file topol_000.top, line 4803]:
+  No default Bond types for perturbed atoms, using normal values
+
+
+ERROR 12 [file topol_000.top, line 13587]:
+  No default Angle types
+
+
+WARNING 41 [file topol_000.top, line 13587]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 13 [file topol_000.top, line 13588]:
+  No default Angle types
+
+
+WARNING 42 [file topol_000.top, line 13588]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 14 [file topol_000.top, line 13591]:
+  No default Angle types
+
+
+WARNING 43 [file topol_000.top, line 13591]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 15 [file topol_000.top, line 13592]:
+  No default Angle types
+
+
+WARNING 44 [file topol_000.top, line 13592]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 16 [file topol_000.top, line 13593]:
+  No default Angle types
+
+
+WARNING 45 [file topol_000.top, line 13593]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 17 [file topol_000.top, line 13594]:
+  No default Angle types
+
+
+WARNING 46 [file topol_000.top, line 13594]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 18 [file topol_000.top, line 13595]:
+  No default Angle types
+
+
+WARNING 47 [file topol_000.top, line 13595]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 19 [file topol_000.top, line 13596]:
+  No default Angle types
+
+
+WARNING 48 [file topol_000.top, line 13596]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 20 [file topol_000.top, line 13597]:
+  No default Angle types
+
+
+WARNING 49 [file topol_000.top, line 13597]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 21 [file topol_000.top, line 13598]:
+  No default Angle types
+
+
+WARNING 50 [file topol_000.top, line 13598]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 22 [file topol_000.top, line 13599]:
+  No default Angle types
+
+
+WARNING 51 [file topol_000.top, line 13599]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 23 [file topol_000.top, line 13600]:
+  No default Angle types
+
+
+WARNING 52 [file topol_000.top, line 13600]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 24 [file topol_000.top, line 13601]:
+  No default Angle types
+
+
+WARNING 53 [file topol_000.top, line 13601]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 25 [file topol_000.top, line 14491]:
+  No default Angle types
+
+
+WARNING 54 [file topol_000.top, line 14491]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 26 [file topol_000.top, line 14492]:
+  No default Angle types
+
+
+WARNING 55 [file topol_000.top, line 14492]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 27 [file topol_000.top, line 14495]:
+  No default Angle types
+
+
+WARNING 56 [file topol_000.top, line 14495]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 28 [file topol_000.top, line 14496]:
+  No default Angle types
+
+
+WARNING 57 [file topol_000.top, line 14496]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 29 [file topol_000.top, line 14497]:
+  No default Angle types
+
+
+WARNING 58 [file topol_000.top, line 14497]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 30 [file topol_000.top, line 14498]:
+  No default Angle types
+
+
+WARNING 59 [file topol_000.top, line 14498]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 31 [file topol_000.top, line 14499]:
+  No default Angle types
+
+
+WARNING 60 [file topol_000.top, line 14499]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 32 [file topol_000.top, line 14500]:
+  No default Angle types
+
+
+WARNING 61 [file topol_000.top, line 14500]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 33 [file topol_000.top, line 14501]:
+  No default Angle types
+
+
+WARNING 62 [file topol_000.top, line 14501]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 34 [file topol_000.top, line 14502]:
+  No default Angle types
+
+
+WARNING 63 [file topol_000.top, line 14502]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 35 [file topol_000.top, line 14503]:
+  No default Angle types
+
+
+WARNING 64 [file topol_000.top, line 14503]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 36 [file topol_000.top, line 14504]:
+  No default Angle types
+
+
+WARNING 65 [file topol_000.top, line 14504]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 66 [file topol_000.top, line 15010]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 67 [file topol_000.top, line 15011]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 68 [file topol_000.top, line 15012]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 69 [file topol_000.top, line 15013]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 70 [file topol_000.top, line 15014]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 71 [file topol_000.top, line 15015]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 72 [file topol_000.top, line 15016]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 73 [file topol_000.top, line 15017]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 74 [file topol_000.top, line 15018]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 75 [file topol_000.top, line 15019]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 76 [file topol_000.top, line 15020]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 77 [file topol_000.top, line 15021]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 78 [file topol_000.top, line 15022]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 79 [file topol_000.top, line 15023]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 80 [file topol_000.top, line 15024]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 81 [file topol_000.top, line 15025]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 82 [file topol_000.top, line 15026]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 83 [file topol_000.top, line 15027]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 84 [file topol_000.top, line 15028]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 85 [file topol_000.top, line 15029]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 86 [file topol_000.top, line 15030]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 87 [file topol_000.top, line 15031]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 88 [file topol_000.top, line 15032]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 89 [file topol_000.top, line 15033]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 90 [file topol_000.top, line 15034]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 91 [file topol_000.top, line 15035]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 92 [file topol_000.top, line 15036]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 93 [file topol_000.top, line 15037]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 94 [file topol_000.top, line 15038]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 95 [file topol_000.top, line 15039]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 96 [file topol_000.top, line 15040]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 97 [file topol_000.top, line 15041]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 98 [file topol_000.top, line 15042]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 99 [file topol_000.top, line 15043]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 100 [file topol_000.top, line 15044]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 101 [file topol_000.top, line 15045]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 102 [file topol_000.top, line 15046]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 103 [file topol_000.top, line 15047]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 104 [file topol_000.top, line 15048]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 105 [file topol_000.top, line 15049]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 106 [file topol_000.top, line 15050]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 107 [file topol_000.top, line 15051]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 108 [file topol_000.top, line 15052]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 109 [file topol_000.top, line 15053]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 110 [file topol_000.top, line 15054]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 111 [file topol_000.top, line 15055]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 112 [file topol_000.top, line 15056]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 113 [file topol_000.top, line 15057]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 114 [file topol_000.top, line 15058]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+WARNING 115 [file topol_000.top, line 15059]:
+  No default Angle types for perturbed atoms, using normal values
+
+
+ERROR 37 [file topol_000.top, line 19052]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 116 [file topol_000.top, line 19052]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 38 [file topol_000.top, line 19055]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 117 [file topol_000.top, line 19055]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 39 [file topol_000.top, line 19056]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 118 [file topol_000.top, line 19056]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 40 [file topol_000.top, line 19057]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 119 [file topol_000.top, line 19057]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 41 [file topol_000.top, line 19058]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 120 [file topol_000.top, line 19058]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 42 [file topol_000.top, line 19059]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 121 [file topol_000.top, line 19059]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 43 [file topol_000.top, line 19060]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 122 [file topol_000.top, line 19060]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 44 [file topol_000.top, line 19070]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 123 [file topol_000.top, line 19070]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 45 [file topol_000.top, line 19071]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 124 [file topol_000.top, line 19071]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 46 [file topol_000.top, line 19072]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 125 [file topol_000.top, line 19072]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 47 [file topol_000.top, line 19073]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 126 [file topol_000.top, line 19073]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 48 [file topol_000.top, line 19074]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 127 [file topol_000.top, line 19074]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 49 [file topol_000.top, line 19075]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 128 [file topol_000.top, line 19075]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 50 [file topol_000.top, line 19076]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 129 [file topol_000.top, line 19076]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 51 [file topol_000.top, line 19077]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 130 [file topol_000.top, line 19077]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 52 [file topol_000.top, line 19078]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 131 [file topol_000.top, line 19078]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 53 [file topol_000.top, line 19079]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 132 [file topol_000.top, line 19079]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 54 [file topol_000.top, line 19080]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 133 [file topol_000.top, line 19080]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 55 [file topol_000.top, line 19081]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 134 [file topol_000.top, line 19081]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 56 [file topol_000.top, line 19084]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 135 [file topol_000.top, line 19084]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 57 [file topol_000.top, line 19085]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 136 [file topol_000.top, line 19085]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 58 [file topol_000.top, line 20377]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 137 [file topol_000.top, line 20377]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 59 [file topol_000.top, line 20380]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 138 [file topol_000.top, line 20380]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 60 [file topol_000.top, line 20381]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 139 [file topol_000.top, line 20381]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 61 [file topol_000.top, line 20382]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 140 [file topol_000.top, line 20382]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 62 [file topol_000.top, line 20383]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 141 [file topol_000.top, line 20383]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 63 [file topol_000.top, line 20384]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 142 [file topol_000.top, line 20384]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 64 [file topol_000.top, line 20385]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 143 [file topol_000.top, line 20385]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 65 [file topol_000.top, line 20395]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 144 [file topol_000.top, line 20395]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 66 [file topol_000.top, line 20396]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 145 [file topol_000.top, line 20396]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 67 [file topol_000.top, line 20397]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 146 [file topol_000.top, line 20397]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 68 [file topol_000.top, line 20398]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 147 [file topol_000.top, line 20398]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 69 [file topol_000.top, line 20399]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 148 [file topol_000.top, line 20399]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 70 [file topol_000.top, line 20400]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 149 [file topol_000.top, line 20400]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 71 [file topol_000.top, line 20401]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 150 [file topol_000.top, line 20401]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 72 [file topol_000.top, line 20402]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 151 [file topol_000.top, line 20402]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 73 [file topol_000.top, line 20403]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 152 [file topol_000.top, line 20403]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 74 [file topol_000.top, line 20404]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 153 [file topol_000.top, line 20404]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 75 [file topol_000.top, line 20405]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 154 [file topol_000.top, line 20405]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 76 [file topol_000.top, line 20406]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 155 [file topol_000.top, line 20406]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 77 [file topol_000.top, line 20407]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 156 [file topol_000.top, line 20407]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 78 [file topol_000.top, line 20408]:
+  No default Ryckaert-Bell. types
+
+
+WARNING 157 [file topol_000.top, line 20408]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 158 [file topol_000.top, line 21151]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 159 [file topol_000.top, line 21152]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 160 [file topol_000.top, line 21153]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 161 [file topol_000.top, line 21154]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 162 [file topol_000.top, line 21155]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 163 [file topol_000.top, line 21156]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 164 [file topol_000.top, line 21157]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 165 [file topol_000.top, line 21158]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 166 [file topol_000.top, line 21159]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 167 [file topol_000.top, line 21160]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 168 [file topol_000.top, line 21161]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 169 [file topol_000.top, line 21162]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 170 [file topol_000.top, line 21163]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 171 [file topol_000.top, line 21164]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 172 [file topol_000.top, line 21165]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 173 [file topol_000.top, line 21166]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 174 [file topol_000.top, line 21167]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 175 [file topol_000.top, line 21168]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 176 [file topol_000.top, line 21169]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 177 [file topol_000.top, line 21170]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 178 [file topol_000.top, line 21171]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 179 [file topol_000.top, line 21172]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 180 [file topol_000.top, line 21173]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 181 [file topol_000.top, line 21174]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 182 [file topol_000.top, line 21175]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 183 [file topol_000.top, line 21176]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 184 [file topol_000.top, line 21177]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 185 [file topol_000.top, line 21178]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 186 [file topol_000.top, line 21179]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 187 [file topol_000.top, line 21180]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 188 [file topol_000.top, line 21181]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 189 [file topol_000.top, line 21182]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 190 [file topol_000.top, line 21183]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 191 [file topol_000.top, line 21184]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 192 [file topol_000.top, line 21185]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 193 [file topol_000.top, line 21186]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 194 [file topol_000.top, line 21187]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 195 [file topol_000.top, line 21188]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 196 [file topol_000.top, line 21189]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 197 [file topol_000.top, line 21190]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 198 [file topol_000.top, line 21191]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 199 [file topol_000.top, line 21192]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 200 [file topol_000.top, line 21193]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 201 [file topol_000.top, line 21194]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 202 [file topol_000.top, line 21195]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 203 [file topol_000.top, line 21196]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 204 [file topol_000.top, line 21197]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 205 [file topol_000.top, line 21198]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 206 [file topol_000.top, line 21199]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 207 [file topol_000.top, line 21200]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 208 [file topol_000.top, line 21201]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 209 [file topol_000.top, line 21202]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 210 [file topol_000.top, line 21203]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 211 [file topol_000.top, line 21204]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 212 [file topol_000.top, line 21205]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 213 [file topol_000.top, line 21206]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 214 [file topol_000.top, line 21207]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 215 [file topol_000.top, line 21208]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 216 [file topol_000.top, line 21209]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 217 [file topol_000.top, line 21210]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 218 [file topol_000.top, line 21211]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 219 [file topol_000.top, line 21212]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 220 [file topol_000.top, line 21213]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 221 [file topol_000.top, line 21214]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 222 [file topol_000.top, line 21215]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 223 [file topol_000.top, line 21216]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 224 [file topol_000.top, line 21217]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 225 [file topol_000.top, line 21218]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 226 [file topol_000.top, line 21219]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 227 [file topol_000.top, line 21220]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 228 [file topol_000.top, line 21221]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+WARNING 229 [file topol_000.top, line 21222]:
+  No default Ryckaert-Bell. types for perturbed atoms, using normal values
+
+
+ERROR 79 [file topol_000.top, line 21679]:
+  Duplicate atom index (2274) in dihedrals
+
+
+There were 229 WARNINGs
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2023.1-Ubuntu_2023.1_2ubuntu1
+Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 2198)
+
+Fatal error:
+There were 79 errors in input file(s)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Setting the LD random seed to 2147285930
+
+Generated 409060 of the 409060 non-bonded parameter combinations
+
+Generated 409060 of the 409060 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+Velocities were taken from a Maxwell distribution at 5 K

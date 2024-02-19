@@ -316,7 +316,7 @@
      H    opls_241    0.300     0
     CA    opls_224B   0.140     1
     HA    opls_140    0.060     1
-    CB    opls_136   -0.120     2
+    CB    opls_136   -0.120     2 
    HB1    opls_140    0.060     2
    HB2    opls_140    0.060     2
     CG    opls_267    0.520     3
@@ -1625,7 +1625,7 @@ HD23    opls_140     0.060      1
    C3    aah_C6         0.140      1
    H2    aah_H7         0.060      1
    H3    aah_H8         0.060      1
-   N1    aah_N9        -0.500      1
+   N    aah_N9        -0.500      1
    H4    aah_H10        0.300      1
    H5    aah_H11        0.060      1
    C4    aah_C12        0.500      1

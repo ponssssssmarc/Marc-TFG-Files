@@ -1,15 +1,15 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: p315462 (10315462)
-;	On host: login1
-;	At date: Fri Feb 16 13:03:52 2024
+;	By user: jordivilla (1001)
+;	On host: P-0515
+;	At date: Mon Feb 19 14:50:37 2024
 ;
 ;	Created by:
-;	             :-) GROMACS - gmx grompp, 2023.1-EasyBuild_4.8.0 (-:
+;	         :-) GROMACS - gmx grompp, 2023.1-Ubuntu_2023.1_2ubuntu1 (-:
 ;	
-;	Executable:   /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2023.1-foss-2022a/bin/gmx
-;	Data prefix:  /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2023.1-foss-2022a
-;	Working dir:  /home3/p315462/FinalGromacs3/top
+;	Executable:   /usr/bin/gmx
+;	Data prefix:  /usr
+;	Working dir:  /home/jordivilla/GitHub/Treball/Ade-Thesis-Files/Top/top
 ;	Command line:
 ;	  gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb -maxwarn 1
 
@@ -171,7 +171,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = no
 gen-temp                 = 300
-gen-seed                 = -470948617
+gen-seed                 = 494895035
 
 ; OPTIONS FOR BONDS    
 constraints              = none
