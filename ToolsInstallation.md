@@ -136,12 +136,17 @@ gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb -maxwarn 1
 gmx genion -s dummy.tpr -o STBO_ion.pdb -p topol.top -neutral
 choose Group 16 (SOL)
 ```
-17.   The qmatoms.dat file shhould be created. It should contain the various qatoms in the system, the moorse paramters and softcore potentials
-18.   Topology files (51) for the various frames are created using the code gmx4evb.py  and the command below:
+17.   The qmatoms.dat file shhould be created. It should contain the various qatoms in the system, the moorse paramters and softcore potentials. The table for the soft core potentials should also be generated based on your beta value. This is done using the command:
+```
+gfortran gen_table.f90 -o gen_table.out
+ ./gen_table.out > table_r1_hr.xvg
+```
+NOTE: If your beta=20, then the file must be named table_b0.xvg(this is Gromacs's format of reading the table). 
+19.   Topology files (51) for the various frames are created using the code gmx4evb.py  and the command below:
 ```
 python gmx4evb.py -f 51 -r STO AAH -p RRD AAW
 ```
-19. Successive Equilibration of the system is carried out using the topology file topo.000.top. This is done by running the script equil_protocol.sh.
+20. Successive Equilibration of the system is carried out using the topology file topo.000.top. This is done by running the script equil_protocol.sh.
     
 
 
