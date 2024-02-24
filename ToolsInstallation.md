@@ -113,7 +113,7 @@ ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 7. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp files (see the files at the address indicated above)
 
 8. Build the corresponding residue inside aminoacids.rtp file (see STO residue inside aminoacids.rtp); we must build only the residues corresponding to RS.
-9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state). In the ffnonbonded.itp file, specify the bonding type for the product states. Where there is an amino acid, use the aminoacid.rtp file to get the bondtype.
+9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state). In the ffnonbonded.itp file, specify the bonding type for the product states. In case you reaction involves some amino acids of the protein chain, use the aminoacid.rtp file to get the bondtype.
 10. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp for the reactant state.
 11. Build the corresponding residue inside `aminoacids.rtp` file for the Reactant state. Edit the aminoacids.rtp file and the aminoacid.hbd file so that the residues of the protonated Aspartate and the protonated Histidine are represented in a similar manner.
 12. Build GROMACS topology using the command;
@@ -136,7 +136,7 @@ gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb -maxwarn 1
 gmx genion -s dummy.tpr -o STBO_ion.pdb -p topol.top -neutral
 choose Group 16 (SOL)
 ```
-17.   The qmatoms.dat file shhould be created. It should contain the various qatoms in the system, the moorse paramters and softcore potentials. The table for the soft core potentials should also be generated based on your beta value. This is done using the command:
+17.   The qmatoms.dat file shhould be created. It should contain the various qatoms in the system, the moorse parameters and softcore potentials. The table for the softcore potentials should also be generated based on your beta value. This is done using the command:
 ```
 gfortran gen_table.f90 -o gen_table.out
  ./gen_table.out > table_r1_hr.xvg
