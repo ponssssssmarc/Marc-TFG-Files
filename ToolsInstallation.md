@@ -113,7 +113,7 @@ ffld2gmx.py -n STO -f STO.ffld -a STO.ac
 7. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp files (see the files at the address indicated above)
 
 8. Build the corresponding residue inside aminoacids.rtp file (see STO residue inside aminoacids.rtp); we must build only the residues corresponding to RS.
-9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state). 
+9. Add the content from `sto_types.opls` to `atomtypes.atp`, add `sto_vdw.opls` to `ffnonbonded.itp`, and `sto_bonds.opls`, `sto_angles.opls`, `sto_torsions.opls`, and `sto_impropers.opls` to `ffbonded.itp` file of GROMACS' force field (The parameters added to the ffbonded.itp is done only for the reactant state). In the ffnonbonded.itp file, specify the bonding type for the product states. Where there is an amino acid, use the aminoacid.rtp file to get the bondtype.
 10. Add dummy atom types for all EVB atoms in ffnonbonded.itp and atomtypes.atp for the reactant state.
 11. Build the corresponding residue inside `aminoacids.rtp` file for the Reactant state. Edit the aminoacids.rtp file and the aminoacid.hbd file so that the residues of the protonated Aspartate and the protonated Histidine are represented in a similar manner.
 12. Build GROMACS topology using the command;
@@ -124,7 +124,7 @@ gmx pdb2gmx -f STBO.pdb -o STBO-start.pdb -water spc -merge all
 ```
 gmx editconf -f STBO-start.pdb -o STBO-box.pdb -c -d 2 -bt dodecahedron
 ```
-14. Solvate the systeme
+14. Solvate the system
 ```
 gmx solvate -cp STBO-box.pdb -cs spc216.gro -o STBO-solv.pdb -p topol.top
 ```
@@ -139,7 +139,7 @@ choose Group 16 (SOL)
 17.   The qmatoms.dat file shhould be created. It should contain the various qatoms in the system, the moorse paramters and softcore potentials
 18.   Topology files (51) for the various frames are created using the code gmx4evb.py  and the command below:
 ```
-python gmx4evb.py -f 51 -r STO ASH -p RRD ASP
+python gmx4evb.py -f 51 -r STO AAH -p RRD AAW
 ```
 19. Successive Equilibration of the system is carried out using the topology file topo.000.top. This is done by running the script equil_protocol.sh.
     
