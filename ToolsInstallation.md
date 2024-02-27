@@ -136,13 +136,14 @@ gmx grompp -f dummy.mdp -o dummy.tpr -p topol.top -c STBO-solv.pdb -maxwarn 1
 gmx genion -s dummy.tpr -o STBO_ion.pdb -p topol.top -neutral
 choose Group 16 (SOL)
 ```
-17.   The qmatoms.dat file shhould be created. It should contain the various qatoms in the system, the moorse parameters and softcore potentials. The table for the softcore potentials should also be generated based on your beta value. This is done using the command:
+17.   The qmatoms.dat file should be created. It should contain the various qatoms in the system, the moorse parameters and softcore potentials. The table for the softcore potentials should also be generated based on your beta value. This is done using the command:
 ```
 gfortran gen_table.f90 -o gen_table.out
  ./gen_table.out > table_r1_hr.xvg
 ```
 NOTE: If your beta=20, then the file must be named table_b0.xvg(this is Gromacs's format of reading the table). 
-19.   Topology files (51) for the various frames are created using the code gmx4evb.py  and the command below:
+
+19. Topology files (51) for the various frames are created using the code gmx4evb.py  and the command below:
 ```
 python gmx4evb.py -f 51 -r STO AAH -p RRD AAW
 ```
