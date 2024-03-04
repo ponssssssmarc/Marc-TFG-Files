@@ -145,7 +145,7 @@ NOTE: If your beta=20, then the file must be named table_b0.xvg(this is Gromacs'
 
 19. Topology files (51) for the various frames are created using the code gmx4evb.py  and the command below:
 ```
-python gmx4evb.py -f 51 -r STO AAH -p RRD AAW
+python gmx4evb.py -f 51 -r STO AAH WHO -p RRD AAW
 ```
 20. Successive Equilibration of the system is carried out using the topology file topo.000.top. This is done by running the script equil_protocol.sh.
     
