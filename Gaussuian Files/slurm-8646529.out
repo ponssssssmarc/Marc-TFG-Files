@@ -1,0 +1,47 @@
+Lmod Warning: Note: setting PGI_FASTMATH_CPU=sandybridge as workaround to
+prevent errors on AMD CPUs. This may have a negative impact on the performance. 
+While processing the following module(s):
+    Module fullname   Module Filename
+    ---------------   ---------------
+    Gaussian/16.B.01  /apps/versions/2023.01/rocky8/x86_64/amd/zen3/modules/all/Gaussian/16.B.01.lua
+
+
+###############################################################################
+Hábrók Cluster
+Job 8646529 for user p257188
+Finished at: Fri May  3 11:38:09 CEST 2024
+
+Job details:
+============
+
+Job ID              : 8646529
+Name                : products_full_scan
+User                : p257188
+Partition           : regularmedium
+Nodes               : node89
+Number of Nodes     : 1
+Cores               : 16
+Number of Tasks     : 1
+State               : RUNNING
+Submit              : 2024-05-02T10:03:28
+Start               : 2024-05-02T10:08:07
+End                 : --
+Reserved walltime   : 2-23:59:00
+Used walltime       : 1-01:30:02
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 16G
+Max Mem (Node/step) : 0.00  (Node unknown, N/A)
+Full Max Mem usage  : 0.00  (Until last completed step)
+Total Disk Read     : 0.00  (Until last completed step)
+Total Disk Write    : 0.00  (Until last completed step)
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Hábrók in your publications:
+
+https://wiki.hpc.rug.nl/habrok/introduction/scientific_output
+
+################################################################################
