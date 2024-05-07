@@ -1,0 +1,3249 @@
+
+Build and version information
+
+Build number 6.0.16
+Build date   20240314
+Built:       
+      by     p315462
+      on     login1
+      git id adc28a635c78993922188615a73366ace3402081
+      with   GNU Fortran GCC 11.3.0
+Qdyn version 6.0.16 , git id=adc28a635c78993922188615a73366ace3402081 initialising
+Current date 2024- 4-17 and time  3:31:32
+
+Welcome in qdyn modification date 20240314
+
+ Q6, Copyright © 2017 Johan Åqvist, John Marelius, Shina Caroline Lynn Kamerlin and Paul Bauer
+ Q6 comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are welcome
+ to redistribute it under certain conditions. For details, add the --help flag.
+--------------------- Reading input from fep_011_0.680.inp --------------------
+Number of MD steps =     20000  Stepsize (fs)    =     0.100
+ Not being verbose in temperature print out
+Target temperature =    300.00  T-relax time     =    100.00
+ No thermostat chosen. Berendsen thermostat will be used.
+ Leap frog integrator used by default.
+Solute and solvent atoms coupled separately to heat bath.
+May redefine groups in later section
+ Using Shake as the constraint algorithm
+Shake constraints on solvent bonds to hydrogens : on 
+Shake constraints on solute bonds to any atoms : off
+Nonbonded method   = LRF Taylor expansion outside cut-off
+Using default temperature coupling groups
+Boundary: sphere
+Cut-off radii for non-bonded interactions:
+Solute-solute:     10.00
+Solvent-solvent:   10.00
+Solute-solvent:    10.00
+Q-atom-non-Q-atom: 99.00
+LRF:               99.00
+ Radius of inner restrained shell set to 85% of exclusion shell radius.
+Radius of inner restrained shell       =       0.850
+Polarization force update at default 10/ps
+Update every 1000 steps
+Non-bonded pair list update interval   =      30
+Energy summary print-out interval      =     500
+Temperature print-out interval         =     200
+Trajectory write interval              =     500
+Energy file write interval             =      10
+All atoms will be included in the trajectory.
+Topology file      = RRDiol.top
+Initial coord. file= fep_010_0.700.re
+Final coord. file  = fep_011_0.680.re
+Trajectory file    = fep_011_0.680.dcd
+Energy output file = fep_011_0.680.en
+FEP input file     = RRD_Diol.fep
+
+External rstr file = cont_relax_016.re.rest
+
+lambda-values      =  0.68000 0.32000
+
+List of excluded atom groups
+No QCP section found, will not try to use RPMD.
+
+Listing of restraining data:
+---------------------------- Reading topology file ---------------------------
+RRDiol.top                                                                      
+
+No. of solute atoms     =       4755
+No. of solvent atoms    =       1269
+Solvent dielectric*1000 =     80100
+No. of coordinates      =      18072
+No. of atom type codes  =       6024
+No. of solute bonds     =       4809
+No. of solvent bonds    =       1269
+No. of solute angles    =       8715
+No. of solvent angles   =        423
+No. of solute torsions  =      16781
+No. of solvent torsions =          0
+No. of solute impropers =        951
+No. of solvent impropers=          0
+No. of atomic charges   =       6024
+No. of solute chargegrps=        675
+No. of solvent chargegps=        423
+Charge group cut-off    : Switching atoms
+vdW  rule [ 1=G / 2=A ] =          1
+El-static 1-4 damping   =      0.500
+Coulomb constant        =   332.0000
+No. of atom types       =        111
+No. of LJ type 2 pairs  =          0
+No. of heavy atoms      =       2803
+No. of 1-4 neighbours   =      12665
+No. long-range 1-4 nbrs =          6
+No. of nbor exclusions  =      15216
+No. of long-range excls =          0
+No. of residues         =        725
+No of solute residues   =        302
+No. of molecules        =        428
+Atom type names         =        111
+SYBYL atom types        =        111
+Boundary: sphere
+Exclusion radius        =     20.000
+Eff. solvent radius     =     19.620
+Solvent density         =   0.03350000
+Solute centre           =      8.301    -6.381    -2.992
+Solvent centre          =      8.301    -6.381    -2.992
+No. of excluded atoms   =       2491
+Molecular topology read successfully.
+
+
+Refreshing topology coords for restraining...
+
+Found      559 solute atoms in the restrained shell region ( 17.00 to  20.00)
+----------------------------- Reading restart file ----------------------------
+Total number of atoms        =    6024
+Number of waters encountered =     423
+
+----------------------------- Reading Q atom list ----------------------------
+No. of fep/evb states    =     2
+No. of fep/evb atoms     =    43
+Atom nos.:  4699  4700  4701  4702  4703  4704  4705  4706  4707  4708
+Atom nos.:  4709  4710  4711  4712  4713  4714  4715  4716  4717  4718
+Atom nos.:  4719  4720  4721  4722  4723  4724  4725  4754  4753  4755
+Atom nos.:  1490  1491  1492  1493  1487  1488  1489  1984  1985  1986
+Atom nos.:  1981  1982  1983
+--------------------------- Reading fep/evb strategy --------------------------
+
+No. of changing charges  =    43
+Effective Q-atom charges for all Q-atoms
+Q atom    charge in state 1 state 2
+     1               -0.249  -0.708
+     2               -0.109   0.369
+     3                0.228  -0.046
+     4               -0.215  -0.148
+     5               -0.124  -0.158
+     6               -0.175  -0.123
+     7               -0.124  -0.158
+     8               -0.215  -0.148
+     9               -0.109   0.368
+    10                0.227  -0.046
+    11               -0.215  -0.148
+    12               -0.124  -0.158
+    13               -0.175  -0.123
+    14               -0.124  -0.158
+    15               -0.215  -0.148
+    16                0.133  -0.002
+    17                0.147   0.150
+    18                0.143   0.138
+    19                0.146   0.133
+    20                0.143   0.138
+    21                0.147   0.150
+    22                0.133  -0.003
+    23                0.147   0.150
+    24                0.143   0.138
+    25                0.146   0.133
+    26                0.143   0.138
+    27                0.147   0.150
+    28                0.417   0.450
+    29               -0.834  -0.709
+    30                0.417   0.414
+    31                0.520   0.700
+    32               -0.530  -0.800
+    33               -0.440  -0.800
+    34                0.450   0.415
+    35               -0.120  -0.220
+    36                0.060   0.060
+    37                0.060   0.060
+    38                0.700   0.520
+    39               -0.800  -0.530
+    40               -0.800  -0.440
+    41               -0.220  -0.120
+    42                0.060   0.060
+    43                0.060   0.060
+
+   SUM               -1.000  -1.000
+
+No. of Q-atom types  =    66
+Name            Ai      Bi      Ci     ai Ai(1-4) Bi(1-4)    Mass
+sto.O99     445.12   18.25  170.00  2.50   314.75   12.91   16.00
+rrd.O99     760.64   25.04  180.00  2.50   537.86   17.71   16.00
+sto.C98     944.52   22.03  190.00  2.50   667.88   15.58   12.01
+rrd.C98     944.52   22.03  110.00  2.50   667.88   15.58   12.01
+sto.C96    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C96    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C1     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C1     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C2     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C2     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C3     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C3     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C4     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C4     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C5     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C5     1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C99     944.52   22.03    1.00  2.50   667.88   15.58   12.01
+rrd.C99     944.52   22.03    1.00  2.50   667.88   15.58   12.01
+sto.C97    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C97    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C10    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C10    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C11    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C11    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C12    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C12    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C13    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C13    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.C14    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+rrd.C14    1059.13   23.67    1.00  2.50   748.92   16.74   12.01
+sto.H98      84.57    5.41    1.00  2.50    59.80    3.83    1.01
+rrd.H98      84.57    5.41    1.00  2.50    59.80    3.83    1.01
+sto.H1       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H1       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H2       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H2       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H3       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H3       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H4       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H4       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H5       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H5       69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H99      84.57    5.41    1.00  2.50    59.80    3.83    1.01
+rrd.H99      84.57    5.41    1.00  2.50    59.80    3.83    1.01
+sto.H10      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H10      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H11      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H11      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H12      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H12      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H13      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H13      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+sto.H14      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+rrd.H14      69.58    4.91    1.00  2.50    49.20    3.47    1.01
+HW            0.00    0.00    1.00  2.50     0.00    0.00    1.01
+HO            0.00    0.00    1.00  2.50     0.00    0.00    1.01
+OW          762.89   24.39  180.00  2.50   539.44   17.25   16.00
+rrd.O88     760.64   25.04  160.00  2.50   537.86   17.71   16.00
+rrd.H88       0.01    0.04    1.00  2.50     0.00    0.03    1.01
+C2         1802.24   34.18    1.00  2.50  1274.38   24.17   12.01
+ODE         601.15   22.27    1.00  2.50   425.08   15.75   16.00
+O2          616.44   23.77    1.00  2.50   435.89   16.81   16.00
+O1          616.44   23.77    1.00  2.50   435.89   16.81   16.00
+rrd.H89       0.01    0.04  165.00  2.50     0.00    0.03    1.01
+CT          944.52   22.03    1.00  2.50   667.88   15.58   12.01
+HC           84.57    5.41    1.00  2.50    59.80    3.83    1.01
+
+Assigning Q-atom types to all Q atoms:
+Q atom    atom type in  state 1  state 2
+     1                  sto.O99  rrd.O99 
+     2                  sto.C98  rrd.C98 
+     3                  sto.C96  rrd.C96 
+     4                  sto.C1   rrd.C1  
+     5                  sto.C2   rrd.C2  
+     6                  sto.C3   rrd.C3  
+     7                  sto.C4   rrd.C4  
+     8                  sto.C5   rrd.C5  
+     9                  sto.C99  rrd.C99 
+    10                  sto.C97  rrd.C97 
+    11                  sto.C10  rrd.C10 
+    12                  sto.C11  rrd.C11 
+    13                  sto.C12  rrd.C12 
+    14                  sto.C13  rrd.C13 
+    15                  sto.C14  rrd.C14 
+    16                  sto.H98  rrd.H98 
+    17                  sto.H1   rrd.H1  
+    18                  sto.H2   rrd.H2  
+    19                  sto.H3   rrd.H3  
+    20                  sto.H4   rrd.H4  
+    21                  sto.H5   rrd.H5  
+    22                  sto.H99  rrd.H99 
+    23                  sto.H10  rrd.H10 
+    24                  sto.H11  rrd.H11 
+    25                  sto.H12  rrd.H12 
+    26                  sto.H13  rrd.H13 
+    27                  sto.H14  rrd.H14 
+    28                  HW       HO      
+    29                  OW       rrd.O88 
+    30                  HW       rrd.H88 
+    31                  C2       C2      
+    32                  ODE      O2      
+    33                  O1       O2      
+    34                  HO       rrd.H89 
+    35                  CT       CT      
+    36                  HC       HC      
+    37                  HC       HC      
+    38                  C2       C2      
+    39                  O2       ODE     
+    40                  O2       O1      
+    41                  CT       CT      
+    42                  HC       HC      
+    43                  HC       HC      
+
+No. of soft repulsion non-bonded pairs =     6
+q-atom_i q-atom_j
+       1        2
+      29       28
+      32       34
+      39       28
+       2       29
+       1       34
+
+Q-bond types:
+type #  Morse E_diss    alpha       b0  Harmonic force_k 
+     1        670.00     1.87     1.43
+     2        102.00     2.26     0.96
+     3        102.00     2.20     0.87
+     4        670.00     1.87     1.41
+     5        640.00     2.26     0.94
+     6       1312.00     1.87     1.25
+     7        900.00     1.87     1.36
+     8       1140.00     1.87     1.23
+     9        570.00     1.60     1.49
+    10        634.00     1.60     1.51
+    11        520.00     1.60     1.51
+    12        536.00     1.60     1.53
+    13        680.00     1.80     1.09
+    14        680.00     1.80     1.09
+    15        570.00     1.60     1.49
+    16        634.00     1.60     1.51
+    17        680.00     1.80     1.09
+    18        680.00     1.80     1.09
+    19        670.00     1.87     1.43
+    20        640.00     1.87     1.41
+    21       1106.00     2.26     0.96
+    22       1106.00     2.26     0.94
+
+
+No. of changing bonds    =    17
+atom_i atom_j   bond type in state 1 state 2
+  4699   4700                      1       0
+  4753   4754                      2       0
+  1491   1493                      3       0
+  1985   4754                      0       3
+  4700   4753                      0       4
+  1493   4699                      0       5
+  1984   1985                      6       7
+  1984   1986                      6       8
+  4700   4701                      9      10
+  4700   4707                     11      12
+  4700   4714                     13      14
+  4707   4708                     15      16
+  4707   4720                     17      18
+  4699   4707                     19      20
+  4753   4755                     21      22
+  1490   1491                      7       6
+  1490   1492                      8       6
+
+Q-angle types:
+type #       force-k   theta0
+     1         30.00    59.15
+     2        170.00   111.86
+     3         30.00    60.43
+     4        100.00   114.28
+     5        200.00   104.52
+     6         70.00   113.00
+     7        180.00   112.52
+     8        110.00   108.50
+     9        100.00   109.50
+    10         70.00   109.50
+    11        110.00   108.50
+    12        140.00   117.00
+    13        160.00   120.40
+    14        130.00   119.88
+    15        140.00   112.17
+    16        120.00   121.76
+    17        140.00   120.00
+    18        120.00   121.76
+    19        140.00   120.00
+    20        130.00   119.88
+    21        140.00   112.17
+    22         75.00   117.20
+    23         75.00   110.70
+    24        120.00   121.76
+    25        140.00   120.00
+    26        120.00   121.76
+    27        140.00   120.00
+    28         75.00   117.20
+    29         75.00   110.70
+    30        170.00   111.86
+    31        180.00   112.52
+    32         30.00    60.43
+    33        100.00   109.50
+    34        100.00   114.28
+    35         70.00   109.50
+
+
+No. of changing angles   =    25
+atom_i atom_j atom_k    angle type in state 1 state 2
+  4700   4699   4707                        1       0
+  4699   4700   4701                        2       0
+  4699   4700   4707                        3       0
+  4699   4700   4714                        4       0
+  4754   4753   4755                        5       0
+  1490   1491   1493                        6       0
+  1984   1985   4754                        0       6
+  4701   4700   4753                        0       7
+  4700   4753   4755                        0       8
+  4707   4700   4753                        0       9
+  4714   4700   4753                        0      10
+  1493   4699   4707                        0      11
+  1981   1984   1986                       12      13
+  4701   4700   4707                       14      15
+  4700   4701   4702                       16      17
+  4700   4701   4706                       18      19
+  4700   4707   4708                       20      21
+  4700   4707   4720                       22      23
+  4707   4708   4709                       24      25
+  4707   4708   4713                       26      27
+  4707   4700   4714                       28      29
+  4699   4707   4708                       30      31
+  4699   4707   4700                       32      33
+  4699   4707   4720                       34      35
+  1487   1490   1492                       13      12
+
+Q-torsion types:
+type #       force-k     mult    delta
+     1          0.38     3.00     0.00
+     2          0.38     3.00     0.00
+     3          0.37     3.00     0.00
+     4          0.37     3.00     0.00
+     5          0.65     1.00     0.00
+     6          0.15     2.00   180.00
+     7          0.21     3.00     0.00
+     8          0.65     1.00     0.00
+     9          0.15     2.00   180.00
+    10          0.21     3.00     0.00
+    11         -0.64     1.00     0.00
+    12         -0.04     2.00   180.00
+    13          0.20     3.00     0.00
+    14          0.23     3.00     0.00
+    15          1.50     1.00     0.00
+    16          2.45     2.00   180.00
+    17          2.45     2.00   180.00
+    18          0.14     2.00   180.00
+    19          0.00     3.00     0.00
+    20          0.14     2.00   180.00
+    21          0.00     3.00     0.00
+    22          0.32     1.00     0.00
+    23         -0.12     2.00   180.00
+    24          0.39     3.00     0.00
+    25          1.13     1.00     0.00
+    26         -1.01     2.00   180.00
+    27         -0.12     1.00     0.00
+    28         -0.09     2.00   180.00
+    29          0.21     3.00     0.00
+    30          0.19     3.00     0.00
+    31          0.23     3.00     0.00
+    32          3.75     1.00     0.00
+    33          0.32     1.00     0.00
+    34         -0.12     2.00   180.00
+    35          0.39     3.00     0.00
+    36         -0.12     1.00     0.00
+    37         -0.09     2.00   180.00
+    38          0.21     3.00     0.00
+    39          0.19     3.00     0.00
+    40          0.00     1.00     0.00
+    41          0.00     2.00   180.00
+    42          0.65     1.00     0.00
+    43          0.15     2.00   180.00
+    44          0.21     3.00     0.00
+    45          0.14     2.00   180.00
+    46          0.00     3.00     0.00
+    47          0.65     1.00     0.00
+    48          0.15     2.00   180.00
+    49          0.21     3.00     0.00
+    50          0.14     2.00   180.00
+    51          0.00     3.00     0.00
+    52         -0.64     1.00     0.00
+    53         -0.04     2.00   180.00
+    54          0.20     3.00     0.00
+    55          1.13     1.00     0.00
+    56         -1.01     2.00   180.00
+
+
+No. of changing torsions =    65
+atom_i atom_j atom_k atom_l    torsion type in state 1 state 2
+  4701   4700   4699   4707                          1       0
+  4700   4699   4707   4708                          2       0
+  4700   4699   4707   4720                          3       0
+  4707   4699   4700   4714                          4       0
+  4699   4700   4701   4702                          5       0
+  4699   4700   4701   4702                          6       0
+  4699   4700   4701   4702                          7       0
+  4699   4700   4701   4706                          8       0
+  4699   4700   4701   4706                          9       0
+  4699   4700   4701   4706                         10       0
+  4699   4700   4707   4708                         11       0
+  4699   4700   4707   4708                         12       0
+  4699   4700   4707   4708                         13       0
+  4699   4700   4707   4720                         14       0
+  1487   1490   1491   1493                         15       0
+  1487   1490   1491   1493                         16       0
+  1492   1490   1491   1493                         17       0
+  1981   1984   1985   4754                          0      15
+  1981   1984   1985   4754                          0      16
+  1986   1984   1985   4754                          0      17
+  4702   4701   4700   4753                          0      18
+  4702   4701   4700   4753                          0      19
+  4706   4701   4700   4753                          0      20
+  4706   4701   4700   4753                          0      21
+  4701   4700   4753   4755                          0      22
+  4701   4700   4753   4755                          0      23
+  4701   4700   4753   4755                          0      24
+  4708   4707   4700   4753                          0      25
+  4708   4707   4700   4753                          0      26
+  4707   4700   4753   4755                          0      27
+  4707   4700   4753   4755                          0      28
+  4707   4700   4753   4755                          0      29
+  4714   4700   4753   4755                          0      30
+  4720   4707   4700   4753                          0      31
+  4699   4707   4700   4753                          0      32
+  1493   4699   4707   4708                          0      33
+  1493   4699   4707   4708                          0      34
+  1493   4699   4707   4708                          0      35
+  1493   4699   4707   4700                          0      36
+  1493   4699   4707   4700                          0      37
+  1493   4699   4707   4700                          0      38
+  1493   4699   4707   4720                          0      39
+  1982   1981   1984   1986                         40       0
+  1982   1981   1984   1986                          0      41
+  1983   1981   1984   1986                         40       0
+  1983   1981   1984   1986                          0      41
+  4699   4707   4708   4709                         42       0
+  4699   4707   4708   4709                         43       0
+  4699   4707   4708   4709                         44       0
+  4699   4707   4708   4709                          0      45
+  4699   4707   4708   4709                          0      46
+  4699   4707   4708   4713                         47       0
+  4699   4707   4708   4713                         48       0
+  4699   4707   4708   4713                         49       0
+  4699   4707   4708   4713                          0      50
+  4699   4707   4708   4713                          0      51
+  4699   4707   4700   4701                         52       0
+  4699   4707   4700   4701                         53       0
+  4699   4707   4700   4701                         54       0
+  4699   4707   4700   4701                          0      55
+  4699   4707   4700   4701                          0      56
+  1488   1487   1490   1492                         41       0
+  1488   1487   1490   1492                          0      40
+  1489   1487   1490   1492                         41       0
+  1489   1487   1490   1492                          0      40
+
+No. of offdiagonal (Hij) functions =     1
+state_i state_j atom_k atom_l     Aij mu_ij
+      1       2     32     39   20.00  0.45
+No softcore section found. Using normal LJ potentials.
+
+---------------- Removing redefined interactions from topology ---------------
+type      atom1 atom2 atom3 atom4
+bond       1490  1491
+bond       1490  1492
+bond       1491  1493
+bond       1984  1985
+bond       1984  1986
+bond       4699  4700
+bond       4699  4707
+bond       4700  4701
+bond       4700  4707
+bond       4700  4714
+bond       4707  4708
+bond       4707  4720
+bond       4753  4754
+bond       4753  4755
+angle      1487  1490  1492
+angle      1490  1491  1493
+angle      1981  1984  1986
+angle      4700  4699  4707
+angle      4699  4700  4701
+angle      4699  4700  4707
+angle      4699  4700  4714
+angle      4699  4707  4700
+angle      4699  4707  4708
+angle      4699  4707  4720
+angle      4701  4700  4707
+angle      4700  4701  4702
+angle      4700  4701  4706
+angle      4707  4700  4714
+angle      4700  4707  4708
+angle      4700  4707  4720
+angle      4707  4708  4709
+angle      4707  4708  4713
+angle      4754  4753  4755
+torsion    1488  1487  1490  1492
+torsion    1489  1487  1490  1492
+torsion    1487  1490  1491  1493
+torsion    1487  1490  1491  1493
+torsion    1492  1490  1491  1493
+torsion    1982  1981  1984  1986
+torsion    1983  1981  1984  1986
+torsion    4707  4699  4700  4701
+torsion    4707  4699  4700  4714
+torsion    4700  4699  4707  4708
+torsion    4700  4699  4707  4720
+torsion    4699  4700  4701  4702
+torsion    4699  4700  4701  4702
+torsion    4699  4700  4701  4702
+torsion    4699  4700  4701  4706
+torsion    4699  4700  4701  4706
+torsion    4699  4700  4701  4706
+torsion    4699  4700  4707  4708
+torsion    4699  4700  4707  4708
+torsion    4699  4700  4707  4708
+torsion    4699  4700  4707  4720
+torsion    4701  4700  4707  4699
+torsion    4701  4700  4707  4699
+torsion    4701  4700  4707  4699
+torsion    4699  4707  4708  4709
+torsion    4699  4707  4708  4709
+torsion    4699  4707  4708  4709
+torsion    4699  4707  4708  4713
+torsion    4699  4707  4708  4713
+torsion    4699  4707  4708  4713
+
+---------------------------- Initialising dynamics ---------------------------
+Total charge of non-Q atoms             =      -6.00
+Total charge of excluded atoms          =       0.00
+Total charge of system                  =      -7.00
+Target water sphere radius              =      19.62
+Surface inward harmonic force constant  =      60.00
+Surface attraction well depth           =       0.85
+Surface attraction well width           =       0.48
+Water polarisation restraints           : ON, Born correction enabled
+Radial polarisation force constant      =      20.00
+
+Setting up 3 water shells for polarisation restraints.
+Loaded polarisation restraint data from restart file.
+Shell #    outer radius    inner radius
+      1           19.62           19.12
+      2           19.12           18.12
+      3           18.12           16.62
+
+Number of shake constraints             =       1269
+No. molecules with shake constraints    =        423
+No. of Rcq indep. nb pairs involving q-atoms =  1131 in state :  1
+No. of Rcq indep. nb pairs involving q-atoms =  1128 in state :  2
+
+Coordinates for  6024 atoms will be written to the trajectory.
+------------------------ Distribution of charge groups -----------------------
+node value solute-solute solute-water  water-water     Q-solute      Q-water       #Shake       #Atoms   #Molecules
+     total           675          675          423          675          423          423         6024          428
+----------------------------- End of distribution ----------------------------
+
+Initial System total temperatures are : Ttot =    261.81 Tfree =    303.33
+Solute               temperatures are : Ttot =    251.67 Tfree =    297.53
+Solvent              temperatures are : Ttot =    318.86 Tfree =    318.86
+
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step      0 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5272.50     -352.04     1184.42     1695.89     1166.93      100.62
+solvent             -3106.50      585.67        0.00        0.00        0.00        0.00
+solute-solvent      -2115.90      -36.18
+LRF                  -132.48
+Q-atom               -105.09       18.32   -10420.64       49.03        7.27        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            820.94      873.54     -214.06       49.69      111.77        0.00
+
+                       total   potential     kinetic
+SUM                -11543.43   -15912.21     4368.77
+======================= Q-atom energies at step      0 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -69.66     61.84
+Q-Q     2 0.3200    -96.30     47.86
+
+Q-prot  1 0.6800     -1.61    -39.09
+Q-prot  2 0.3200     46.58    -39.46
+
+Q-wat   1 0.6800    -33.01      0.19
+Q-wat   2 0.3200    -57.10      0.09
+
+Q-surr. 1 0.6800    -34.63    -38.90
+Q-surr. 2 0.3200    -10.52    -39.38
+
+Q-any   1 0.6800   -104.28     22.94 -10258.52     17.05      8.83      0.00
+Q-any   2 0.3200   -106.82      8.49 -10765.13    117.00      3.97      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10313.99      0.00
+Q-SUM   2 0.3200 -10742.49      0.00
+H( 1, 2) =    0.54 dist. between Q-atoms  32  39 =    8.04
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step     200 T=     262.5 Average =  262.780 +-    1.603
+         Free System temperature at step     200 T=     303.0 Average =  304.447 +-    0.867
+              Solute temperature at step     200 T=     300.8 Average =  301.870 +-    3.536
+             Solvent temperature at step     200 T=     308.9 Average =  311.343 +-    9.121
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step     400 T=     263.9 Average =  260.896 +-    2.311
+         Free System temperature at step     400 T=     301.7 Average =  302.310 +-    0.744
+              Solute temperature at step     400 T=     298.8 Average =  300.830 +-    1.422
+             Solvent temperature at step     400 T=     309.5 Average =  306.272 +-    3.281
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step    500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5275.57     -351.68     1221.07     1625.72     1156.92      105.44
+solvent             -3107.06      564.73        0.00        0.00        0.00        0.00
+solute-solvent      -2111.07      -44.81
+LRF                   -74.40
+Q-atom               -111.08       34.54   -10432.90       44.57        6.14        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            820.56      865.59     -208.69       39.76      123.90        0.00
+
+                       total   potential     kinetic
+SUM                -11546.35   -15928.88     4382.53
+======================= Q-atom energies at step    500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -62.09     72.33
+Q-Q     2 0.3200   -105.45     64.53
+
+Q-prot  1 0.6800     -9.26    -40.11
+Q-prot  2 0.3200     41.64    -40.38
+
+Q-wat   1 0.6800    -34.02      4.94
+Q-wat   2 0.3200    -59.40      4.85
+
+Q-surr. 1 0.6800    -43.28    -35.17
+Q-surr. 2 0.3200    -17.76    -35.53
+
+Q-any   1 0.6800   -105.37     37.16 -10273.49     19.72      7.14      0.00
+Q-any   2 0.3200   -123.20     28.99 -10771.67     97.35      4.02      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10314.83      0.00
+Q-SUM   2 0.3200 -10764.51      0.00
+H( 1, 2) =    0.61 dist. between Q-atoms  32  39 =    7.75
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step     600 T=     262.4 Average =  260.886 +-    5.215
+         Free System temperature at step     600 T=     303.9 Average =  300.582 +-    8.375
+              Solute temperature at step     600 T=     301.7 Average =  297.309 +-   16.380
+             Solvent temperature at step     600 T=     309.9 Average =  309.342 +-    0.340
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step     800 T=     260.7 Average =  262.027 +-    1.260
+         Free System temperature at step     800 T=     299.3 Average =  303.758 +-    6.865
+              Solute temperature at step     800 T=     296.6 Average =  302.109 +-   11.892
+             Solvent temperature at step     800 T=     306.5 Average =  308.169 +-    2.867
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   82.4     90.963     90.462      6.564
+    2   96.2     91.070     90.499      7.114
+    3  101.5     90.073     90.573      4.451
+=======================  Energy summary at step   1000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5300.27     -332.61     1204.13     1611.22     1163.86      110.86
+solvent             -3051.76      558.86        0.00        0.00        0.00        0.00
+solute-solvent      -2141.74      -55.67
+LRF                   -57.39
+Q-atom                -99.79       29.93   -10439.86       40.54        8.25        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            839.95      888.34     -205.67       43.47      113.81        0.00
+
+                       total   potential     kinetic
+SUM                -11552.26   -15911.50     4359.24
+======================= Q-atom energies at step   1000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -60.24     76.04
+Q-Q     2 0.3200   -105.37     61.54
+
+Q-prot  1 0.6800     -1.55    -42.86
+Q-prot  2 0.3200     45.80    -41.65
+
+Q-wat   1 0.6800    -31.54      1.03
+Q-wat   2 0.3200    -53.94      0.94
+
+Q-surr. 1 0.6800    -33.09    -41.83
+Q-surr. 2 0.3200     -8.15    -40.71
+
+Q-any   1 0.6800    -93.32     34.21 -10281.23     18.62      9.64      0.00
+Q-any   2 0.3200   -113.52     20.83 -10776.96     87.11      5.29      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10312.09      0.00
+Q-SUM   2 0.3200 -10777.24      0.00
+H( 1, 2) =    0.53 dist. between Q-atoms  32  39 =    8.05
+===============================================================================
+        Total System temperature at step    1000 T=     261.3 Average =  261.530 +-    5.156
+         Free System temperature at step    1000 T=     302.6 Average =  302.504 +-   11.971
+              Solute temperature at step    1000 T=     301.4 Average =  299.373 +-   19.794
+             Solvent temperature at step    1000 T=     305.9 Average =  310.884 +-    8.772
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    1200 T=     259.1 Average =  262.541 +-    1.523
+         Free System temperature at step    1200 T=     301.7 Average =  303.165 +-    1.772
+              Solute temperature at step    1200 T=     297.6 Average =  299.788 +-    5.689
+             Solvent temperature at step    1200 T=     312.7 Average =  312.205 +-   12.838
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    1400 T=     258.6 Average =  260.310 +-    2.251
+         Free System temperature at step    1400 T=     297.9 Average =  300.904 +-    2.494
+              Solute temperature at step    1400 T=     297.2 Average =  299.746 +-    4.510
+             Solvent temperature at step    1400 T=     300.0 Average =  304.003 +-   17.446
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   1500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5352.70     -371.97     1247.48     1604.10     1174.24      116.11
+solvent             -3086.93      550.15        0.00        0.00        0.00        0.00
+solute-solvent      -2106.74      -27.90
+LRF                   -36.06
+Q-atom                -96.28       17.00   -10429.97       39.94        8.36        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            841.88      894.85     -209.70       42.09      114.63        0.00
+
+                       total   potential     kinetic
+SUM                -11554.31   -15909.28     4354.97
+======================= Q-atom energies at step   1500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -57.05     63.86
+Q-Q     2 0.3200   -104.66     60.76
+
+Q-prot  1 0.6800      1.28    -45.13
+Q-prot  2 0.3200     48.01    -45.26
+
+Q-wat   1 0.6800    -33.18     -0.67
+Q-wat   2 0.3200    -55.18     -0.77
+
+Q-surr. 1 0.6800    -31.90    -45.79
+Q-surr. 2 0.3200     -7.17    -46.03
+
+Q-any   1 0.6800    -88.96     18.06 -10267.80     17.41      9.02      0.00
+Q-any   2 0.3200   -111.83     14.73 -10774.59     87.82      6.96      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10312.27      0.00
+Q-SUM   2 0.3200 -10776.91      0.00
+H( 1, 2) =    0.51 dist. between Q-atoms  32  39 =    8.16
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    1600 T=     259.5 Average =  260.331 +-    1.644
+         Free System temperature at step    1600 T=     300.8 Average =  300.494 +-    8.834
+              Solute temperature at step    1600 T=     298.4 Average =  297.951 +-   12.379
+             Solvent temperature at step    1600 T=     307.3 Average =  307.300 +-   10.744
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    1800 T=     261.4 Average =  259.824 +-    2.476
+         Free System temperature at step    1800 T=     299.3 Average =  299.538 +-    1.052
+              Solute temperature at step    1800 T=     297.3 Average =  295.799 +-    3.603
+             Solvent temperature at step    1800 T=     304.6 Average =  309.543 +-    7.988
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   78.8     90.512     90.462      6.615
+    2  101.7     89.742     90.499      6.356
+    3  101.1     90.736     90.573      4.614
+=======================  Energy summary at step   2000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5334.71     -379.23     1209.49     1679.95     1167.93      116.67
+solvent             -3093.10      580.21        0.00        0.00        0.00        0.00
+solute-solvent      -2051.10      -91.79
+LRF                   -68.98
+Q-atom                -92.42       34.89   -10436.33       43.59        7.62        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            826.16      887.06     -213.19       38.24      114.03        0.00
+
+                       total   potential     kinetic
+SUM                -11539.60   -15881.17     4341.57
+======================= Q-atom energies at step   2000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -60.23     68.72
+Q-Q     2 0.3200   -104.69     81.26
+
+Q-prot  1 0.6800      1.71    -39.33
+Q-prot  2 0.3200     49.02    -37.56
+
+Q-wat   1 0.6800    -28.95      0.95
+Q-wat   2 0.3200    -47.25      0.84
+
+Q-surr. 1 0.6800    -27.24    -38.38
+Q-surr. 2 0.3200      1.77    -36.71
+
+Q-any   1 0.6800    -87.47     30.34 -10291.44     20.56      7.94      0.00
+Q-any   2 0.3200   -102.92     44.54 -10744.22     92.52      6.94      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10320.06      0.00
+Q-SUM   2 0.3200 -10703.14      0.00
+H( 1, 2) =    0.52 dist. between Q-atoms  32  39 =    8.12
+===============================================================================
+        Total System temperature at step    2000 T=     260.2 Average =  260.266 +-    4.433
+         Free System temperature at step    2000 T=     298.3 Average =  299.833 +-    3.740
+              Solute temperature at step    2000 T=     295.8 Average =  300.730 +-    4.426
+             Solvent temperature at step    2000 T=     305.0 Average =  297.435 +-   16.650
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    2200 T=     263.9 Average =  261.783 +-    4.882
+         Free System temperature at step    2200 T=     306.2 Average =  302.528 +-    9.058
+              Solute temperature at step    2200 T=     303.8 Average =  298.968 +-   12.525
+             Solvent temperature at step    2200 T=     312.8 Average =  312.054 +-   14.100
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    2400 T=     257.6 Average =  260.808 +-    2.514
+         Free System temperature at step    2400 T=     295.3 Average =  299.753 +-    6.303
+              Solute temperature at step    2400 T=     293.1 Average =  297.841 +-   11.296
+             Solvent temperature at step    2400 T=     301.3 Average =  304.868 +-    8.941
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   2500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5318.57     -367.95     1191.98     1666.77     1145.83      115.26
+solvent             -3044.35      532.39        0.00        0.00        0.00        0.00
+solute-solvent      -2077.33      -63.27
+LRF                   -60.07
+Q-atom                -92.86       24.08   -10436.97       36.51        6.39        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            858.16      899.79     -212.04       51.81      118.59        0.00
+
+                       total   potential     kinetic
+SUM                -11530.09   -15884.00     4353.91
+======================= Q-atom energies at step   2500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -63.19     67.28
+Q-Q     2 0.3200   -105.31     60.14
+
+Q-prot  1 0.6800      0.59    -44.16
+Q-prot  2 0.3200     49.49    -44.46
+
+Q-wat   1 0.6800    -27.21      3.38
+Q-wat   2 0.3200    -43.50      3.27
+
+Q-surr. 1 0.6800    -26.62    -40.78
+Q-surr. 2 0.3200      5.98    -41.19
+
+Q-any   1 0.6800    -89.82     26.50 -10265.53     16.64      7.79      0.00
+Q-any   2 0.3200    -99.33     18.95 -10801.27     78.72      3.41      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10304.41      0.00
+Q-SUM   2 0.3200 -10799.52      0.00
+H( 1, 2) =    0.55 dist. between Q-atoms  32  39 =    7.99
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    2600 T=     263.5 Average =  260.233 +-    5.516
+         Free System temperature at step    2600 T=     299.8 Average =  298.449 +-    6.076
+              Solute temperature at step    2600 T=     295.7 Average =  297.039 +-   11.204
+             Solvent temperature at step    2600 T=     310.6 Average =  302.223 +-   21.854
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    2800 T=     261.4 Average =  260.128 +-    1.273
+         Free System temperature at step    2800 T=     299.6 Average =  299.078 +-    2.948
+              Solute temperature at step    2800 T=     297.2 Average =  297.194 +-    2.942
+             Solvent temperature at step    2800 T=     306.2 Average =  304.118 +-   13.173
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   84.8     90.362     90.462      6.514
+    2   98.2     91.148     90.499      7.005
+    3  101.5     89.971     90.573      4.013
+=======================  Energy summary at step   3000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5340.67     -366.07     1215.08     1652.33     1147.89      108.79
+solvent             -3056.59      548.65        0.00        0.00        0.00        0.00
+solute-solvent      -2073.50      -40.67
+LRF                   -75.02
+Q-atom                -90.67       25.94   -10433.74       39.56        6.34        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            855.11      902.18     -212.21       44.18      120.96        0.00
+
+                       total   potential     kinetic
+SUM                -11524.60   -15877.25     4352.65
+======================= Q-atom energies at step   3000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -56.28     62.21
+Q-Q     2 0.3200   -105.50     73.34
+
+Q-prot  1 0.6800     -1.08    -40.52
+Q-prot  2 0.3200     47.96    -40.33
+
+Q-wat   1 0.6800    -28.10      0.66
+Q-wat   2 0.3200    -44.20      0.55
+
+Q-surr. 1 0.6800    -29.18    -39.87
+Q-surr. 2 0.3200      3.76    -39.78
+
+Q-any   1 0.6800    -85.46     22.35 -10275.61     21.65      7.45      0.00
+Q-any   2 0.3200   -101.73     33.57 -10769.78     77.61      3.97      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10309.62      0.00
+Q-SUM   2 0.3200 -10756.37      0.00
+H( 1, 2) =    0.59 dist. between Q-atoms  32  39 =    7.85
+===============================================================================
+        Total System temperature at step    3000 T=     260.9 Average =  261.938 +-    0.686
+         Free System temperature at step    3000 T=     300.5 Average =  301.984 +-    3.512
+              Solute temperature at step    3000 T=     300.5 Average =  301.443 +-    4.511
+             Solvent temperature at step    3000 T=     300.4 Average =  303.433 +-   17.893
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    3200 T=     260.6 Average =  260.708 +-    1.913
+         Free System temperature at step    3200 T=     301.2 Average =  299.834 +-    1.372
+              Solute temperature at step    3200 T=     298.1 Average =  298.233 +-    1.736
+             Solvent temperature at step    3200 T=     309.3 Average =  304.117 +-    5.123
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    3400 T=     261.7 Average =  262.500 +-    4.326
+         Free System temperature at step    3400 T=     303.8 Average =  303.475 +-    3.508
+              Solute temperature at step    3400 T=     300.8 Average =  299.635 +-    6.920
+             Solvent temperature at step    3400 T=     311.6 Average =  313.752 +-    2.941
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   3500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5311.20     -375.84     1214.93     1647.37     1146.51      111.77
+solvent             -3063.10      555.41        0.00        0.00        0.00        0.00
+solute-solvent      -2080.90      -68.86
+LRF                   -60.23
+Q-atom                -93.56       26.76   -10433.30       39.78        7.01        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            849.84      901.53     -211.94       40.84      119.40        0.00
+
+                       total   potential     kinetic
+SUM                -11522.85   -15887.60     4364.76
+======================= Q-atom energies at step   3500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -65.09     65.68
+Q-Q     2 0.3200    -95.21     57.58
+
+Q-prot  1 0.6800     -1.77    -37.41
+Q-prot  2 0.3200     49.88    -36.63
+
+Q-wat   1 0.6800    -27.09      0.86
+Q-wat   2 0.3200    -47.41      0.77
+
+Q-surr. 1 0.6800    -28.86    -36.54
+Q-surr. 2 0.3200      2.46    -35.86
+
+Q-any   1 0.6800    -93.95     29.14 -10266.77     18.42      8.87      0.00
+Q-any   2 0.3200    -92.74     21.72 -10787.19     85.17      3.05      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10304.28      0.00
+Q-SUM   2 0.3200 -10769.99      0.00
+H( 1, 2) =    0.56 dist. between Q-atoms  32  39 =    7.94
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    3600 T=     260.1 Average =  262.320 +-    1.793
+         Free System temperature at step    3600 T=     302.7 Average =  302.385 +-    1.188
+              Solute temperature at step    3600 T=     299.1 Average =  300.323 +-    4.027
+             Solvent temperature at step    3600 T=     312.3 Average =  307.902 +-    8.785
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    3800 T=     260.7 Average =  261.127 +-    1.959
+         Free System temperature at step    3800 T=     296.7 Average =  300.722 +-   11.042
+              Solute temperature at step    3800 T=     296.5 Average =  299.128 +-   10.637
+             Solvent temperature at step    3800 T=     297.1 Average =  304.986 +-   19.897
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   86.8     90.840     90.462      6.892
+    2   93.6     90.425     90.499      6.930
+    3  109.3     90.993     90.573      4.433
+=======================  Energy summary at step   4000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5318.77     -378.42     1229.91     1686.38     1165.89      115.84
+solvent             -3128.80      564.61        0.00        0.00        0.00        0.00
+solute-solvent      -2043.65      -38.70
+LRF                   -85.09
+Q-atom                -90.03       29.92   -10426.63       34.76        6.27        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            819.47      862.55     -213.97       57.29      113.59        0.00
+
+                       total   potential     kinetic
+SUM                -11513.39   -15857.03     4343.64
+======================= Q-atom energies at step   4000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -58.67     65.95
+Q-Q     2 0.3200    -90.86     55.19
+
+Q-prot  1 0.6800     -6.04    -36.46
+Q-prot  2 0.3200     45.06    -36.46
+
+Q-wat   1 0.6800    -26.34      3.91
+Q-wat   2 0.3200    -42.07      3.79
+
+Q-surr. 1 0.6800    -32.38    -32.55
+Q-surr. 2 0.3200      2.99    -32.67
+
+Q-any   1 0.6800    -91.05     33.40 -10249.45     15.58      6.87      0.00
+Q-any   2 0.3200    -87.87     22.52 -10803.12     75.54      5.00      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10284.65      0.00
+Q-SUM   2 0.3200 -10787.93      0.00
+H( 1, 2) =    0.70 dist. between Q-atoms  32  39 =    7.46
+===============================================================================
+        Total System temperature at step    4000 T=     260.3 Average =  260.524 +-    1.928
+         Free System temperature at step    4000 T=     298.2 Average =  299.362 +-    1.073
+              Solute temperature at step    4000 T=     297.6 Average =  299.553 +-    2.098
+             Solvent temperature at step    4000 T=     299.8 Average =  298.849 +-    3.519
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    4200 T=     261.6 Average =  261.758 +-    2.613
+         Free System temperature at step    4200 T=     303.6 Average =  301.275 +-    8.842
+              Solute temperature at step    4200 T=     302.0 Average =  299.684 +-    8.472
+             Solvent temperature at step    4200 T=     307.9 Average =  305.532 +-   15.893
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    4400 T=     265.3 Average =  261.634 +-    4.742
+         Free System temperature at step    4400 T=     304.9 Average =  300.525 +-    3.144
+              Solute temperature at step    4400 T=     302.3 Average =  297.216 +-    6.348
+             Solvent temperature at step    4400 T=     311.7 Average =  309.381 +-    4.938
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   4500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5317.85     -355.74     1228.00     1654.12     1150.39      118.65
+solvent             -3097.30      583.97        0.00        0.00        0.00        0.00
+solute-solvent      -2050.43      -68.70
+LRF                   -74.31
+Q-atom                -81.28       28.66   -10432.85       35.65        6.59        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            841.37      886.08     -209.68       46.31      118.66        0.00
+
+                       total   potential     kinetic
+SUM                -11506.35   -15831.07     4324.72
+======================= Q-atom energies at step   4500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -60.93     70.14
+Q-Q     2 0.3200    -99.62     61.57
+
+Q-prot  1 0.6800     -0.15    -37.83
+Q-prot  2 0.3200     46.04    -37.08
+
+Q-wat   1 0.6800    -16.09     -1.11
+Q-wat   2 0.3200    -36.43     -1.22
+
+Q-surr. 1 0.6800    -16.24    -38.94
+Q-surr. 2 0.3200      9.61    -38.29
+
+Q-any   1 0.6800    -77.16     31.19 -10268.43     19.09      7.33      0.00
+Q-any   2 0.3200    -90.02     23.28 -10782.23     70.84      5.00      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10287.98      0.00
+Q-SUM   2 0.3200 -10773.12      0.00
+H( 1, 2) =    0.79 dist. between Q-atoms  32  39 =    7.19
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    4600 T=     260.4 Average =  261.564 +-    8.697
+         Free System temperature at step    4600 T=     298.7 Average =  300.299 +-   16.201
+              Solute temperature at step    4600 T=     295.8 Average =  300.471 +-   16.521
+             Solvent temperature at step    4600 T=     306.4 Average =  299.838 +-   37.860
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    4800 T=     262.7 Average =  261.640 +-    4.482
+         Free System temperature at step    4800 T=     303.2 Average =  300.144 +-    8.282
+              Solute temperature at step    4800 T=     301.4 Average =  297.631 +-   11.467
+             Solvent temperature at step    4800 T=     307.9 Average =  306.869 +-   13.723
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   86.9     90.478     90.462      6.907
+    2   99.2     90.758     90.499      7.188
+    3  102.0     91.217     90.573      5.077
+=======================  Energy summary at step   5000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5249.89     -359.86     1190.43     1686.88     1148.37      110.56
+solvent             -3125.75      575.78        0.00        0.00        0.00        0.00
+solute-solvent      -2053.48      -58.48
+LRF                  -132.38
+Q-atom                -81.98       18.76   -10430.32       38.12        6.22        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            859.07      895.99     -214.43       58.54      118.97        0.00
+
+                       total   potential     kinetic
+SUM                -11491.04   -15857.96     4366.91
+======================= Q-atom energies at step   5000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -57.06     61.36
+Q-Q     2 0.3200   -100.32     55.75
+
+Q-prot  1 0.6800     -0.73    -41.03
+Q-prot  2 0.3200     49.78    -41.14
+
+Q-wat   1 0.6800    -21.52      0.29
+Q-wat   2 0.3200    -37.10      0.19
+
+Q-surr. 1 0.6800    -22.25    -40.74
+Q-surr. 2 0.3200     12.68    -40.95
+
+Q-any   1 0.6800    -79.31     20.62 -10258.42     18.96      7.07      0.00
+Q-any   2 0.3200    -87.64     14.80 -10795.62     78.84      4.41      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10291.09      0.00
+Q-SUM   2 0.3200 -10785.21      0.00
+H( 1, 2) =    0.76 dist. between Q-atoms  32  39 =    7.26
+===============================================================================
+        Total System temperature at step    5000 T=     261.7 Average =  261.985 +-    1.035
+         Free System temperature at step    5000 T=     300.6 Average =  301.456 +-    6.578
+              Solute temperature at step    5000 T=     296.7 Average =  298.589 +-   11.152
+             Solvent temperature at step    5000 T=     311.1 Average =  309.129 +-    4.403
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    5200 T=     263.1 Average =  261.832 +-    2.178
+         Free System temperature at step    5200 T=     303.0 Average =  301.074 +-    3.538
+              Solute temperature at step    5200 T=     303.3 Average =  299.444 +-    4.229
+             Solvent temperature at step    5200 T=     302.1 Average =  305.437 +-   26.646
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    5400 T=     264.1 Average =  262.015 +-    1.922
+         Free System temperature at step    5400 T=     304.3 Average =  300.462 +-    6.638
+              Solute temperature at step    5400 T=     304.7 Average =  298.121 +-   18.118
+             Solvent temperature at step    5400 T=     303.2 Average =  306.724 +-    5.872
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   5500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5317.04     -333.87     1235.90     1667.97     1161.70      110.48
+solvent             -3050.64      540.27        0.00        0.00        0.00        0.00
+solute-solvent      -2056.72      -82.84
+LRF                   -90.22
+Q-atom                -78.82       21.92   -10429.63       31.29        7.48        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            840.83      893.52     -210.77       40.69      117.39        0.00
+
+                       total   potential     kinetic
+SUM                -11481.90   -15821.95     4340.05
+======================= Q-atom energies at step   5500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -59.70     64.59
+Q-Q     2 0.3200    -92.99     56.58
+
+Q-prot  1 0.6800      1.70    -39.34
+Q-prot  2 0.3200     51.54    -39.00
+
+Q-wat   1 0.6800    -20.82     -0.84
+Q-wat   2 0.3200    -37.38     -0.95
+
+Q-surr. 1 0.6800    -19.12    -40.18
+Q-surr. 2 0.3200     14.16    -39.95
+
+Q-any   1 0.6800    -78.82     24.41 -10265.24     16.37      7.70      0.00
+Q-any   2 0.3200    -78.82     16.63 -10778.96     62.97      7.00      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10295.57      0.00
+Q-SUM   2 0.3200 -10771.18      0.00
+H( 1, 2) =    0.75 dist. between Q-atoms  32  39 =    7.29
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    5600 T=     257.1 Average =  260.966 +-    3.499
+         Free System temperature at step    5600 T=     293.9 Average =  299.069 +-    9.227
+              Solute temperature at step    5600 T=     294.2 Average =  298.772 +-   23.998
+             Solvent temperature at step    5600 T=     293.3 Average =  299.863 +-   16.433
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    5800 T=     258.8 Average =  260.169 +-    6.072
+         Free System temperature at step    5800 T=     299.5 Average =  297.669 +-    9.744
+              Solute temperature at step    5800 T=     300.3 Average =  298.075 +-   16.247
+             Solvent temperature at step    5800 T=     297.1 Average =  296.582 +-    2.145
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   92.6     89.984     90.462      6.429
+    2   91.0     90.587     90.499      7.275
+    3  100.2     89.812     90.573      4.316
+=======================  Energy summary at step   6000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5258.36     -370.33     1229.28     1654.49     1155.91      107.25
+solvent             -3117.10      571.28        0.00        0.00        0.00        0.00
+solute-solvent      -2011.69      -92.41
+LRF                  -123.68
+Q-atom                -79.82       16.26   -10433.35       34.66        7.96        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            846.52      897.64     -211.80       44.58      116.11        0.00
+
+                       total   potential     kinetic
+SUM                -11467.22   -15863.13     4395.91
+======================= Q-atom energies at step   6000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -55.68     65.35
+Q-Q     2 0.3200    -97.03     60.18
+
+Q-prot  1 0.6800      2.82    -44.97
+Q-prot  2 0.3200     46.66    -44.66
+
+Q-wat   1 0.6800    -21.43     -2.54
+Q-wat   2 0.3200    -41.19     -2.65
+
+Q-surr. 1 0.6800    -18.60    -47.51
+Q-surr. 2 0.3200      5.47    -47.30
+
+Q-any   1 0.6800    -74.29     17.85 -10268.09     18.81      7.92      0.00
+Q-any   2 0.3200    -91.57     12.88 -10784.53     68.36      8.04      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10297.79      0.00
+Q-SUM   2 0.3200 -10786.82      0.00
+H( 1, 2) =    0.71 dist. between Q-atoms  32  39 =    7.42
+===============================================================================
+        Total System temperature at step    6000 T=     263.5 Average =  261.006 +-    8.152
+         Free System temperature at step    6000 T=     302.8 Average =  299.154 +-   20.419
+              Solute temperature at step    6000 T=     300.6 Average =  297.540 +-   26.398
+             Solvent temperature at step    6000 T=     308.8 Average =  303.475 +-   12.350
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    6200 T=     263.5 Average =  264.706 +-    0.673
+         Free System temperature at step    6200 T=     303.7 Average =  304.918 +-    1.899
+              Solute temperature at step    6200 T=     300.0 Average =  302.431 +-    3.600
+             Solvent temperature at step    6200 T=     313.7 Average =  311.574 +-    0.872
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    6400 T=     264.5 Average =  264.051 +-    7.278
+         Free System temperature at step    6400 T=     305.8 Average =  304.483 +-    6.637
+              Solute temperature at step    6400 T=     303.2 Average =  301.774 +-   14.531
+             Solvent temperature at step    6400 T=     312.9 Average =  311.732 +-    2.189
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   6500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5324.13     -363.50     1198.33     1666.22     1161.15      108.53
+solvent             -3091.83      566.44        0.00        0.00        0.00        0.00
+solute-solvent      -2085.84      -46.99
+LRF                   -59.79
+Q-atom                -91.62       19.43   -10433.22       35.02        6.88        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            863.39      918.90     -209.05       35.19      118.35        0.00
+
+                       total   potential     kinetic
+SUM                -11488.01   -15871.51     4383.50
+======================= Q-atom energies at step   6500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -62.48     65.32
+Q-Q     2 0.3200   -102.32     62.19
+
+Q-prot  1 0.6800      2.57    -46.00
+Q-prot  2 0.3200     47.63    -46.20
+
+Q-wat   1 0.6800    -26.41      1.21
+Q-wat   2 0.3200    -48.20      1.12
+
+Q-surr. 1 0.6800    -23.84    -44.79
+Q-surr. 2 0.3200     -0.57    -45.09
+
+Q-any   1 0.6800    -86.32     20.53 -10263.34     19.07      7.81      0.00
+Q-any   2 0.3200   -102.89     17.11 -10794.21     68.92      4.92      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10302.26      0.00
+Q-SUM   2 0.3200 -10806.15      0.00
+H( 1, 2) =    0.69 dist. between Q-atoms  32  39 =    7.49
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    6600 T=     263.0 Average =  262.515 +-    1.000
+         Free System temperature at step    6600 T=     302.3 Average =  302.045 +-    3.566
+              Solute temperature at step    6600 T=     301.4 Average =  300.340 +-    3.516
+             Solvent temperature at step    6600 T=     304.6 Average =  306.606 +-   10.103
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    6800 T=     267.3 Average =  263.353 +-    2.266
+         Free System temperature at step    6800 T=     309.0 Average =  303.671 +-    8.858
+              Solute temperature at step    6800 T=     306.2 Average =  300.087 +-    9.194
+             Solvent temperature at step    6800 T=     316.6 Average =  313.260 +-   21.281
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   86.6     90.486     90.462      6.453
+    2   93.7     91.187     90.499      7.962
+    3  104.5     89.262     90.573      3.006
+=======================  Energy summary at step   7000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5324.66     -361.56     1236.00     1629.90     1152.58      114.59
+solvent             -3072.63      564.81        0.00        0.00        0.00        0.00
+solute-solvent      -2134.43      -33.41
+LRF                   -62.69
+Q-atom                -93.42       29.47   -10431.40       34.62        5.62        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            829.81      882.31     -215.20       45.99      116.71        0.00
+
+                       total   potential     kinetic
+SUM                -11505.19   -15916.81     4411.61
+======================= Q-atom energies at step   7000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -56.48     66.64
+Q-Q     2 0.3200   -100.72     63.07
+
+Q-prot  1 0.6800     -5.70    -35.85
+Q-prot  2 0.3200     40.80    -36.31
+
+Q-wat   1 0.6800    -25.63     -0.01
+Q-wat   2 0.3200    -45.45     -0.10
+
+Q-surr. 1 0.6800    -31.32    -35.85
+Q-surr. 2 0.3200     -4.64    -36.41
+
+Q-any   1 0.6800    -87.81     30.79 -10265.37     18.65      6.18      0.00
+Q-any   2 0.3200   -105.36     26.67 -10784.23     68.56      4.44      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10297.56      0.00
+Q-SUM   2 0.3200 -10789.92      0.00
+H( 1, 2) =    0.77 dist. between Q-atoms  32  39 =    7.24
+===============================================================================
+        Total System temperature at step    7000 T=     264.4 Average =  265.967 +-    3.172
+         Free System temperature at step    7000 T=     304.4 Average =  307.392 +-    2.285
+              Solute temperature at step    7000 T=     301.3 Average =  304.094 +-    5.567
+             Solvent temperature at step    7000 T=     312.8 Average =  316.217 +-    3.655
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    7200 T=     264.5 Average =  261.444 +-    3.824
+         Free System temperature at step    7200 T=     303.3 Average =  300.176 +-    6.060
+              Solute temperature at step    7200 T=     298.9 Average =  296.847 +-    4.439
+             Solvent temperature at step    7200 T=     315.2 Average =  309.084 +-   25.394
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    7400 T=     263.6 Average =  261.890 +-    2.745
+         Free System temperature at step    7400 T=     304.3 Average =  300.687 +-    9.114
+              Solute temperature at step    7400 T=     301.5 Average =  296.609 +-   19.307
+             Solvent temperature at step    7400 T=     311.7 Average =  311.602 +-    2.073
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   7500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5293.38     -355.74     1204.74     1655.88     1173.14      103.57
+solvent             -3092.39      569.83        0.00        0.00        0.00        0.00
+solute-solvent      -2091.85      -64.26
+LRF                   -68.36
+Q-atom                -89.53       18.04   -10429.56       38.37        6.26        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            836.51      886.96     -207.26       39.41      117.41        0.00
+
+                       total   potential     kinetic
+SUM                -11487.66   -15878.74     4391.08
+======================= Q-atom energies at step   7500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -64.32     61.23
+Q-Q     2 0.3200    -97.36     61.65
+
+Q-prot  1 0.6800      3.45    -40.66
+Q-prot  2 0.3200     45.27    -40.48
+
+Q-wat   1 0.6800    -25.71     -2.69
+Q-wat   2 0.3200    -43.73     -2.79
+
+Q-surr. 1 0.6800    -22.26    -43.36
+Q-surr. 2 0.3200      1.55    -43.26
+
+Q-any   1 0.6800    -86.58     17.87 -10265.10     19.40      7.54      0.00
+Q-any   2 0.3200    -95.81     18.39 -10779.03     78.68      3.53      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10306.87      0.00
+Q-SUM   2 0.3200 -10774.25      0.00
+H( 1, 2) =    0.71 dist. between Q-atoms  32  39 =    7.43
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    7600 T=     262.1 Average =  261.537 +-    3.811
+         Free System temperature at step    7600 T=     300.9 Average =  300.739 +-    7.645
+              Solute temperature at step    7600 T=     297.0 Average =  297.206 +-   13.805
+             Solvent temperature at step    7600 T=     311.2 Average =  310.196 +-    0.448
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    7800 T=     258.8 Average =  263.082 +-    2.869
+         Free System temperature at step    7800 T=     300.2 Average =  301.916 +-    4.288
+              Solute temperature at step    7800 T=     298.2 Average =  300.128 +-    8.445
+             Solvent temperature at step    7800 T=     305.7 Average =  306.703 +-    8.214
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   77.1     91.114     90.462      7.105
+    2  105.6     88.844     90.499      6.307
+    3   98.6     90.499     90.573      2.933
+=======================  Energy summary at step   8000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5264.58     -367.63     1238.88     1602.76     1179.78      118.67
+solvent             -3075.55      566.74        0.00        0.00        0.00        0.00
+solute-solvent      -2096.44      -73.53
+LRF                  -115.92
+Q-atom                -82.64       21.84   -10434.25       39.84        6.74        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            826.70      887.80     -210.46       33.14      116.23        0.00
+
+                       total   potential     kinetic
+SUM                -11489.73   -15908.59     4418.86
+======================= Q-atom energies at step   8000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -58.67     72.77
+Q-Q     2 0.3200    -99.38     53.25
+
+Q-prot  1 0.6800      2.36    -44.59
+Q-prot  2 0.3200     45.64    -43.75
+
+Q-wat   1 0.6800    -22.58     -0.33
+Q-wat   2 0.3200    -36.84     -0.43
+
+Q-surr. 1 0.6800    -20.23    -44.91
+Q-surr. 2 0.3200      8.80    -44.19
+
+Q-any   1 0.6800    -78.90     27.86 -10268.57     15.51      7.75      0.00
+Q-any   2 0.3200    -90.59      9.06 -10786.32     91.52      4.60      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10296.35      0.00
+Q-SUM   2 0.3200 -10771.72      0.00
+H( 1, 2) =    0.66 dist. between Q-atoms  32  39 =    7.57
+===============================================================================
+        Total System temperature at step    8000 T=     264.8 Average =  262.121 +-    5.918
+         Free System temperature at step    8000 T=     306.7 Average =  300.727 +-   15.673
+              Solute temperature at step    8000 T=     306.7 Average =  298.517 +-   27.938
+             Solvent temperature at step    8000 T=     306.6 Average =  306.642 +-    0.499
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    8200 T=     261.8 Average =  262.635 +-    4.126
+         Free System temperature at step    8200 T=     304.2 Average =  301.631 +-   11.234
+              Solute temperature at step    8200 T=     299.3 Average =  301.634 +-    9.677
+             Solvent temperature at step    8200 T=     317.2 Average =  301.621 +-   39.625
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    8400 T=     263.8 Average =  263.331 +-    1.745
+         Free System temperature at step    8400 T=     304.8 Average =  303.969 +-    6.596
+              Solute temperature at step    8400 T=     303.1 Average =  298.707 +-   11.178
+             Solvent temperature at step    8400 T=     309.3 Average =  318.051 +-   16.289
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   8500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5253.85     -403.66     1250.89     1640.63     1159.98      117.73
+solvent             -3123.13      592.70        0.00        0.00        0.00        0.00
+solute-solvent      -2076.80      -64.25
+LRF                  -135.64
+Q-atom                -93.15       21.61   -10420.46       39.60        5.77        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            855.94      892.86     -210.55       55.52      118.12        0.00
+
+                       total   potential     kinetic
+SUM                -11501.50   -15886.10     4384.60
+======================= Q-atom energies at step   8500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -61.57     58.81
+Q-Q     2 0.3200   -105.72     50.59
+
+Q-prot  1 0.6800      0.03    -35.21
+Q-prot  2 0.3200     46.08    -35.28
+
+Q-wat   1 0.6800    -27.60      0.70
+Q-wat   2 0.3200    -42.02      0.60
+
+Q-surr. 1 0.6800    -27.57    -34.51
+Q-surr. 2 0.3200      4.06    -34.69
+
+Q-any   1 0.6800    -89.14     24.30 -10252.75     19.50      6.49      0.00
+Q-any   2 0.3200   -101.66     15.90 -10776.85     82.31      4.24      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10291.60      0.00
+Q-SUM   2 0.3200 -10776.05      0.00
+H( 1, 2) =    0.63 dist. between Q-atoms  32  39 =    7.67
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    8600 T=     263.8 Average =  263.721 +-    1.818
+         Free System temperature at step    8600 T=     304.8 Average =  304.315 +-    3.019
+              Solute temperature at step    8600 T=     301.9 Average =  302.627 +-   11.507
+             Solvent temperature at step    8600 T=     312.6 Average =  308.832 +-   17.794
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    8800 T=     265.5 Average =  262.240 +-    2.559
+         Free System temperature at step    8800 T=     307.1 Average =  301.410 +-   11.154
+              Solute temperature at step    8800 T=     305.7 Average =  299.507 +-   13.360
+             Solvent temperature at step    8800 T=     310.9 Average =  306.501 +-    8.802
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   80.6     90.157     90.462      6.800
+    2  100.3     91.800     90.499      7.607
+    3   97.4     91.718     90.573      4.078
+=======================  Energy summary at step   9000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5293.54     -359.75     1253.06     1653.67     1160.78      112.83
+solvent             -3134.36      653.27        0.00        0.00        0.00        0.00
+solute-solvent      -2127.56      -43.49
+LRF                   -88.18
+Q-atom                -91.23       21.75   -10421.13       39.52        6.42        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            848.46      888.36     -213.23       43.20      130.13        0.00
+
+                       total   potential     kinetic
+SUM                -11491.25   -15809.47     4318.23
+======================= Q-atom energies at step   9000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -65.13     59.36
+Q-Q     2 0.3200    -98.27     48.61
+
+Q-prot  1 0.6800      6.27    -39.93
+Q-prot  2 0.3200     48.68    -39.76
+
+Q-wat   1 0.6800    -30.71      5.72
+Q-wat   2 0.3200    -45.19      5.65
+
+Q-surr. 1 0.6800    -24.43    -34.20
+Q-surr. 2 0.3200      3.50    -34.11
+
+Q-any   1 0.6800    -89.56     25.16 -10260.89     18.62      7.09      0.00
+Q-any   2 0.3200    -94.77     14.51 -10761.63     83.92      5.01      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10299.59      0.00
+Q-SUM   2 0.3200 -10752.97      0.00
+H( 1, 2) =    0.58 dist. between Q-atoms  32  39 =    7.88
+===============================================================================
+        Total System temperature at step    9000 T=     258.8 Average =  261.894 +-    3.710
+         Free System temperature at step    9000 T=     296.8 Average =  300.580 +-    9.638
+              Solute temperature at step    9000 T=     295.0 Average =  298.349 +-   13.863
+             Solvent temperature at step    9000 T=     301.6 Average =  306.551 +-   12.115
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    9200 T=     261.7 Average =  261.650 +-    3.103
+         Free System temperature at step    9200 T=     303.3 Average =  300.537 +-    7.433
+              Solute temperature at step    9200 T=     299.9 Average =  298.591 +-    8.469
+             Solvent temperature at step    9200 T=     312.4 Average =  305.745 +-   12.135
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    9400 T=     264.2 Average =  263.727 +-    1.229
+         Free System temperature at step    9400 T=     305.5 Average =  304.346 +-    4.593
+              Solute temperature at step    9400 T=     301.6 Average =  299.864 +-    5.356
+             Solvent temperature at step    9400 T=     316.0 Average =  316.339 +-    6.977
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step   9500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5322.95     -336.79     1226.57     1627.79     1163.36      115.44
+solvent             -3066.52      557.76        0.00        0.00        0.00        0.00
+solute-solvent      -2143.14      -37.86
+LRF                   -85.36
+Q-atom                -89.25       14.22   -10422.65       40.19        6.34        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            830.73      874.20     -205.91       45.55      116.89        0.00
+
+                       total   potential     kinetic
+SUM                -11500.23   -15922.12     4421.89
+======================= Q-atom energies at step   9500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -62.42     60.97
+Q-Q     2 0.3200    -94.69     47.70
+
+Q-prot  1 0.6800      0.06    -40.98
+Q-prot  2 0.3200     43.58    -40.79
+
+Q-wat   1 0.6800    -25.86     -1.55
+Q-wat   2 0.3200    -40.32     -1.66
+
+Q-surr. 1 0.6800    -25.80    -42.53
+Q-surr. 2 0.3200      3.26    -42.45
+
+Q-any   1 0.6800    -88.22     18.44 -10253.36     15.95      6.59      0.00
+Q-any   2 0.3200    -91.43      5.25 -10782.40     91.69      5.80      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10300.59      0.00
+Q-SUM   2 0.3200 -10771.10      0.00
+H( 1, 2) =    0.62 dist. between Q-atoms  32  39 =    7.73
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    9600 T=     262.6 Average =  263.658 +-    1.422
+         Free System temperature at step    9600 T=     301.6 Average =  303.985 +-    2.209
+              Solute temperature at step    9600 T=     299.8 Average =  303.239 +-    4.384
+             Solvent temperature at step    9600 T=     306.4 Average =  305.982 +-   11.597
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step    9800 T=     260.6 Average =  264.302 +-    4.552
+         Free System temperature at step    9800 T=     297.5 Average =  305.631 +-   10.119
+              Solute temperature at step    9800 T=     296.4 Average =  304.710 +-   11.856
+             Solvent temperature at step    9800 T=     300.4 Average =  308.096 +-   10.682
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   80.4     90.578     90.462      6.916
+    2  101.6     89.499     90.499      6.607
+    3   96.9     91.594     90.573      5.099
+=======================  Energy summary at step  10000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5327.92     -351.98     1229.12     1638.19     1156.17      114.03
+solvent             -3035.16      537.98        0.00        0.00        0.00        0.00
+solute-solvent      -2128.75      -70.11
+LRF                   -99.93
+Q-atom                -80.12       15.59   -10428.39       37.95        5.97        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            844.13      889.46     -213.52       47.49      120.70        0.00
+
+                       total   potential     kinetic
+SUM                -11518.28   -15943.24     4424.95
+======================= Q-atom energies at step  10000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -63.85     69.92
+Q-Q     2 0.3200   -101.59     49.53
+
+Q-prot  1 0.6800      8.63    -44.60
+Q-prot  2 0.3200     52.47    -44.24
+
+Q-wat   1 0.6800    -21.61     -3.29
+Q-wat   2 0.3200    -37.98     -3.39
+
+Q-surr. 1 0.6800    -12.99    -47.89
+Q-surr. 2 0.3200     14.49    -47.63
+
+Q-any   1 0.6800    -76.84     22.03 -10261.16     15.69      7.40      0.00
+Q-any   2 0.3200    -87.09      1.90 -10783.76     85.27      2.94      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10292.88      0.00
+Q-SUM   2 0.3200 -10780.74      0.00
+H( 1, 2) =    0.62 dist. between Q-atoms  32  39 =    7.73
+===============================================================================
+        Total System temperature at step   10000 T=     265.2 Average =  262.242 +-    1.377
+         Free System temperature at step   10000 T=     304.6 Average =  301.903 +-    1.981
+              Solute temperature at step   10000 T=     302.9 Average =  301.032 +-    6.476
+             Solvent temperature at step   10000 T=     309.2 Average =  304.231 +-   23.213
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   10200 T=     261.3 Average =  260.258 +-    4.851
+         Free System temperature at step   10200 T=     297.6 Average =  298.927 +-   10.694
+              Solute temperature at step   10200 T=     296.3 Average =  299.095 +-   10.932
+             Solvent temperature at step   10200 T=     301.0 Average =  298.479 +-   24.641
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   10400 T=     259.5 Average =  262.068 +-    2.266
+         Free System temperature at step   10400 T=     298.8 Average =  301.674 +-    4.366
+              Solute temperature at step   10400 T=     299.7 Average =  301.253 +-    3.306
+             Solvent temperature at step   10400 T=     296.4 Average =  302.801 +-   11.121
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  10500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5265.77     -380.48     1254.16     1641.07     1151.03      115.54
+solvent             -3019.73      527.89        0.00        0.00        0.00        0.00
+solute-solvent      -2086.18      -67.18
+LRF                  -130.60
+Q-atom                -99.97       19.84   -10428.07       43.24        7.00        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            866.86      892.69     -213.36       57.41      130.12        0.00
+
+                       total   potential     kinetic
+SUM                -11500.35   -15851.33     4350.98
+======================= Q-atom energies at step  10500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -58.05     61.84
+Q-Q     2 0.3200   -106.02     60.34
+
+Q-prot  1 0.6800     -2.31    -42.73
+Q-prot  2 0.3200     42.83    -42.71
+
+Q-wat   1 0.6800    -33.21      1.24
+Q-wat   2 0.3200    -50.37      1.14
+
+Q-surr. 1 0.6800    -35.52    -41.49
+Q-surr. 2 0.3200     -7.54    -41.58
+
+Q-any   1 0.6800    -93.57     20.35 -10264.58     15.92      7.85      0.00
+Q-any   2 0.3200   -113.56     18.76 -10775.49    101.30      5.20      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10314.03      0.00
+Q-SUM   2 0.3200 -10763.79      0.00
+H( 1, 2) =    0.64 dist. between Q-atoms  32  39 =    7.63
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   10600 T=     261.1 Average =  262.535 +-    1.941
+         Free System temperature at step   10600 T=     302.5 Average =  302.219 +-    3.053
+              Solute temperature at step   10600 T=     300.6 Average =  302.113 +-    3.391
+             Solvent temperature at step   10600 T=     307.9 Average =  302.503 +-   18.080
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   10800 T=     263.1 Average =  261.905 +-    1.220
+         Free System temperature at step   10800 T=     302.8 Average =  301.305 +-    3.510
+              Solute temperature at step   10800 T=     303.3 Average =  299.508 +-    7.249
+             Solvent temperature at step   10800 T=     301.5 Average =  306.114 +-    1.764
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   88.2     90.798     90.462      7.252
+    2   94.8     91.175     90.499      7.282
+    3   94.8     90.753     90.573      5.279
+=======================  Energy summary at step  11000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5247.23     -404.81     1231.72     1652.65     1175.32      114.60
+solvent             -3068.93      574.15        0.00        0.00        0.00        0.00
+solute-solvent      -2080.07      -86.38
+LRF                  -124.90
+Q-atom               -101.24       20.06   -10432.18       43.92        6.56        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            830.47      872.69     -205.75       46.92      116.61        0.00
+
+                       total   potential     kinetic
+SUM                -11507.02   -15896.31     4389.29
+======================= Q-atom energies at step  11000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -69.49     60.05
+Q-Q     2 0.3200   -103.20     55.39
+
+Q-prot  1 0.6800     -0.66    -41.24
+Q-prot  2 0.3200     45.02    -41.24
+
+Q-wat   1 0.6800    -28.51      2.77
+Q-wat   2 0.3200    -48.53      2.68
+
+Q-surr. 1 0.6800    -29.17    -38.47
+Q-surr. 2 0.3200     -3.51    -38.55
+
+Q-any   1 0.6800    -98.67     21.58 -10268.32     18.41      8.21      0.00
+Q-any   2 0.3200   -106.71     16.84 -10780.39     98.12      3.05      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10318.79      0.00
+Q-SUM   2 0.3200 -10769.09      0.00
+H( 1, 2) =    0.68 dist. between Q-atoms  32  39 =    7.50
+===============================================================================
+        Total System temperature at step   11000 T=     263.1 Average =  261.475 +-    1.192
+         Free System temperature at step   11000 T=     304.1 Average =  300.581 +-    4.235
+              Solute temperature at step   11000 T=     304.4 Average =  300.350 +-    9.670
+             Solvent temperature at step   11000 T=     303.2 Average =  301.200 +-    3.830
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   11200 T=     262.7 Average =  263.381 +-    0.669
+         Free System temperature at step   11200 T=     305.0 Average =  304.481 +-    2.489
+              Solute temperature at step   11200 T=     303.7 Average =  303.308 +-    4.835
+             Solvent temperature at step   11200 T=     308.5 Average =  307.619 +-    4.540
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   11400 T=     258.6 Average =  262.507 +-    5.700
+         Free System temperature at step   11400 T=     297.1 Average =  302.523 +-   28.887
+              Solute temperature at step   11400 T=     297.0 Average =  300.402 +-   45.750
+             Solvent temperature at step   11400 T=     297.1 Average =  308.200 +-   15.880
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  11500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5318.45     -375.53     1252.19     1660.88     1166.16      112.67
+solvent             -3089.29      574.42        0.00        0.00        0.00        0.00
+solute-solvent      -2072.32      -58.64
+LRF                   -86.84
+Q-atom                -93.19       20.68   -10434.18       47.72        6.26        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            878.97      896.63     -213.91       61.79      134.46        0.00
+
+                       total   potential     kinetic
+SUM                -11512.47   -15808.49     4296.02
+======================= Q-atom energies at step  11500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -59.49     61.08
+Q-Q     2 0.3200    -98.40     68.38
+
+Q-prot  1 0.6800     -4.16    -41.90
+Q-prot  2 0.3200     42.85    -41.68
+
+Q-wat   1 0.6800    -27.13     -0.88
+Q-wat   2 0.3200    -42.76     -0.98
+
+Q-surr. 1 0.6800    -31.29    -42.77
+Q-surr. 2 0.3200      0.09    -42.65
+
+Q-any   1 0.6800    -90.78     18.31 -10274.64     26.46      6.20      0.00
+Q-any   2 0.3200    -98.31     25.73 -10773.21     92.90      6.39      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10314.45      0.00
+Q-SUM   2 0.3200 -10746.51      0.00
+H( 1, 2) =    0.81 dist. between Q-atoms  32  39 =    7.12
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   11600 T=     263.1 Average =  259.677 +-    5.302
+         Free System temperature at step   11600 T=     303.8 Average =  297.534 +-   19.365
+              Solute temperature at step   11600 T=     304.1 Average =  296.876 +-   23.991
+             Solvent temperature at step   11600 T=     302.9 Average =  299.295 +-   22.351
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   11800 T=     264.5 Average =  261.324 +-    2.900
+         Free System temperature at step   11800 T=     303.6 Average =  299.004 +-    7.009
+              Solute temperature at step   11800 T=     306.3 Average =  299.720 +-   13.118
+             Solvent temperature at step   11800 T=     296.3 Average =  297.089 +-    4.646
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   90.5     91.159     90.462      7.950
+    2   90.0     90.060     90.499      6.843
+    3   98.8     91.494     90.573      6.200
+=======================  Energy summary at step  12000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5291.61     -344.24     1190.20     1682.73     1151.27      123.36
+solvent             -3043.32      553.88        0.00        0.00        0.00        0.00
+solute-solvent      -2058.27      -91.28
+LRF                  -131.72
+Q-atom               -100.05       27.35   -10434.41       41.71        8.24        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            846.00      871.60     -207.27       57.88      123.79        0.00
+
+                       total   potential     kinetic
+SUM                -11491.25   -15870.16     4378.91
+======================= Q-atom energies at step  12000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -63.06     59.51
+Q-Q     2 0.3200   -104.31     67.62
+
+Q-prot  1 0.6800     -0.17    -37.45
+Q-prot  2 0.3200     42.95    -37.20
+
+Q-wat   1 0.6800    -30.86      2.65
+Q-wat   2 0.3200    -51.36      2.54
+
+Q-surr. 1 0.6800    -31.03    -34.80
+Q-surr. 2 0.3200     -8.41    -34.66
+
+Q-any   1 0.6800    -94.09     24.71 -10273.48     21.57      7.89      0.00
+Q-any   2 0.3200   -112.72     32.96 -10776.39     84.51      8.97      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10313.40      0.00
+Q-SUM   2 0.3200 -10762.66      0.00
+H( 1, 2) =    0.80 dist. between Q-atoms  32  39 =    7.15
+===============================================================================
+        Total System temperature at step   12000 T=     262.4 Average =  260.660 +-    3.029
+         Free System temperature at step   12000 T=     298.6 Average =  298.956 +-    7.753
+              Solute temperature at step   12000 T=     296.8 Average =  298.464 +-   17.782
+             Solvent temperature at step   12000 T=     303.4 Average =  300.272 +-    2.673
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   12200 T=     262.7 Average =  261.663 +-    1.127
+         Free System temperature at step   12200 T=     302.5 Average =  299.762 +-    9.348
+              Solute temperature at step   12200 T=     302.5 Average =  298.691 +-   20.117
+             Solvent temperature at step   12200 T=     302.8 Average =  302.631 +-    3.217
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   12400 T=     264.3 Average =  262.531 +-    3.136
+         Free System temperature at step   12400 T=     304.3 Average =  301.278 +-    5.338
+              Solute temperature at step   12400 T=     304.1 Average =  298.767 +-    7.872
+             Solvent temperature at step   12400 T=     304.9 Average =  307.998 +-    6.668
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  12500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5296.32     -361.52     1220.44     1662.87     1173.91      109.10
+solvent             -3027.61      536.39        0.00        0.00        0.00        0.00
+solute-solvent      -2116.53      -12.91
+LRF                  -167.05
+Q-atom               -104.35       29.58   -10435.53       43.69        8.92        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            843.67      888.67     -206.10       50.82      110.28        0.00
+
+                       total   potential     kinetic
+SUM                -11480.60   -15893.25     4412.65
+======================= Q-atom energies at step  12500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -57.09     62.31
+Q-Q     2 0.3200    -97.35     58.65
+
+Q-prot  1 0.6800     -6.64    -33.92
+Q-prot  2 0.3200     34.65    -33.92
+
+Q-wat   1 0.6800    -33.47      2.39
+Q-wat   2 0.3200    -56.83      2.30
+
+Q-surr. 1 0.6800    -40.12    -31.53
+Q-surr. 2 0.3200    -22.19    -31.62
+
+Q-any   1 0.6800    -97.21     30.78 -10271.40     22.61      8.54      0.00
+Q-any   2 0.3200   -119.54     27.03 -10784.31     88.48      9.72      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10306.68      0.00
+Q-SUM   2 0.3200 -10778.62      0.00
+H( 1, 2) =    0.75 dist. between Q-atoms  32  39 =    7.30
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   12600 T=     260.3 Average =  263.452 +-    4.595
+         Free System temperature at step   12600 T=     298.9 Average =  303.770 +-    5.268
+              Solute temperature at step   12600 T=     297.9 Average =  301.329 +-   10.981
+             Solvent temperature at step   12600 T=     301.7 Average =  310.303 +-   19.519
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   12800 T=     263.8 Average =  261.733 +-    2.126
+         Free System temperature at step   12800 T=     305.3 Average =  300.464 +-    7.418
+              Solute temperature at step   12800 T=     302.1 Average =  298.162 +-    4.448
+             Solvent temperature at step   12800 T=     313.9 Average =  306.624 +-   32.909
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   86.9     89.710     90.462      7.197
+    2   91.8     90.650     90.499      6.994
+    3  103.9     90.312     90.573      5.939
+=======================  Energy summary at step  13000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5303.57     -339.21     1216.08     1638.59     1180.41      120.31
+solvent             -3058.71      583.27        0.00        0.00        0.00        0.00
+solute-solvent      -2134.94      -60.62
+LRF                  -104.74
+Q-atom                -96.60       24.61   -10434.87       44.72        8.63        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            842.63      887.66     -210.90       45.94      119.92        0.00
+
+                       total   potential     kinetic
+SUM                -11495.42   -15874.04     4378.62
+======================= Q-atom energies at step  13000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -51.97     64.13
+Q-Q     2 0.3200    -91.48     59.38
+
+Q-prot  1 0.6800    -13.99    -36.33
+Q-prot  2 0.3200     30.95    -34.80
+
+Q-wat   1 0.6800    -26.90     -2.13
+Q-wat   2 0.3200    -44.00     -2.23
+
+Q-surr. 1 0.6800    -40.89    -38.46
+Q-surr. 2 0.3200    -13.05    -37.03
+
+Q-any   1 0.6800    -92.86     25.67 -10266.85     21.35      7.95      0.00
+Q-any   2 0.3200   -104.53     22.35 -10791.92     94.37     10.06      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10304.75      0.00
+Q-SUM   2 0.3200 -10769.67      0.00
+H( 1, 2) =    0.80 dist. between Q-atoms  32  39 =    7.15
+===============================================================================
+        Total System temperature at step   13000 T=     262.4 Average =  263.964 +-    3.770
+         Free System temperature at step   13000 T=     303.5 Average =  303.956 +-    4.805
+              Solute temperature at step   13000 T=     298.9 Average =  300.119 +-    8.123
+             Solvent temperature at step   13000 T=     315.6 Average =  314.223 +-    4.487
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   13200 T=     263.9 Average =  262.736 +-    0.436
+         Free System temperature at step   13200 T=     304.9 Average =  302.755 +-    0.870
+              Solute temperature at step   13200 T=     305.0 Average =  301.258 +-    4.643
+             Solvent temperature at step   13200 T=     304.5 Average =  306.760 +-   13.360
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   13400 T=     261.4 Average =  261.475 +-    1.625
+         Free System temperature at step   13400 T=     303.1 Average =  299.783 +-    4.661
+              Solute temperature at step   13400 T=     300.5 Average =  299.195 +-    6.753
+             Solvent temperature at step   13400 T=     310.1 Average =  301.355 +-   16.483
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  13500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5324.27     -336.10     1208.23     1654.59     1142.35      113.03
+solvent             -3060.53      577.10        0.00        0.00        0.00        0.00
+solute-solvent      -2124.34      -77.32
+LRF                   -80.75
+Q-atom                -97.39       16.67   -10431.26       40.02        9.54        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            847.88      891.24     -210.12       48.41      118.35        0.00
+
+                       total   potential     kinetic
+SUM                -11498.69   -15922.55     4423.86
+======================= Q-atom energies at step  13500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -55.84     53.34
+Q-Q     2 0.3200    -91.67     60.63
+
+Q-prot  1 0.6800     -9.84    -37.53
+Q-prot  2 0.3200     29.73    -37.26
+
+Q-wat   1 0.6800    -27.38     -1.53
+Q-wat   2 0.3200    -44.65     -1.63
+
+Q-surr. 1 0.6800    -37.22    -39.06
+Q-surr. 2 0.3200    -14.92    -38.89
+
+Q-any   1 0.6800    -93.06     14.28 -10271.34     21.96      8.96      0.00
+Q-any   2 0.3200   -106.59     21.74 -10771.10     78.38     10.78      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10319.20      0.00
+Q-SUM   2 0.3200 -10766.79      0.00
+H( 1, 2) =    0.81 dist. between Q-atoms  32  39 =    7.12
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   13600 T=     263.5 Average =  263.580 +-    1.507
+         Free System temperature at step   13600 T=     303.2 Average =  304.613 +-    2.528
+              Solute temperature at step   13600 T=     297.5 Average =  300.378 +-    4.723
+             Solvent temperature at step   13600 T=     318.4 Average =  315.946 +-    9.766
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   13800 T=     260.9 Average =  261.611 +-    2.322
+         Free System temperature at step   13800 T=     301.3 Average =  300.081 +-    4.252
+              Solute temperature at step   13800 T=     299.8 Average =  297.275 +-    7.763
+             Solvent temperature at step   13800 T=     305.4 Average =  307.592 +-   31.358
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   90.4     89.549     90.462      6.284
+    2   88.6     90.494     90.499      6.989
+    3  101.3     89.609     90.573      4.976
+=======================  Energy summary at step  14000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5277.94     -391.77     1258.11     1636.71     1159.93      105.62
+solvent             -2978.85      528.58        0.00        0.00        0.00        0.00
+solute-solvent      -2171.33      -70.08
+LRF                   -79.58
+Q-atom               -106.23       26.86   -10432.91       33.27        8.69        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            843.90      876.48     -204.50       40.78      131.13        0.00
+
+                       total   potential     kinetic
+SUM                -11502.38   -15907.03     4404.66
+======================= Q-atom energies at step  14000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -59.64     64.29
+Q-Q     2 0.3200   -102.43     68.42
+
+Q-prot  1 0.6800     -7.02    -41.25
+Q-prot  2 0.3200     36.11    -41.16
+
+Q-wat   1 0.6800    -31.69      2.50
+Q-wat   2 0.3200    -56.63      2.39
+
+Q-surr. 1 0.6800    -38.72    -38.75
+Q-surr. 2 0.3200    -20.52    -38.77
+
+Q-any   1 0.6800    -98.36     25.54 -10264.12     19.85      8.60      0.00
+Q-any   2 0.3200   -122.94     29.66 -10791.60     61.77      8.89      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10308.49      0.00
+Q-SUM   2 0.3200 -10814.22      0.00
+H( 1, 2) =    0.71 dist. between Q-atoms  32  39 =    7.43
+===============================================================================
+        Total System temperature at step   14000 T=     264.0 Average =  263.421 +-    4.264
+         Free System temperature at step   14000 T=     301.2 Average =  303.289 +-   13.231
+              Solute temperature at step   14000 T=     299.1 Average =  299.828 +-   19.879
+             Solvent temperature at step   14000 T=     306.8 Average =  312.552 +-   13.634
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   14200 T=     265.0 Average =  262.062 +-    3.835
+         Free System temperature at step   14200 T=     305.6 Average =  301.655 +-    4.995
+              Solute temperature at step   14200 T=     305.1 Average =  298.810 +-   12.284
+             Solvent temperature at step   14200 T=     306.8 Average =  309.267 +-    8.450
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   14400 T=     263.3 Average =  262.530 +-    2.552
+         Free System temperature at step   14400 T=     301.1 Average =  302.493 +-    8.282
+              Solute temperature at step   14400 T=     295.7 Average =  299.145 +-   14.040
+             Solvent temperature at step   14400 T=     315.8 Average =  311.451 +-   21.706
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  14500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5249.07     -345.10     1245.47     1625.29     1147.17      109.22
+solvent             -3097.26      551.33        0.00        0.00        0.00        0.00
+solute-solvent      -2095.41      -67.19
+LRF                  -134.36
+Q-atom               -105.18       24.74   -10429.33       36.70        9.71        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            874.10      916.88     -211.02       42.99      125.24        0.00
+
+                       total   potential     kinetic
+SUM                -11499.24   -15899.18     4399.94
+======================= Q-atom energies at step  14500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -52.91     58.10
+Q-Q     2 0.3200    -96.38     60.37
+
+Q-prot  1 0.6800    -14.22    -36.79
+Q-prot  2 0.3200     28.21    -36.88
+
+Q-wat   1 0.6800    -29.03      2.75
+Q-wat   2 0.3200    -56.21      2.68
+
+Q-surr. 1 0.6800    -43.25    -34.04
+Q-surr. 2 0.3200    -27.99    -34.20
+
+Q-any   1 0.6800    -96.15     24.06 -10257.14     21.45      9.15      0.00
+Q-any   2 0.3200   -124.37     26.17 -10795.22     69.09     10.88      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10298.63      0.00
+Q-SUM   2 0.3200 -10813.45      0.00
+H( 1, 2) =    0.67 dist. between Q-atoms  32  39 =    7.56
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   14600 T=     261.5 Average =  263.662 +-    9.035
+         Free System temperature at step   14600 T=     300.8 Average =  305.372 +-    9.177
+              Solute temperature at step   14600 T=     297.5 Average =  300.836 +-   13.031
+             Solvent temperature at step   14600 T=     309.9 Average =  317.509 +-   10.625
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   14800 T=     260.8 Average =  263.017 +-    7.025
+         Free System temperature at step   14800 T=     301.3 Average =  301.851 +-    8.781
+              Solute temperature at step   14800 T=     301.4 Average =  298.877 +-   15.706
+             Solvent temperature at step   14800 T=     300.9 Average =  309.812 +-   14.739
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   89.7     89.064     90.462      4.886
+    2   87.4     90.827     90.499      7.316
+    3  105.0     90.037     90.573      4.441
+=======================  Energy summary at step  15000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5301.89     -360.91     1216.21     1634.14     1163.98      113.73
+solvent             -3149.19      579.28        0.00        0.00        0.00        0.00
+solute-solvent      -2092.73      -67.40
+LRF                   -88.90
+Q-atom               -101.47       26.22   -10432.71       34.42        8.52        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            854.54      886.51     -208.24       42.78      133.50        0.00
+
+                       total   potential     kinetic
+SUM                -11518.23   -15964.14     4445.91
+======================= Q-atom energies at step  15000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -55.06     61.63
+Q-Q     2 0.3200    -93.06     63.02
+
+Q-prot  1 0.6800    -15.38    -36.42
+Q-prot  2 0.3200     32.13    -36.17
+
+Q-wat   1 0.6800    -27.28      0.52
+Q-wat   2 0.3200    -48.48      0.42
+
+Q-surr. 1 0.6800    -42.67    -35.91
+Q-surr. 2 0.3200    -16.35    -35.75
+
+Q-any   1 0.6800    -97.73     25.72 -10270.89     18.95      7.38      0.00
+Q-any   2 0.3200   -109.41     27.27 -10776.57     67.30     10.94      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10316.56      0.00
+Q-SUM   2 0.3200 -10780.47      0.00
+H( 1, 2) =    0.68 dist. between Q-atoms  32  39 =    7.51
+===============================================================================
+        Total System temperature at step   15000 T=     266.5 Average =  262.581 +-    3.168
+         Free System temperature at step   15000 T=     308.5 Average =  303.211 +-    7.857
+              Solute temperature at step   15000 T=     304.9 Average =  301.357 +-    8.733
+             Solvent temperature at step   15000 T=     318.1 Average =  308.172 +-   37.586
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   15200 T=     261.7 Average =  265.349 +-    2.570
+         Free System temperature at step   15200 T=     306.3 Average =  307.385 +-    3.844
+              Solute temperature at step   15200 T=     302.8 Average =  305.012 +-    9.483
+             Solvent temperature at step   15200 T=     315.7 Average =  313.735 +-    7.580
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   15400 T=     259.4 Average =  262.815 +-    7.818
+         Free System temperature at step   15400 T=     299.6 Average =  303.218 +-    8.796
+              Solute temperature at step   15400 T=     296.9 Average =  298.726 +-   10.842
+             Solvent temperature at step   15400 T=     307.1 Average =  315.237 +-   28.740
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  15500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5321.45     -363.63     1224.39     1673.95     1159.35      112.36
+solvent             -3122.27      582.39        0.00        0.00        0.00        0.00
+solute-solvent      -2100.39      -71.18
+LRF                   -79.02
+Q-atom                -90.79       21.15   -10424.73       32.93        8.44        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            808.77      868.47     -210.08       34.06      116.32        0.00
+
+                       total   potential     kinetic
+SUM                -11526.91   -15949.75     4422.83
+======================= Q-atom energies at step  15500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -54.17     55.07
+Q-Q     2 0.3200    -94.75     62.68
+
+Q-prot  1 0.6800     -3.95    -35.28
+Q-prot  2 0.3200     36.84    -33.70
+
+Q-wat   1 0.6800    -26.04     -1.55
+Q-wat   2 0.3200    -46.98     -1.65
+
+Q-surr. 1 0.6800    -29.99    -36.83
+Q-surr. 2 0.3200    -10.14    -35.35
+
+Q-any   1 0.6800    -84.15     18.24 -10258.40     19.05      7.21      0.00
+Q-any   2 0.3200   -104.89     27.34 -10778.19     62.43     11.04      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10298.05      0.00
+Q-SUM   2 0.3200 -10782.27      0.00
+H( 1, 2) =    0.76 dist. between Q-atoms  32  39 =    7.26
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   15600 T=     261.8 Average =  264.025 +-    4.240
+         Free System temperature at step   15600 T=     305.4 Average =  304.850 +-    8.015
+              Solute temperature at step   15600 T=     304.8 Average =  302.382 +-   12.668
+             Solvent temperature at step   15600 T=     307.2 Average =  311.453 +-    7.856
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   15800 T=     257.2 Average =  262.303 +-    7.712
+         Free System temperature at step   15800 T=     294.6 Average =  303.105 +-   18.959
+              Solute temperature at step   15800 T=     289.7 Average =  301.355 +-   34.006
+             Solvent temperature at step   15800 T=     307.5 Average =  307.788 +-    5.665
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   86.4     91.698     90.462      6.122
+    2   91.7     90.255     90.499      7.072
+    3  101.9     89.363     90.573      3.231
+=======================  Energy summary at step  16000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5298.31     -354.62     1257.60     1658.81     1157.22      114.30
+solvent             -3134.69      602.11        0.00        0.00        0.00        0.00
+solute-solvent      -2097.29      -50.37
+LRF                  -119.87
+Q-atom               -100.35       25.23   -10431.91       38.07        9.86        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            873.47      902.34     -208.30       46.24      133.19        0.00
+
+                       total   potential     kinetic
+SUM                -11526.37   -15850.73     4324.36
+======================= Q-atom energies at step  16000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -49.22     61.24
+Q-Q     2 0.3200    -91.73     65.55
+
+Q-prot  1 0.6800    -16.31    -36.48
+Q-prot  2 0.3200     25.92    -36.49
+
+Q-wat   1 0.6800    -26.89     -0.87
+Q-wat   2 0.3200    -51.38     -0.98
+
+Q-surr. 1 0.6800    -43.20    -37.35
+Q-surr. 2 0.3200    -25.46    -37.47
+
+Q-any   1 0.6800    -92.42     23.89 -10266.31     24.55      8.64      0.00
+Q-any   2 0.3200   -117.18     28.08 -10783.80     66.81     12.47      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10301.65      0.00
+Q-SUM   2 0.3200 -10793.62      0.00
+H( 1, 2) =    0.76 dist. between Q-atoms  32  39 =    7.27
+===============================================================================
+        Total System temperature at step   16000 T=     259.2 Average =  260.947 +-    4.567
+         Free System temperature at step   16000 T=     299.0 Average =  299.565 +-   14.194
+              Solute temperature at step   16000 T=     296.0 Average =  298.581 +-   25.621
+             Solvent temperature at step   16000 T=     307.3 Average =  302.197 +-    7.114
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   16200 T=     258.9 Average =  262.044 +-    2.577
+         Free System temperature at step   16200 T=     298.1 Average =  301.948 +-    8.383
+              Solute temperature at step   16200 T=     297.1 Average =  299.623 +-   20.270
+             Solvent temperature at step   16200 T=     300.8 Average =  308.168 +-   10.962
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   16400 T=     263.5 Average =  263.332 +-    4.543
+         Free System temperature at step   16400 T=     303.1 Average =  303.673 +-   11.293
+              Solute temperature at step   16400 T=     299.1 Average =  301.990 +-   13.130
+             Solvent temperature at step   16400 T=     313.8 Average =  308.177 +-   24.491
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  16500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5313.97     -352.51     1218.03     1675.56     1164.27      118.69
+solvent             -3111.32      572.19        0.00        0.00        0.00        0.00
+solute-solvent      -2101.38      -56.60
+LRF                   -80.18
+Q-atom                -99.79       33.09   -10435.77       31.51       10.55        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            832.37      890.02     -209.21       34.24      117.33        0.00
+
+                       total   potential     kinetic
+SUM                -11530.16   -15895.26     4365.10
+======================= Q-atom energies at step  16500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -56.21     66.00
+Q-Q     2 0.3200    -88.69     64.27
+
+Q-prot  1 0.6800     -5.09    -36.89
+Q-prot  2 0.3200     34.85    -36.78
+
+Q-wat   1 0.6800    -33.16      4.52
+Q-wat   2 0.3200    -57.30      4.46
+
+Q-surr. 1 0.6800    -38.25    -32.37
+Q-surr. 2 0.3200    -22.45    -32.33
+
+Q-any   1 0.6800    -94.46     33.63 -10265.97     17.49     10.09      0.00
+Q-any   2 0.3200   -111.14     31.95 -10796.57     61.30     11.52      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10299.22      0.00
+Q-SUM   2 0.3200 -10802.96      0.00
+H( 1, 2) =    0.79 dist. between Q-atoms  32  39 =    7.19
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   16600 T=     261.9 Average =  262.518 +-    2.743
+         Free System temperature at step   16600 T=     300.8 Average =  302.684 +-    5.801
+              Solute temperature at step   16600 T=     299.0 Average =  298.523 +-    6.532
+             Solvent temperature at step   16600 T=     305.5 Average =  313.820 +-   19.743
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   16800 T=     261.5 Average =  262.764 +-    3.999
+         Free System temperature at step   16800 T=     301.0 Average =  303.048 +-   11.165
+              Solute temperature at step   16800 T=     299.9 Average =  301.659 +-   17.901
+             Solvent temperature at step   16800 T=     304.0 Average =  306.763 +-    1.487
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   91.3     90.331     90.462      5.991
+    2   89.3     90.795     90.499      7.368
+    3  100.1     89.768     90.573      2.426
+=======================  Energy summary at step  17000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5343.75     -353.53     1223.50     1640.93     1146.05      103.93
+solvent             -3095.18      579.60        0.00        0.00        0.00        0.00
+solute-solvent      -2104.68      -56.22
+LRF                   -51.24
+Q-atom               -110.43       31.94   -10428.03       35.18        8.81        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            848.80      900.30     -203.96       35.39      117.06        0.00
+
+                       total   potential     kinetic
+SUM                -11540.78   -15924.33     4383.54
+======================= Q-atom energies at step  17000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -50.25     58.43
+Q-Q     2 0.3200    -86.09     59.41
+
+Q-prot  1 0.6800    -17.22    -30.98
+Q-prot  2 0.3200     25.26    -30.89
+
+Q-wat   1 0.6800    -36.66      4.18
+Q-wat   2 0.3200    -62.99      4.08
+
+Q-surr. 1 0.6800    -53.87    -26.81
+Q-surr. 2 0.3200    -37.74    -26.81
+
+Q-any   1 0.6800   -104.13     31.63 -10263.52     19.45      7.46      0.00
+Q-any   2 0.3200   -123.82     32.61 -10777.61     68.60     11.70      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10309.11      0.00
+Q-SUM   2 0.3200 -10788.53      0.00
+H( 1, 2) =    0.88 dist. between Q-atoms  32  39 =    6.94
+===============================================================================
+        Total System temperature at step   17000 T=     262.7 Average =  262.015 +-    2.891
+         Free System temperature at step   17000 T=     303.9 Average =  302.601 +-   10.065
+              Solute temperature at step   17000 T=     305.3 Average =  303.027 +-   16.927
+             Solvent temperature at step   17000 T=     300.3 Average =  301.461 +-    1.857
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   17200 T=     263.8 Average =  262.432 +-    5.188
+         Free System temperature at step   17200 T=     304.2 Average =  303.137 +-   11.529
+              Solute temperature at step   17200 T=     305.8 Average =  304.811 +-   18.198
+             Solvent temperature at step   17200 T=     300.1 Average =  298.657 +-    2.048
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   17400 T=     261.8 Average =  261.420 +-    2.825
+         Free System temperature at step   17400 T=     301.3 Average =  301.770 +-   13.996
+              Solute temperature at step   17400 T=     297.4 Average =  300.078 +-   32.588
+             Solvent temperature at step   17400 T=     311.6 Average =  306.295 +-    8.882
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  17500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5350.17     -379.96     1226.33     1665.78     1167.99      105.30
+solvent             -3069.61      558.08        0.00        0.00        0.00        0.00
+solute-solvent      -2105.98      -72.81
+LRF                   -26.11
+Q-atom               -103.93       23.12   -10430.43       40.92        9.27        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            829.38      887.09     -211.88       33.75      120.42        0.00
+
+                       total   potential     kinetic
+SUM                -11557.86   -15912.84     4354.98
+======================= Q-atom energies at step  17500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -55.65     57.76
+Q-Q     2 0.3200   -101.01     66.59
+
+Q-prot  1 0.6800     -8.83    -37.68
+Q-prot  2 0.3200     34.36    -37.99
+
+Q-wat   1 0.6800    -31.50      0.35
+Q-wat   2 0.3200    -54.15      0.24
+
+Q-surr. 1 0.6800    -40.34    -37.33
+Q-surr. 2 0.3200    -19.79    -37.75
+
+Q-any   1 0.6800    -95.99     20.43 -10274.72     20.44      8.37      0.00
+Q-any   2 0.3200   -120.80     28.83 -10761.33     84.46     11.17      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10321.47      0.00
+Q-SUM   2 0.3200 -10757.67      0.00
+H( 1, 2) =    0.85 dist. between Q-atoms  32  39 =    7.01
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   17600 T=     264.5 Average =  262.415 +-    2.918
+         Free System temperature at step   17600 T=     305.2 Average =  304.078 +-    4.185
+              Solute temperature at step   17600 T=     302.6 Average =  301.491 +-    7.372
+             Solvent temperature at step   17600 T=     312.1 Average =  311.000 +-    0.425
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   17800 T=     259.6 Average =  262.362 +-    2.409
+         Free System temperature at step   17800 T=     301.5 Average =  302.796 +-    5.393
+              Solute temperature at step   17800 T=     302.2 Average =  301.065 +-    7.815
+             Solvent temperature at step   17800 T=     299.8 Average =  307.427 +-   17.337
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   88.8     90.740     90.462      6.269
+    2   91.1     90.319     90.499      7.187
+    3  102.8     91.108     90.573      2.962
+=======================  Energy summary at step  18000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5297.69     -382.08     1195.44     1620.48     1187.67      106.82
+solvent             -3118.03      584.04        0.00        0.00        0.00        0.00
+solute-solvent      -2104.84      -57.41
+LRF                   -87.17
+Q-atom               -103.34       34.09   -10442.28       38.72        9.37        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            825.00      860.28     -211.46       43.25      132.93        0.00
+
+                       total   potential     kinetic
+SUM                -11570.39   -15991.23     4420.83
+======================= Q-atom energies at step  18000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -51.37     67.81
+Q-Q     2 0.3200    -98.44     83.11
+
+Q-prot  1 0.6800     -6.52    -41.23
+Q-prot  2 0.3200     34.46    -41.27
+
+Q-wat   1 0.6800    -35.68      2.67
+Q-wat   2 0.3200    -60.13      2.56
+
+Q-surr. 1 0.6800    -42.20    -38.57
+Q-surr. 2 0.3200    -25.67    -38.72
+
+Q-any   1 0.6800    -93.57     29.24 -10276.80     21.72      8.74      0.00
+Q-any   2 0.3200   -124.11     44.39 -10793.95     74.84     10.72      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10310.67      0.00
+Q-SUM   2 0.3200 -10788.11      0.00
+H( 1, 2) =    0.76 dist. between Q-atoms  32  39 =    7.28
+===============================================================================
+        Total System temperature at step   18000 T=     265.0 Average =  261.250 +-    3.665
+         Free System temperature at step   18000 T=     304.4 Average =  302.190 +-    4.627
+              Solute temperature at step   18000 T=     302.0 Average =  302.019 +-    9.618
+             Solvent temperature at step   18000 T=     310.6 Average =  302.649 +-   18.540
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   18200 T=     258.5 Average =  262.482 +-    2.878
+         Free System temperature at step   18200 T=     299.5 Average =  304.035 +-    5.704
+              Solute temperature at step   18200 T=     291.9 Average =  299.338 +-    8.539
+             Solvent temperature at step   18200 T=     319.7 Average =  316.605 +-   22.375
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   18400 T=     262.5 Average =  262.024 +-    2.693
+         Free System temperature at step   18400 T=     304.4 Average =  302.428 +-    5.871
+              Solute temperature at step   18400 T=     303.1 Average =  299.749 +-   15.024
+             Solvent temperature at step   18400 T=     307.9 Average =  309.595 +-   13.095
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  18500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5320.84     -364.10     1186.90     1626.71     1169.95      115.00
+solvent             -3100.28      579.80        0.00        0.00        0.00        0.00
+solute-solvent      -2120.23      -45.71
+LRF                   -77.66
+Q-atom               -103.41       37.11   -10437.36       35.78       10.96        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            819.66      864.18     -211.18       39.27      127.39        0.00
+
+                       total   potential     kinetic
+SUM                -11571.22   -15987.73     4416.52
+======================= Q-atom energies at step  18500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -61.27     69.34
+Q-Q     2 0.3200    -94.08     70.91
+
+Q-prot  1 0.6800      4.16    -39.27
+Q-prot  2 0.3200     41.45    -38.82
+
+Q-wat   1 0.6800    -38.39      6.42
+Q-wat   2 0.3200    -67.61      6.32
+
+Q-surr. 1 0.6800    -34.23    -32.85
+Q-surr. 2 0.3200    -26.16    -32.50
+
+Q-any   1 0.6800    -95.50     36.49 -10272.93     19.47     10.94      0.00
+Q-any   2 0.3200   -120.24     38.41 -10786.78     70.45     11.00      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10301.52      0.00
+Q-SUM   2 0.3200 -10787.17      0.00
+H( 1, 2) =    0.72 dist. between Q-atoms  32  39 =    7.40
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   18600 T=     264.5 Average =  261.772 +-    1.765
+         Free System temperature at step   18600 T=     304.1 Average =  302.142 +-    3.183
+              Solute temperature at step   18600 T=     305.0 Average =  300.793 +-    6.695
+             Solvent temperature at step   18600 T=     301.6 Average =  305.752 +-    1.538
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   18800 T=     258.4 Average =  261.743 +-    4.651
+         Free System temperature at step   18800 T=     296.4 Average =  303.254 +-   10.074
+              Solute temperature at step   18800 T=     295.9 Average =  304.424 +-   15.407
+             Solvent temperature at step   18800 T=     297.8 Average =  300.124 +-    2.867
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   83.9     91.351     90.462      7.159
+    2   93.6     91.299     90.499      7.987
+    3  101.7     91.165     90.573      3.554
+=======================  Energy summary at step  19000 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5362.24     -368.75     1221.90     1638.89     1176.56      111.01
+solvent             -3126.07      590.41        0.00        0.00        0.00        0.00
+solute-solvent      -2113.34      -16.01
+LRF                   -58.14
+Q-atom                -97.93       21.71   -10430.00       34.95        8.58        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            843.65      879.71     -210.12       52.14      121.92        0.00
+
+                       total   potential     kinetic
+SUM                -11552.77   -15924.82     4372.05
+======================= Q-atom energies at step  19000 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -57.96     62.72
+Q-Q     2 0.3200    -99.79     62.98
+
+Q-prot  1 0.6800     -0.40    -41.91
+Q-prot  2 0.3200     38.47    -41.76
+
+Q-wat   1 0.6800    -31.65      0.81
+Q-wat   2 0.3200    -53.42      0.70
+
+Q-surr. 1 0.6800    -32.05    -41.10
+Q-surr. 2 0.3200    -14.95    -41.05
+
+Q-any   1 0.6800    -90.01     21.61 -10271.34     17.47      7.69      0.00
+Q-any   2 0.3200   -114.74     21.93 -10767.14     72.09     10.46      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10314.58      0.00
+Q-SUM   2 0.3200 -10777.41      0.00
+H( 1, 2) =    0.82 dist. between Q-atoms  32  39 =    7.11
+===============================================================================
+        Total System temperature at step   19000 T=     262.0 Average =  260.085 +-    7.968
+         Free System temperature at step   19000 T=     301.7 Average =  299.015 +-   12.869
+              Solute temperature at step   19000 T=     301.5 Average =  299.571 +-   28.077
+             Solvent temperature at step   19000 T=     302.3 Average =  297.525 +-   13.514
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   19200 T=     260.5 Average =  261.296 +-    1.292
+         Free System temperature at step   19200 T=     299.8 Average =  302.182 +-    2.509
+              Solute temperature at step   19200 T=     300.3 Average =  302.793 +-    5.393
+             Solvent temperature at step   19200 T=     298.6 Average =  300.545 +-    1.941
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   19400 T=     261.3 Average =  260.509 +-    3.718
+         Free System temperature at step   19400 T=     300.6 Average =  300.513 +-    7.737
+              Solute temperature at step   19400 T=     298.7 Average =  300.239 +-   11.463
+             Solvent temperature at step   19400 T=     305.7 Average =  301.246 +-   22.275
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+=======================  Energy summary at step  19500 ========================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5319.61     -363.80     1218.13     1647.78     1176.42      106.15
+solvent             -3103.25      577.12        0.00        0.00        0.00        0.00
+solute-solvent      -2043.53      -76.48
+LRF                   -80.90
+Q-atom                -96.36       22.56   -10428.06       34.14        9.07        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            838.35      883.47     -210.59       41.65      123.83        0.00
+
+                       total   potential     kinetic
+SUM                -11558.05   -15882.27     4324.22
+======================= Q-atom energies at step  19500 ========================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -55.77     59.88
+Q-Q     2 0.3200    -96.19     57.95
+
+Q-prot  1 0.6800     -4.90    -38.13
+Q-prot  2 0.3200     36.85    -37.41
+
+Q-wat   1 0.6800    -29.88      1.24
+Q-wat   2 0.3200    -49.36      1.14
+
+Q-surr. 1 0.6800    -34.78    -36.89
+Q-surr. 2 0.3200    -12.51    -36.27
+
+Q-any   1 0.6800    -90.55     22.98 -10263.39     17.77      7.97      0.00
+Q-any   2 0.3200   -108.71     21.68 -10777.98     68.93     11.41      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10305.22      0.00
+Q-SUM   2 0.3200 -10784.66      0.00
+H( 1, 2) =    0.88 dist. between Q-atoms  32  39 =    6.93
+===============================================================================
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   19600 T=     258.1 Average =  259.720 +-    1.537
+         Free System temperature at step   19600 T=     298.2 Average =  299.890 +-    2.483
+              Solute temperature at step   19600 T=     297.5 Average =  298.705 +-    3.883
+             Solvent temperature at step   19600 T=     300.1 Average =  303.060 +-    1.167
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+        Total System temperature at step   19800 T=     259.8 Average =  258.808 +-    2.705
+         Free System temperature at step   19800 T=     299.2 Average =  296.471 +-    4.993
+              Solute temperature at step   19800 T=     298.1 Average =  295.651 +-    9.530
+             Solvent temperature at step   19800 T=     301.9 Average =  298.665 +-    1.022
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+------------------------ Nonbonded pair list generation -----------------------
+--------------------- Solvent polarisation restraint data --------------------
+shell    <n>    <theta>    theta_0 theta_corr
+    1   89.9     90.447     90.462      7.144
+    2   86.9     90.894     90.499      8.381
+    3  100.9     90.559     90.573      3.540
+
+=========================== FINAL  Energy summary =============================
+                          el         vdW        bond       angle     torsion    improper
+solute              -5277.37     -339.01     1214.47     1665.17     1148.68      100.17
+solvent             -3073.74      568.83        0.00        0.00        0.00        0.00
+solute-solvent      -2116.85      -47.39
+LRF                  -120.90
+Q-atom                -91.24       15.35   -10420.84       30.89        9.08        0.00
+
+                       total         fix   slvnt_rad   slvnt_pol       shell      solute
+restraints            857.97      881.39     -209.72       55.35      130.94        0.00
+
+                       total   potential     kinetic
+SUM                -11530.20   -15876.74     4346.54
+=========================== FINAL Q-atom energies =============================
+type   st lambda        el       vdW      bond     angle   torsion  improper
+Q-Q     1 0.6800    -63.18     58.89
+Q-Q     2 0.3200    -91.92     46.51
+
+Q-prot  1 0.6800      2.78    -40.76
+Q-prot  2 0.3200     47.56    -39.75
+
+Q-wat   1 0.6800    -29.73      0.89
+Q-wat   2 0.3200    -49.25      0.78
+
+Q-surr. 1 0.6800    -26.94    -39.87
+Q-surr. 2 0.3200     -1.70    -38.96
+
+Q-any   1 0.6800    -90.12     19.02 -10242.83     15.70      8.11      0.00
+Q-any   2 0.3200    -93.62      7.55 -10799.12     63.18     11.15      0.00
+
+type   st lambda     total restraint
+Q-SUM   1 0.6800 -10290.12      0.00
+Q-SUM   2 0.3200 -10810.87      0.00
+H( 1, 2) =    0.91 dist. between Q-atoms  32  39 =    6.87
+===============================================================================
+        Total System temperature at step   20000 T=     260.5 Average =  261.119 +-    1.541
+         Free System temperature at step   20000 T=     300.8 Average =  301.373 +-    1.253
+              Solute temperature at step   20000 T=     296.8 Average =  297.629 +-    4.146
+             Solvent temperature at step   20000 T=     311.7 Average =  311.392 +-   16.899
+Total time of main loop:                              1216.2(s)
+ QDyn version 6.0.16 , git id=adc28a635c78993922188615a73366ace3402081 terminated normally.
+###############################################################################

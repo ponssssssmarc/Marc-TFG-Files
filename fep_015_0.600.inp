@@ -1,0 +1,33 @@
+# Generated with QTools, version 0.7.0
+# Date: Tue Apr 16 19:24:43 2024
+# CWD: /home3/p315462/Project/RRDiol_isomer/Trail/03-fep
+# Cmdline: /home3/p315462/bin/qtools/qscripts-cli/q_genfeps.py input/genfeps.proc ../02-relax/relax_001/relax_016.inp relax --rs input/run_feps_q.sh --repeats 10 --frames 51 --fromlambda 0.90 --pdb ../01_preparation/RRDiol.pdb --prefix replica_001
+[md]
+steps                                         20000
+temperature                                     300
+stepsize                                        0.1
+bath_coupling                                   100
+shake_solvent                                    on
+shake_solute                                    off
+
+[cut-offs]
+q_atom                                           99
+
+[intervals]
+non_bond                                         30
+output                                          500
+temperature                                     200
+energy                                           10
+trajectory                                      500
+
+[files]
+topology                                 RRDiol.top
+restart                            fep_014_0.620.re
+final                              fep_015_0.600.re
+trajectory                        fep_015_0.600.dcd
+energy                             fep_015_0.600.en
+fep                                    RRD_Diol.fep
+restraint                    cont_relax_016.re.rest
+
+[lambdas]
+0.6000000 0.4000000
