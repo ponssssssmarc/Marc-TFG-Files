@@ -1,0 +1,32 @@
+Time: Thu Apr 25 11:15:52 CEST 2024
+I'm working in this directory:
+   /home3/p315462/Final_EVB_GROMACS/equil
+
+Steps:
+equil_01_5k_nvt
+equil_02_100k_nvt
+equil_03_250k_nvt
+equil_04_300k_nvt
+equil_05_5k_nvt
+equil_06_5k_npt
+equil_07_100k_npt
+equil_08_250k_npt
+equil_09_300k_npt
+equil_10_300k_npt
+equil_11_300k_npt
+
+Time: Thu Apr 25 11:15:53 CEST 2024     Running the step: equil_01_5k_nvt    --    OK
+Time: Thu Apr 25 11:25:05 CEST 2024     Running the step: equil_02_100k_nvt    --    OK
+Time: Thu Apr 25 11:34:32 CEST 2024     Running the step: equil_03_250k_nvt    --    OK
+Time: Thu Apr 25 11:44:46 CEST 2024     Running the step: equil_04_300k_nvt    --    OK
+Time: Thu Apr 25 11:55:03 CEST 2024     Running the step: equil_05_5k_nvt    --    OK
+Time: Thu Apr 25 12:04:18 CEST 2024     Running the step: equil_06_5k_npt    --    OK
+Time: Thu Apr 25 12:14:43 CEST 2024     Running the step: equil_07_100k_npt    --    OK
+Time: Thu Apr 25 12:25:07 CEST 2024     Running the step: equil_08_250k_npt    --    OK
+Time: Thu Apr 25 12:35:34 CEST 2024     Running the step: equil_09_300k_npt    --    OK
+Time: Thu Apr 25 12:46:16 CEST 2024     Running the step: equil_10_300k_npt    --    OK
+Time: Thu Apr 25 12:57:15 CEST 2024     Running the step: equil_11_300k_npt    --    OK
+
+Normal termination
+Time: Fri Apr 26 09:01:11 CEST 2024
+Total time: 78318 seconds
