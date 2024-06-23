@@ -1,0 +1,64 @@
+Time: Mon Apr 29 13:30:19 CEST 2024
+I'm working in this directory:   /home3/p315462/Final_EVB_GROMACS/FEP
+
+Steps:
+fep_000
+fep_001
+fep_002
+fep_003
+fep_004
+fep_005
+fep_006
+fep_007
+fep_008
+fep_009
+fep_010
+fep_011
+fep_012
+fep_013
+fep_014
+fep_015
+fep_016
+fep_017
+fep_018
+fep_019
+fep_020
+fep_021
+fep_022
+fep_023
+fep_024
+fep_025
+fep_026
+fep_027
+fep_028
+fep_029
+fep_030
+fep_031
+fep_032
+fep_033
+fep_034
+fep_035
+fep_036
+fep_037
+fep_038
+fep_039
+fep_040
+fep_041
+fep_042
+fep_043
+fep_044
+fep_045
+fep_046
+fep_047
+fep_048
+fep_049
+fep_050
+
+Time: Mon Apr 29 13:30:19 CEST 2024     Running the step: restart    --    OK
+Time: Mon Apr 29 15:21:19 CEST 2024     Running the step: fep_000    --    FAILED
+
+Time: Mon Apr 29 15:21:23 CEST 2024
+
+Normal termination
+Time: Mon Apr 29 15:21:23 CEST 2024
+Total time: 6664 seconds

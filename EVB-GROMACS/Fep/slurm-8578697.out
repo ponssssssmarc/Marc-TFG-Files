@@ -1,0 +1,374 @@
+Host: node18
+Tmpdir: 
+                      :-) GROMACS - gmx grompp, 2021.6 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2022, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.6
+Executable:   /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0/bin/gmx
+Data prefix:  /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0
+Working dir:  /home3/p315462/Final_EVB_GROMACS/FEP
+Command line:
+  gmx grompp -f restart.mdp -c equil_11_300k_npt.gro -p topol_000.top -o restart.tpr -r STBO_ion.pdb -maxwarn 1
+
+Generating 1-4 interactions: fudge = 0.5
+
+WARNING 1 [file topol_000.top, line 19061]:
+  Some parameters for bonded interaction involving perturbed atoms are
+  specified explicitly in state A, but not B - copying A to B
+
+Number of degrees of freedom in T-Coupling group Protein is 6797.87
+Number of degrees of freedom in T-Coupling group non-Protein is 148320.12
+
+There was 1 warning
+
+GROMACS reminds you: "Energy is a very subtle concept. It is very, very difficult to get right." (Richard Feynman)
+
+Setting the LD random seed to -67141633
+
+Generated 439453 of the 439453 non-bonded parameter combinations
+
+Generated 439453 of the 439453 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+Setting gen_seed to 392421371
+
+Velocities were taken from a Maxwell distribution at 300 K
+Analysing residue names:
+There are:   144    Protein residues
+There are:     2      Other residues
+There are: 16469      Water residues
+There are:     4        Ion residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.0002 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.011 nm, buffer size 0.011 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.005 nm, buffer size 0.005 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.112 0.112 0.112
+
+Estimate for the relative computational load of the PME mesh part: 0.50
+
+This run will generate roughly 4 Mb of data
+                      :-) GROMACS - gmx mdrun, 2021.6 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2022, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.6
+Executable:   /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0/bin/gmx
+Data prefix:  /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0
+Working dir:  /home3/p315462/Final_EVB_GROMACS/FEP
+Command line:
+  gmx mdrun -deffnm restart -table table.xvg -tableb table_b0.xvg -c restart.gro -pin on -ntmpi 1 -ntomp 16
+
+Reading file restart.tpr, VERSION 2021.6 (single precision)
+Changing nstlist from 30 to 100, rlist from 1.005 to 1.029
+
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+
+Overriding thread affinity set outside gmx mdrun
+NOTE: Affinity setting for 14/16 threads failed.
+
+NOTE: Thread affinity was not set.
+starting mdrun 'Protein in water'
+1000000 steps,    100.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:   106495.958     6655.999     1600.0
+                         1h50:55
+                 (ns/day)    (hour/ns)
+Performance:        1.298       18.489
+
+GROMACS reminds you: "I see they found out the universe is 80 million years older than we thought. It's also been lying about its weight." (Bill Maher)
+
+
+real	110m57.984s
+user	1760m38.556s
+sys	0m25.450s
+                      :-) GROMACS - gmx grompp, 2021.6 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2022, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.6
+Executable:   /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0/bin/gmx
+Data prefix:  /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0
+Working dir:  /home3/p315462/Final_EVB_GROMACS/FEP
+Command line:
+  gmx grompp -f fep_000.mdp -c restart.gro -p topol_000.top -o fep_000.tpr -t restart.cpt -maxwarn 1
+
+Generating 1-4 interactions: fudge = 0.5
+
+WARNING 1 [file topol_000.top, line 19061]:
+  Some parameters for bonded interaction involving perturbed atoms are
+  specified explicitly in state A, but not B - copying A to B
+
+
+NOTE 1 [file topol_000.top, line 22083]:
+  The bond in molecule-type Protein_chain_A between atoms 2294 O1 and 2295
+  H1 has an estimated oscillational period of 6.7e-03 ps, which is less
+  than 10 times the time step of 1.0e-03 ps.
+  Maybe you forgot to change the constraints mdp option.
+
+Number of degrees of freedom in T-Coupling group Protein is 6797.87
+Number of degrees of freedom in T-Coupling group non-Protein is 148320.12
+Last frame         -1 time  100.000   
+
+There was 1 note
+
+There was 1 warning
+
+GROMACS reminds you: "In the End Science Comes Down to Praying" (P. v.d. Berg)
+
+Setting the LD random seed to -553802003
+
+Generated 439453 of the 439453 non-bonded parameter combinations
+
+Generated 439453 of the 439453 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+Analysing residue names:
+There are:   144    Protein residues
+There are:     2      Other residues
+There are: 16469      Water residues
+There are:     4        Ion residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.0002 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.165 nm, buffer size 0.165 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.116 nm, buffer size 0.116 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+Reading Coordinates, Velocities and Box size from old trajectory
+
+Will read whole trajectory
+
+Using frame at t = 100 ps
+
+Starting time for run is 0 ps
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.112 0.112 0.112
+
+Estimate for the relative computational load of the PME mesh part: 0.44
+
+This run will generate roughly 622 Mb of data
+                      :-) GROMACS - gmx mdrun, 2021.6 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2022, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.6
+Executable:   /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0/bin/gmx
+Data prefix:  /cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GROMACS/2021.6-foss-2022a-CUDA-11.7.0
+Working dir:  /home3/p315462/Final_EVB_GROMACS/FEP
+Command line:
+  gmx mdrun -deffnm fep_000 -table table.xvg -tableb table_b0.xvg -c fep_000.gro -pin on -ntmpi 1 -ntomp 16
+
+Reading file fep_000.tpr, VERSION 2021.6 (single precision)
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+
+Overriding thread affinity set outside gmx mdrun
+NOTE: Affinity setting for 14/16 threads failed.
+
+NOTE: Thread affinity was not set.
+starting mdrun 'Protein in water'
+10000 steps,     10.0 ps.
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.6
+Source file: src/gromacs/gmxlib/nonbonded/nb_free_energy.cpp (line 854)
+
+Fatal error:
+There are 13 perturbed non-bonded pair interactions beyond the pair-list
+cutoff of 1.116 nm, which is not supported. This can happen because the system
+is unstable, or because intra-molecular interactions are excluded. The latter
+case is usually triggered by the use of couple-intramol=no. The issue can be
+either due to a too small box, which can cause a molecule and its periodic
+image to end up in the pairlist. In this case increase the box size. Or it can
+happen because interactions at distances longer than rlist are excluded, in
+which case you can try to increase nstlist or rlist to avoid this.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+real	0m2.998s
+user	0m19.868s
+sys	0m0.248s
+Done
+
+###############################################################################
+Hábrók Cluster
+Job 8578697 for user p315462
+Finished at: Mon Apr 29 15:21:23 CEST 2024
+
+Job details:
+============
+
+Job ID              : 8578697
+Name                : fep_protocol.sh
+User                : p315462
+Partition           : regularlong
+Nodes               : node18
+Number of Nodes     : 1
+Cores               : 16
+Number of Tasks     : 1
+State               : RUNNING
+Submit              : 2024-04-29T13:29:00
+Start               : 2024-04-29T13:30:15
+End                 : --
+Reserved walltime   : 6-06:59:00
+Used walltime       :   01:51:09
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 8G
+Max Mem (Node/step) : 0.00  (Node unknown, N/A)
+Full Max Mem usage  : 0.00  (Until last completed step)
+Total Disk Read     : 0.00  (Until last completed step)
+Total Disk Write    : 0.00  (Until last completed step)
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Hábrók in your publications:
+
+https://wiki.hpc.rug.nl/habrok/introduction/scientific_output
+
+################################################################################
