@@ -1,0 +1,111 @@
+; Feb. 2024
+;
+; Last column: '1' is an EVB atom (in region 1); '2' is a non-EVB atom
+; (in region 2). We need to declare the  non-EVB atoms involved in torsion
+; interactions as well as in LJ14 and QQ14 with region 1 atoms in only
+; one of the states, due to forming and/or break bonds.
+ 
+[atoms]
+; #pdb    at(A)        ch(A)       at(B)       ch(B)       dummy   1/2
+; ASH 101
+ 1487     ash_C6       0.140      asp_C2       0.140               2 ; CA
+ 1489     ash_C5      -0.120      asp_C1      -0.220      aah_d5   1 ; CB
+ 1490     ash_H7       0.060      asp_H7       0.060      aah_d7   1 ; HB1
+ 1491     ash_H8       0.060      asp_H8       0.060      aah_d8   1 ; HB2
+ 1492     ash_C1       0.520      asp_C6       0.700      aah_d1   1 ; CG
+ 1493     ash_O4      -0.440      asp_O10     -0.800      aah_d4   1 ; OD1
+ 1494     ash_O2      -0.530      asp_O9      -0.800      aah_d2   1 ; OD2
+ 1495     ash_H3       0.450      rrd_H2       0.38007    aah_d3   1 ; HD2
+; ASP 132
+  1981    asp_C2       0.140      ash_C6       0.140               2  ; C
+  1983    asp_C1      -0.220      ash_C5      -0.120      aaw_d1   1  ; CB
+  1984    asp_H7       0.060      ash_H7       0.060      aaw_d7   1  ; HB1
+  1985    asp_H8       0.060      ash_H8       0.060      aaw_d8   1  ; HB2
+  1986    asp_C6       0.700      ash_C1       0.520      aaw_d6   1  ; CG
+  1987    asp_O9      -0.800      ash_O2      -0.530      aaw_d9   1  ; OD2
+  1988    asp_O10     -0.800      ash_O4      -0.440      aaw_d10  1  ; OD1
+; STO 150
+ 2267     sto_O1      -0.251162    rrd_O1     -0.708500    sto_d1   1  ; O1
+ 2268     sto_C2      -0.109201    rrd_C11     0.468385    sto_d2   1  ; C1
+ 2269     sto_C3       0.227212    rrd_C12    -0.046102    sto_d3   1  ; C2 
+ 2270     sto_C4      -0.215119    rrd_C13    -0.148188    sto_d4   1  ; C3
+ 2271     sto_C5      -0.123712    rrd_C14    -0.157531    sto_d5   1  ; C4
+ 2272     sto_C6      -0.174545    rrd_C15    -0.123219    sto_d6   1  ; C5
+ 2273     sto_C7      -0.123712    rrd_C16    -0.157531    sto_d7   1  ; C6
+ 2274     sto_C8      -0.215119    rrd_C17    -0.148188    sto_d8   1  ; C7
+ 2275     sto_C9      -0.109201    rrd_C3      0.468385    sto_d9   1  ; C8
+ 2276     sto_C10      0.227212    rrd_C5     -0.046102    sto_d10  1  ; C9
+ 2277     sto_C11     -0.215119    rrd_C6     -0.148188    sto_d11  1  ; C10
+ 2278     sto_C12     -0.123712    rrd_C7     -0.157531    sto_d12  1  ; C11
+ 2279     sto_C13     -0.174545    rrd_C8     -0.123219    sto_d13  1  ; C12
+ 2280     sto_C14     -0.123712    rrd_C9     -0.157531    sto_d14  1  ; C13
+ 2281     sto_C15     -0.215119    rrd_C10    -0.148188    sto_d15  1  ; C14
+ 2282     sto_H16      0.133422    rrd_H25    -0.003180    sto_d16  1  ; H1
+ 2283     sto_H17      0.147457    rrd_H26     0.149939    sto_d17  1  ; H2 
+ 2284     sto_H18      0.142561    rrd_H27     0.138469    sto_d18  1  ; H3
+ 2285     sto_H19      0.146319    rrd_H28     0.133348    sto_d19  1  ; H4
+ 2286     sto_H20      0.142561    rrd_H29     0.138469    sto_d20  1  ; H5
+ 2287     sto_H21      0.147457    rrd_H30     0.149939    sto_d21  1  ; H6
+ 2288     sto_H22      0.133422    rrd_H4     -0.003180    sto_d22  1  ; H7
+ 2289     sto_H23      0.147457    rrd_H20     0.109579    sto_d23  1  ; H8
+ 2290     sto_H24      0.142561    rrd_H21     0.138469    sto_d24  1  ; H9
+ 2291     sto_H25      0.146319    rrd_H22     0.133348    sto_d25  1  ; H10
+ 2292     sto_H26      0.142561    rrd_H23     0.138469    sto_d26  1  ; H11
+ 2293     sto_H27      0.147457    rrd_H24     0.109579    sto_d27  1  ; H12
+; H2O 151
+  2294    h2o_O1     -0.940670     rrd_O18    -0.76014     h2o_d1   1  ; O1    ;; !!!
+  2295    h2o_H2      0.470335     rrd_H19     0.38007     h2o_d2   1  ; H2    ;; !!!
+  2296    h2o_H3      0.470335     ash_H3      0.45000     h2o_d3   1  ; H3    ;; !!!
+
+; The A_ij = A_i * A_j; beta_ij = sqrt(beta_i * beta_j)
+[soft-core]
+;     i        A    beta
+;   2267   221.75    25.0
+;   2268   380.74    25.0
+;   2275   380.74    25.0
+;   2294   221.75    25.0
+;   2295   20.92     25.0
+;   2296   20.92     25.0
+;   1493   380.74    25.0
+;   1986   380.74    25.0
+;   1495   20.92     25.0
+ 
+; The bonds from topology will be substituted with these bonds
+; Use only bonds of type 1 or 3.
+[bonds]
+;   i      j type        b(A)          k(A)     beta(A)        b(B)          k(B)        beta(B)
+ 2294   2296    3      0.0945         1028.33      15.0      0.0945         0.0          15.0 ; H2O O1-H3
+ 2275   2267    3      0.1230         1028.33      15.0      0.1230         0.0          15.0  ; STO C8-O1
+ 1494   1495    3      0.0945         1028.25      15.0      0.0945         0.0          15.0 ; ASH O1-HD2 Breaking of O-H in ASH
+ 2294   2275    3      0.0945         0.0          15.0      0.0945         1028.33      15.0  ; RRD C8-OH from water
+ 2267   1495    3      0.0945         0.0          15.0      0.0945         1028.33      15.0 ; RRD H4-O1 Hydrogen from ASH
+ 1987   2296    3      0.0945         0.0          15.0      0.0945         623.5        15.0 ; ASP O-HD2 Protonation of ASP
+
+; constraints
+; bonds of type 6 and 10 does not generate exclusions
+[bcon]
+;    i     j    type  low(A) up1(A) up2(A)    k(A) low(B)  up1(B) up2(B)    k(B)
+  2294  2275      10    0.1    0.3    0.4  4184.0     0.1    0.3    0.4  4184.0   ; 10 kcal/mol/A2
+  2294  1987      10    0.1    0.4    0.5  4184.0     0.1    0.4    0.5  4184.0
+
+; Angles will be defined as in topology.
+; Define both states if it is a forming or a braking angle
+[angles]
+;
+; Torsions will be defined as in topology.
+; Define both states if it is a forming or a braking torsion
+[torsions]
+;
+; Impropers will be defined as in topology.
+; Define both states if it is a forming or a braking improper
+[impropers]
+;  i      j      k      l   type(2)    phi(A)   k(A)         phi(B)        k(B)
+;
+[soft-pairs]
+;    i     j type(9)     beta          k(A)       beta        k(B)
+ 2294   2296    9        20.0         0.0         20.0      1046.0     ; softcore in the PS for H2O O1-H3 breaking
+ 2275   2267    9        20.0         0.0         20.0      1046.0     ; softcore in PS for C8-O1 breaking
+ 1494   1495    9        20.0         0.0         20.0      1046.0     ; Softcore in the PS for ASH C1-HD2
+ 2294   2275    9        20.0        1046.0       20.0      0.0        ; Softcore in RS for RRD O1-H2 formation
+ 2267   1495    9        20.0        1046.0       20.0       0.0       ; Softcore for RRD H4-O1 formation
+ 1987   2296    9        20.0        1046.0       20.0       0.0       ; Softcore for ASP C1-HD2 formation

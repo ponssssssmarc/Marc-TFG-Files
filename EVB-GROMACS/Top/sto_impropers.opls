@@ -1,0 +1,14 @@
+;  atom1       atom2       atom3       atom4       func       phi             k
+   sto_C4      sto_C8      sto_C3      sto_C2         2     180.0     16.735982
+   sto_C5      sto_H17     sto_C4      sto_C3         2     180.0      4.602395
+   sto_C6      sto_H18     sto_C5      sto_C4         2     180.0      4.602395
+   sto_C7      sto_H19     sto_C6      sto_C5         2     180.0      4.602395
+   sto_C8      sto_H20     sto_C7      sto_C6         2     180.0      4.602395
+   sto_C7      sto_H21     sto_C8      sto_C3         2     180.0      4.602395
+   sto_C11     sto_C15     sto_C10     sto_C9         2     180.0     16.735982
+   sto_C12     sto_H23     sto_C11     sto_C10        2     180.0      4.602395
+   sto_C13     sto_H24     sto_C12     sto_C11        2     180.0      4.602395
+   sto_C14     sto_H25     sto_C13     sto_C12        2     180.0      4.602395
+   sto_C15     sto_H26     sto_C14     sto_C13        2     180.0      4.602395
+   sto_C14     sto_H27     sto_C15     sto_C10        2     180.0      4.602395
+
