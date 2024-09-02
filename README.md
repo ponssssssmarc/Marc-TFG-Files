@@ -6,5 +6,5 @@ The protocol implemented in this exercise can be found in the folder "supporting
 The softwares used were: Avogadro, Gaussian, Maestro, AmberTools and GROMACS (See "supporting_document" for installation guide)
 The sub-folders present in 'Gaussian' contain relevant data from the calculations  performed for the reactants (Aspartate101(ASH101),cis-Stilbene oxide(STO), Water molecule(H2O)) and the products (RRDiol or SSDiol), Deprotonated Aspartate(ASP101), Protonated Aspartate132 (ASH132)). Each sub-folder contains the gaussian output files (.log files), ffld_server parameters (.ffld files) and the RESP charges (.ac files) which were used as input to ffld2gmx.py tool which generates GROMACS parameters in OPLS-AA format (.opls files)
 # EMPIRICAL VALENCE BOND SIMULATION WITH Q6
-Files for the simulation are found in the "EVB-Q6" directory. The Gaussian files used for determining the transition state in the system (Quantum cluster calculation) are in the directory "QM-Files" 
-The software used for the EVB simulation was Q (Q6).
+
+The simulation files are located in the "EVB-Q6" directory, while the Gaussian files used for determining the transition state in the system (Quantum cluster calculation) can be found in the "QM-Files" directory. The software used for the EVB simulation was Q ([version Q6](https://github.com/JordiVillaFreixa/Q6) fork).
