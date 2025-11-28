@@ -21,8 +21,8 @@ trajectory                                      100
 
 [files]
 topology                             Diol_water.top
-final                                  relax_001.re
-trajectory                            relax_001.dcd
+final                                  $HOME/results/relax_001.re
+trajectory                            $HOME/results/relax_001.dcd
 fep                                  Diol_water.fep
 
 [lambdas]

@@ -9,16 +9,17 @@
 # module load GCC/11.3.0
 # alias evb="module load Anaconda3;module load GCC/11.3.0;conda activate evb"
 
-cp -r relax_001 $SCRATCHDIR
-cd $SCRATCHDIR/relax_001
+#cp -r relax_001 $SCRATCHDIR
+cd relax_001
 
 OK="(\033[0;32m   OK   \033[0m)"
 FAILED="(\033[0;31m FAILED \033[0m)"
 
 steps=( $(ls -1v *inp | sed 's/.inp//') )
-
-rs=$((1 + $RANDOM % 1000000))
-sed -i s/987654321/$rs/ relax_001.inp
+echo  $steps
+#rs=$((1 + $RANDOM % 1000000))
+#echo $rs
+#sed -i s/987654321/$rs/ relax_001.inp
 
 for step in ${steps[@]}
 do

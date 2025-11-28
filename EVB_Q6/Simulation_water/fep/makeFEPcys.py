@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from Qpyl.qmakefep import make_fep
 fepstring = make_fep(qmap_file="fep2.qmap", 
                         pdb_file="../Diol_water.pdb", 
