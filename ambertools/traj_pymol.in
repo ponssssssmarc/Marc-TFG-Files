@@ -1,0 +1,15 @@
+parm complex.prmtop
+trajin prod.nc
+
+# opcional però molt recomanable:
+autoimage
+
+# si no vols veure tota l’aigua i ions:
+strip :WAT,HOH,Na+,Cl-
+
+# Trajectoria en format multi-PDB per PyMOL
+trajout traj_pymol.pdb pdb
+
+run
+quit
+

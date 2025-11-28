@@ -1,0 +1,2 @@
+To create the document in .pdb format, the substrate was first drawn in ChemDraw and saved in .cml format.
+ Once we had this format, the program Open Babel was used to convert the .cml file into a .pdb file.

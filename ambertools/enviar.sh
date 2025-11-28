@@ -1,0 +1,1 @@
+pmemd -O -i prod.in -o prod.out -p complex.prmtop -c $HOME/results/equil.rst -r $HOME/results/prod.rst -x $HOME/results/prod.nc -ref $HOME/results/equil.rst

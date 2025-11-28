@@ -1,0 +1,47 @@
+# GENRELAX PROC for Marc's system
+# Protein: residues 1–299
+# Ligand: STO (residue 300)
+
+&files
+  top = complex.prmtop
+  pdb = complex_leap.pdb
+/
+
+&general
+  restraintmask = ":1-299@N,CA,C,O"   # restriccions al backbone només
+  restraint_wt = 2.0
+  minim_steps = 8000
+  dt = 0.002
+  cut = 10.0
+  heating_temp = 300
+/
+
+&minimization
+  maxcyc = 8000
+  ncyc = 4000
+/
+
+&heating
+  ntx = 1
+  ntt = 3
+  tautp = 0.2
+  tempi = 0.0
+  temp0 = 300.0
+/
+
+&eq
+  ntx = 5
+  ntt = 3
+  tautp = 0.2
+  ntb = 2
+  ntp = 1
+  taup = 2.0
+/
+
+&prod
+  nstlim = 500000
+  ntpr = 500
+  ntwx = 500
+  ntwr = 5000
+/
+

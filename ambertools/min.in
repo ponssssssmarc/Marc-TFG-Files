@@ -1,0 +1,10 @@
+Initial minimization with restraints on protein backbone
+&cntrl
+  imin=1, maxcyc=8000, ncyc=4000,
+  cut=10.0,
+  ntb=1,
+  ntr=1,
+  restraint_wt=10.0,
+  restraintmask=':1-9999&@CA,C,N,O',
+/
+
