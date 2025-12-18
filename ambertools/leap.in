@@ -8,7 +8,7 @@ loadAmberParams STO.frcmod
 HO2 = loadMol2 HO2.mol2
 loadAmberParams HO2.frcmod
 
-complex = loadPDB 1NNW_amber.pdb
+complex = loadPDB 1NNW_clean.pdb
 
 check complex
 
