@@ -2,7 +2,7 @@
 #SBATCH --job-name=amber_md_10ns
 #SBATCH --output=amber_full_md_10ns.out
 #SBATCH --error=amber_full_md_10ns.err
-#SBATCH --nodes=14
+#SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=normal1
