@@ -1,0 +1,7 @@
+Aquest directori conté els fitxers i scripts de la simulació EVB amb GROMACS.
+
+Inclou:
+- entrades i configuracions de simulació
+- fitxers de suport i documentació del flux de treball
+
+Serveix per reproduir i documentar les simulacions EVB amb GROMACS d'aquest treball.

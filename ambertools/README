@@ -1,0 +1,7 @@
+Aquest directori conté fitxers d'entrada i scripts relacionats amb AmberTools.
+
+Estructura:
+- inputs/: fitxers d'entrada i parametritzacions.
+- scripts/: scripts per preparar, executar i analitzar simulacions.
+
+Serveix per gestionar la preparació, execució i anàlisi de simulacions amb AmberTools.
